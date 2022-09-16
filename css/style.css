@@ -58,7 +58,7 @@ body {
 /* 헤더작업 */
 .logo {
   position: absolute;
-  left: -200px;
+  left: -100px;
   top: 30px;
   width: 150px;
   height: 60px;
@@ -299,7 +299,20 @@ body {
   background-size: cover;
   box-shadow: 0 0 10px gray;
 }
+.pr-textbox {
+  position: absolute;
+  display: block;
+  top: 600%;
+  right: -300%;
+}
 
+.pr-textbox > li {
+  padding: 10px 0;
+  padding-left: 20px;
+}
+.pr-textbox > li > a{
+  font-size: 16px;
+}
 .study-midle {
   position: absolute;
   display: block;
