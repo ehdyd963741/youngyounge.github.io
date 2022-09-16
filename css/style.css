@@ -27,6 +27,7 @@ html {
 }
 
 body {
+  
   font-family: 'Noto Sans KR', Helvetica, '맑은 고딕', 'malgun gothic', 'Apple SD Gothic Neo', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -305,13 +306,55 @@ body {
   top: 400%;
   left:10%;
 }
+
 .study-midle h4 {
   position: relative;
   top: 0;
   left: 0;
   font-size: 30px;
   font-weight: 700;
+  margin-top: 40px;
   margin-bottom: 20px;
+}
+.swiper-inner{
+  position: relative;
+  display: block;
+  width: 500px;
+  height: 400px;
+  margin-left: 50px;
+}
+.swiper {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 500px;
+  height: 400px;
+  box-shadow: 0 0 3px gray;
+}
+
+.st-list {
+  position: absolute;
+  display: block;
+  top: 20%;
+  right: -60%;
+}
+
+.st-list > li {
+  font-size: 16px;
+  padding: 10px;
 }
 
 /* .header {
