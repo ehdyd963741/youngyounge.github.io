@@ -138,27 +138,33 @@ body {
 .text-box {
   position: absolute;
   top: 70%;
-  right: 0;
-  background: rgba(10, 120, 0, 0.5 );
-  width: 30vw;
+  left: 65%;
+  background: rgba(10, 120, 0, 0.3 );
+  width: 20vw;
   height: 40vh;
   transform: translateY(-50%);
 }
 
 .text-box h3 {
-  font-size: 60px;
-  color: #000;
-  text-align: right;
+  font-size: 48px;
+  font-weight: 800;
+  color: #181f2f;
+  text-align: left;
   text-shadow: 3px 3px 3px gray ;
+  padding-top: 120px;
+  padding-left: 40px;
   z-index: 10;
 }
-.text-box h5 {
+
+/* .text-box h5 {
   font-size: 40px;
-  color: #000;
-  text-align: center;
+  color: #181f2f;
+  text-align: right;
   text-shadow: 3px 3px 3px gray ;
-  padding-top: 20px;
-}
+  padding-right: 50px;
+  margin-top: 100px;
+} */
+
 /* profile */
 .profile{
   position: relative;
@@ -221,10 +227,11 @@ body {
 }
 
 .project .inner {
-  
+  position: relative;
+  display: block;
 }
 
-.project h2 {
+.project > h2 {
   position: relative;
   display: inline-block;
   text-align: center;
@@ -268,17 +275,18 @@ body {
 .persnoal-top {
   position: relative;
   display: block;
-  transform: translateY(-40%);
+  transform: translateY(-0);
   left: 10%;
 }
 
-.persnoal-top h4 {
+.persnoal-top > h4 {
   position: relative;
   top: 0;
   left: 0;
   font-size: 30px;
   font-weight: 700;
-  margin-bottom: 20px;
+  padding-top: 80px;
+  padding-bottom: 50px;
 }
 
 .pr-img1 {
@@ -287,6 +295,7 @@ body {
   left: 50px;
   width: 400px;
   height: 300px;
+  -webkit-transform: skew(10deg);
   background: url('../images/jung.png') no-repeat top;
   background-size: cover;
   box-shadow: 0 0 10px gray;
@@ -299,7 +308,8 @@ body {
   height: 300px;
   /* top: 20%; */
   left: 30%;
-  transform: translateY(-20%);
+  transform: translateY(-30%);
+  -webkit-transform: skew(-10deg);
   background: url('../images/suzuki.png') no-repeat top;
   background-size: cover;
   box-shadow: 0 0 10px gray;
@@ -325,15 +335,16 @@ body {
 .study-midle {
   position: relative;
   display: block;
-  transform: translateY(-15%);
+  transform: translateY(-5%);
 }
 
-.study-midle h4 {
+.study-midle > h4 {
   position: relative;
+  display: block;
   font-size: 30px;
   font-weight: 700;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .swiper-inner {
@@ -369,13 +380,13 @@ body {
 .st-list {
   position: absolute;
   display: inline-block;
-  top: 10%;
+  top: 30%;
   left: 50%;
   /* transform: translateY(-150%); */
 
 }
 
-.st-list>li {
+.st-list > li {
   position: relative;
   display: block;
   font-size: 16px;
@@ -384,18 +395,53 @@ body {
 
 .team-bottom {
   position: relative;
-  float: right;
-  right: 20%;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  right: 0;
 }
 
-.team-bottom > h4 {
-  position: relative;
-  text-align: right;
+.expr {
+  padding: 50px 0;
+  padding-left: 50%;
   font-size: 30px;
   font-weight: 700;
-  margin-bottom: 20px;
+}
+.team-bottom > div{
+  position: relative;
+  display: flex;
+  width: 30%;
+  height: 600px;
+  background-size: cover;
+  margin-bottom: 150px;
 }
 
+.corail {
+  position: relative;
+  display: block;
+  height: 600px;
+  -webkit-transform: skew(10deg);
+  background: url('../images/korail.png') no-repeat top;
+  background-size: contain;
+}
+
+.api {
+  position: relative;
+  display: block;
+  height: 600px;
+  -webkit-transform: skew(10deg);
+  background: url('../images/mbghibli.jpg') no-repeat top;
+  background-size: cover;
+}
+
+.blog {
+  position: relative;
+  display: block;
+  height: 600px;
+  -webkit-transform: skew(10deg);
+  background: url('../images/phpall.png') no-repeat top;
+  background-size: cover;
+}
 
 
 
