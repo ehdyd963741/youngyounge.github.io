@@ -72,6 +72,7 @@ body {
   display: block;
   width: 100%;
   text-align: right;
+  background: url('../images/computerg.png');
   background-color: rgba(1, 1, 50, 0.4 );
   border-bottom: 1px solid #999;
   z-index: 9999;
@@ -154,15 +155,6 @@ body {
   padding-left: 40px;
   z-index: 10;
 }
-
-/* .text-box h5 {
-  font-size: 40px;
-  color: #181f2f;
-  text-align: right;
-  text-shadow: 3px 3px 3px gray ;
-  padding-right: 50px;
-  margin-top: 100px;
-} */
 
 /* profile */
 .profile{
