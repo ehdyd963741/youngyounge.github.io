@@ -250,6 +250,61 @@ body {
   margin-bottom: 20px;
 }
 
+/* canbus */
+.business {
+  position: relative;
+  display: block;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.business_canvas {
+  position: absolute;
+  top: 5%;
+  left: -80%;
+  width: 100%;
+  height: 100%;
+  /* background-color: #fdfaf7; */
+}
+
+.business_canvas2 {
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.business_bg {
+  width: 100%;
+  height: 100%;
+}
+.business_bg2 {
+  width: 100%;
+  height: 100%;
+}
+
+.business_bg span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 1200px;
+  background: url('../images/bktext.png') no-repeat right bottom / contain;
+  font-size: 0;
+}
+
+.business_bg2 span {
+  position: absolute;
+  top: 40%;
+  right: -20%;
+  width: 500px;
+  height: 1200px;
+  background: url('../images/bktext.png') no-repeat right bottom / contain;
+  font-size: 0;
+}
+/*  */
+
 .portfolio p {
   position: relative;
   font-size: 20px;
