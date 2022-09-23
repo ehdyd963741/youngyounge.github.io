@@ -23,8 +23,7 @@ const $text3 = document.querySelector(".auto-text3");
 const letters = [
   "HELLOW",
   "MyFortPolio",
-  "Always From Development is",
-  "WooJunKim"  ,
+  "Always From Development is ㅡㅡㅡㅡㅡ 'WooJunKim' ㅡㅡㅡㅡㅡㅡㅡ ",
 ];
 const letters2 = ["From"];
 const letters3 = ["DevelopMent"];
