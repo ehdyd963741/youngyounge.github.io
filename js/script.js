@@ -20,7 +20,12 @@ const $text = document.querySelector(".auto-text");
 const $text2 = document.querySelector(".auto-text2");
 const $text3 = document.querySelector(".auto-text3");
 // 글자 모음
-const letters = ["Always", "From", "DevelopMent", "WooJunKim"];
+const letters = [
+  "HELLOW",
+  "MyFortPolio",
+  "Always From Development is",
+  "WooJunKim"  ,
+];
 const letters2 = ["From"];
 const letters3 = ["DevelopMent"];
 // 글자 입력 속도
