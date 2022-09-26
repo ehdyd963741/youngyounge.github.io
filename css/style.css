@@ -560,6 +560,51 @@ body {
   padding: 10px;
 }
 
+/* 예제 */
+.slide {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.slide-menu {
+  height: 50px;
+  text-align: center;
+}
+
+.slide-menu a {
+  position: relative;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.slide-menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #000;
+  transition: all 0.5s;
+}
+
+/* 탭메뉴 효과 */
+.slide-menu-active {
+  font-weight: 700;
+}
+
+.slide-menu-active::after {
+  width: 100% !important;
+}
+
+.sw-slide {
+  height: 500px;
+}
+
+
+/*  */
+
+
 .team-bottom {
   position: relative;
   display: flex;

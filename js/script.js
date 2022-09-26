@@ -1,5 +1,16 @@
-window.onload = function(){
-  new Swiper(".abc", {
+window.onload = function () {
+  let slideMenu = $(".st-list a");
+  $.each(slideMenu, function (index, item) {
+    $(this).click(function (event) {
+      //href막기
+      event.preventDefault();
+      switchSlide.slideTo(index + 1);
+    });
+  });
+  // 처음 슬라이드 표현을 위해서 0번이 포커스 된다.
+  slideMenu.eq(0).addClass("slide-menu-active");
+
+  let swSlide = new Swiper(".abc", {
     effect: "cube",
     grabCursor: true,
     loop: true,
@@ -14,10 +25,19 @@ window.onload = function(){
       shadowScale: 0.94,
     },
   });
+  // let swStList = new Swiper(".sw-stlist", {
+  //   loop: true,
+  // });
+  // swSlide.controller.control = swStList;
+
+  swSlide.on("slideChange", function () {
+    // 일단 모두 포커스 class 지운다.
+    slideMenu.removeClass("slide-menu-active");
+    // 나는 포커스 들어간다.
+    slideMenu.eq(swSlide.realIndex).addClass("slide-menu-active");
+  });
 
   const $text = document.querySelector(".auto-text");
-  const $text2 = document.querySelector(".auto-text2");
-  const $text3 = document.querySelector(".auto-text3");
   // 글자 모음
   const letters = [
     "HELLOW",
@@ -69,7 +89,7 @@ window.onload = function(){
     relativeInput: true,
     hoverOnly: true,
   });
-  parallaxInstance.friction(.05, .05);
+  parallaxInstance.friction(0.05, 0.05);
 
   $(window)
     .resize(function () {
@@ -84,24 +104,23 @@ window.onload = function(){
     })
     .resize();
   // 애니2
-    var scene = document.getElementById("scene2");
-    var parallaxInstance = new Parallax(scene, {
-      relativeInput: true,
-      hoverOnly: true,
-    });
-    parallaxInstance.friction(0.05, 0.05);
+  var scene = document.getElementById("scene2");
+  var parallaxInstance = new Parallax(scene, {
+    relativeInput: true,
+    hoverOnly: true,
+  });
+  parallaxInstance.friction(0.05, 0.05);
 
-    $(window)
-      .resize(function () {
-        var userAgent = window.navigator.userAgent;
-        var isMobile = /mobile/i.test(userAgent);
+  $(window)
+    .resize(function () {
+      var userAgent = window.navigator.userAgent;
+      var isMobile = /mobile/i.test(userAgent);
 
-        if (isMobile) {
-          parallaxInstance.disable();
-        } else {
-          parallaxInstance.enable();
-        }
-      })
+      if (isMobile) {
+        parallaxInstance.disable();
+      } else {
+        parallaxInstance.enable();
+      }
+    })
     .resize();
-}
-
+};
