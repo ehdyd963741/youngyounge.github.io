@@ -61,7 +61,7 @@ window.onload = function(){
   }
 
   // 초기 실행
-  setTimeout(typing, 2700);
+  setTimeout(typing, 1200);
 
   // 애니메이션
   var scene = document.getElementById("scene");

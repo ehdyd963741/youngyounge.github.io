@@ -173,11 +173,12 @@ body {
   display: block;
   margin-bottom: 100px;
 }
+
 .profile .inner {
   position: relative;
   display: block;
-
 }
+
 .profile .inner > h2 {
   position: relative;
   display: inline-block;
@@ -188,25 +189,114 @@ body {
   /* background: rgba(1, 3, 150, 0.5); */
   width: 100%;
   margin-top: 80px;
-  margin-bottom: 40px;
 }
-.info-flex {
+
+.info {
   position: relative;
-  display: flex;
   align-items: stretch;
   text-align: left;
   margin-top: 50px;
 }
-.myinfo-left{
 
+.aboutme {
+  position: relative;
+  display: block;
 }
+
+.about-box-left {
+  position: relative;
+  display: block;
+  height: 600px;
+}
+.about-box-left > ul {
+  position: relative;
+  display: block;
+  top: 10%;
+}
+
+.about-box-left > ul >li {}
+
+.about-box-left > ul > li > h3 {
+  font-size: 50px;
+}
+.about-box-left > ul > li > p {
+  padding: 20px 0 ;
+  padding-left: 100px;
+  text-align: left;
+  font-size: 30px;
+}
+
+.about-box-left > ul > li > span {
+  display: inline-block;
+  padding-top: 15px;
+  padding-left: 300px;
+  font-size: 40px;
+}
+/* .info-left{
+  position: relative;
+  display: block;
+} */
+.myficture {
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  width: 600px;
+  height: 300px;
+  background: url('../images/trip3.jpg') no-repeat top;
+  background-size: cover;
+  /* border-radius: 50%; */
+}
+.meme {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(70%);
+  width: 600px;
+  height: 300px;
+  background: url('../images/meme2.png') no-repeat top center;
+  background-size: contain;
+}
+/* .info-left > h3 {
+  text-align: right;
+  padding-right: 250px;
+  color: #ffd800;
+  font-size: 25px;
+  font-weight: 500;
+} */
+
+.about-box-right {
+  position: absolute;
+  right: 0;
+  bottom: -80%;
+}
+
+.about-box-right > p {
+  font-size: 20px;
+}
+
 .stat {
   background: url('../images/Untitled-3.png') no-repeat center;
   background-size: cover;
-  width: 450px;
-  height: 440px;
+  width: 600px;
+  height: 600px;
 }
-.myskill-center{
+.stat2 {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: url('../images/stat2.png') no-repeat center;
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+}
+
+.info-rigiht {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  right: 0;
+}
+/* .myskill-center{
   
 }
 
@@ -224,7 +314,7 @@ body {
 
 .mylife-right{
 
-}
+} */
 
 /* Project */
 .portfolio {
