@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 * {
   margin: 0;
@@ -27,8 +27,8 @@ html {
 }
 
 body {
-  
-  font-family: 'Noto Sans KR', Helvetica, '맑은 고딕', 'malgun gothic', 'Apple SD Gothic Neo', sans-serif;
+  font-family: "Noto Sans KR", Helvetica, "맑은 고딕", "malgun gothic",
+    "Apple SD Gothic Neo", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
@@ -37,7 +37,7 @@ body {
 }
 /* 공통요소 */
 .clearfix::after {
-  content: '';
+  content: "";
   position: relative;
   display: block;
   width: 100%;
@@ -63,7 +63,7 @@ body {
   top: 8px;
   width: 160px;
   height: 60px;
-  background:url('../images/logo2.png') no-repeat center;
+  background: url("../images/logo2.png") no-repeat center;
   background-size: cover;
 }
 
@@ -73,12 +73,13 @@ body {
   width: 100%;
   text-align: right;
   /* background: url('../images/computerg.png'); */
-  background-color: rgba(1, 1, 50, 0.4 );
+  background-color: rgba(1, 1, 50, 0.4);
   border-bottom: 1px solid #999;
   z-index: 9999;
 }
 
-.header .inner {}
+.header .inner {
+}
 
 .gnb {
   position: relative;
@@ -104,7 +105,7 @@ body {
   margin: 0 10px;
 }
 
-.visual{
+.visual {
   position: relative;
   display: block;
 }
@@ -117,20 +118,20 @@ body {
   display: block;
   top: 20%;
   left: 0;
-  background: url('../images/my2.jpg') no-repeat center;
+  background: url("../images/my2.jpg") no-repeat center;
   background-size: cover;
   width: 540px;
   height: 427px;
   z-index: -2;
 }
-.vs-img{
+.vs-img {
   position: relative;
   display: block;
   left: 0;
   top: 0;
   width: 100%;
   height: 80vh;
-  background: url('../images/my.jpg') no-repeat center;
+  background: url("../images/my.jpg") no-repeat center;
   background-size: contain;
   z-index: -1;
 }
@@ -141,7 +142,7 @@ body {
   left: 65%;
   width: 20vw;
   height: 45vh;
-  background: rgba(10, 120, 0, 0.3 );
+  background: rgba(10, 120, 0, 0.3);
   transform: translateY(-50%);
 }
 
@@ -150,25 +151,29 @@ body {
   font-weight: 800;
   color: #2b304e;
   text-align: left;
-  text-shadow: 3px 3px 3px gray ;
+  text-shadow: 3px 3px 3px gray;
   margin-top: 60px;
   margin-left: 40px;
   z-index: 10;
 }
 
 .auto-text::after {
-  content: '';
-  padding-right: .6rem;
-  animation: cursor .9s infinite steps(2);
+  content: "";
+  padding-right: 0.6rem;
+  animation: cursor 0.9s infinite steps(2);
 }
 
 @keyframes cursor {
-  from { border-left: 3px solid #222; }
-  to { border-left: 3px solid #777; }
+  from {
+    border-left: 3px solid #222;
+  }
+  to {
+    border-left: 3px solid #777;
+  }
 }
 
 /* profile */
-.profile{
+.profile {
   position: relative;
   display: block;
   margin-bottom: 100px;
@@ -214,13 +219,14 @@ body {
   top: 10%;
 }
 
-.about-box-left > ul >li {}
+.about-box-left > ul > li {
+}
 
 .about-box-left > ul > li > h3 {
   font-size: 50px;
 }
 .about-box-left > ul > li > p {
-  padding: 20px 0 ;
+  padding: 20px 0;
   padding-left: 100px;
   text-align: left;
   font-size: 30px;
@@ -242,7 +248,7 @@ body {
   right: -5%;
   width: 600px;
   height: 300px;
-  background: url('../images/trip3.jpg') no-repeat top;
+  background: url("../images/trip3.jpg") no-repeat top;
   background-size: cover;
   /* border-radius: 50%; */
 }
@@ -253,7 +259,7 @@ body {
   transform: translateY(70%);
   width: 600px;
   height: 300px;
-  background: url('../images/meme2.png') no-repeat top center;
+  background: url("../images/meme2.png") no-repeat top center;
   background-size: contain;
 }
 /* .info-left > h3 {
@@ -275,7 +281,7 @@ body {
 }
 
 .stat {
-  background: url('../images/Untitled-3.png') no-repeat center;
+  background: url("../images/Untitled-3.png") no-repeat center;
   background-size: cover;
   width: 600px;
   height: 600px;
@@ -284,7 +290,7 @@ body {
   position: absolute;
   top: 30px;
   left: 0;
-  background: url('../images/stat2.png') no-repeat center;
+  background: url("../images/stat2.png") no-repeat center;
   background-size: cover;
   width: 600px;
   height: 600px;
@@ -380,7 +386,7 @@ body {
   right: 0;
   width: 500px;
   height: 1200px;
-  background: url('../images/bktext.png') no-repeat right bottom / contain;
+  background: url("../images/bktext.png") no-repeat right bottom / contain;
   font-size: 0;
 }
 
@@ -390,7 +396,7 @@ body {
   right: -20%;
   width: 500px;
   height: 1200px;
-  background: url('../images/bktext.png') no-repeat right bottom / contain;
+  background: url("../images/bktext.png") no-repeat right bottom / contain;
   font-size: 0;
 }
 /*  */
@@ -402,7 +408,7 @@ body {
 }
 
 .portfolio p::after {
-  content: '';
+  content: "";
   position: absolute;
   left: -10px;
   top: 30px;
@@ -415,7 +421,7 @@ body {
 .allpr {
   position: relative;
   display: block;
-  top:0;
+  top: 0;
   transform: translateY(-10%);
   width: 100%;
   height: 500px;
@@ -446,7 +452,7 @@ body {
   width: 400px;
   height: 300px;
   -webkit-transform: skew(10deg);
-  background: url('../images/jung.png') no-repeat top;
+  background: url("../images/jung.png") no-repeat top;
   background-size: cover;
   box-shadow: 0 0 10px gray;
   transition: all 0.5s;
@@ -468,7 +474,7 @@ body {
   left: 30%;
   transform: translateY(-30%);
   -webkit-transform: skew(-10deg);
-  background: url('../images/suzuki.png') no-repeat top;
+  background: url("../images/suzuki.png") no-repeat top;
   background-size: cover;
   box-shadow: 0 0 10px gray;
   transition: all 0.5s;
@@ -489,12 +495,12 @@ body {
   transform: translateY(-450%);
 }
 
-.pr-textbox>li {
+.pr-textbox > li {
   padding: 10px 0;
   padding-left: 20px;
 }
 
-.pr-textbox>li>a {
+.pr-textbox > li > a {
   font-size: 16px;
 }
 
@@ -537,22 +543,60 @@ body {
   background-size: cover;
 }
 
+.sw-port-cube a {
+  position: relative;
+  display: block;
+}
+.sw-port-cube .sw-port-thumb::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 1;
+}
+.sw-port-cube .sw-port-thumb:hover::before {
+  opacity: 1;
+}
+
+.sw-port-link {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  display: block;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  opacity: 0;
+}
+
+.sw-port-link a {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.sw-port-link i {
+  position: relative;
+  font-size: 30px;
+}
+
+.sw-port-cube .sw-port-thumb:hover .sw-port-link {
+  opacity: 1;
+}
+
 .swiper-slide > a > img {
   display: block;
   width: 500px;
   height: 400px;
   box-shadow: 0 0 3px gray;
-}
-
-.swiper-slide > a > img ::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  background: #2b304e;
 }
 
 .st-list {
@@ -586,14 +630,14 @@ body {
 }
 
 .st-list > p::after {
-    content: '';
-    position: absolute;
-    left: 10px;
-    top: 30px;
-    width: 300px;
-    height: 10px;
-    background: yellow;
-    z-index: 99;
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  width: 300px;
+  height: 10px;
+  background: yellow;
+  z-index: 99;
 }
 
 .st-list > li {
@@ -625,7 +669,7 @@ body {
 }
 
 .slide-menu a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -648,9 +692,7 @@ body {
   height: 500px;
 }
 
-
 /*  */
-
 
 .team-bottom {
   position: relative;
@@ -664,11 +706,11 @@ body {
   padding-top: 50px;
   padding-bottom: 10px;
   padding-left: 65%;
-  color:#2b304e;
+  color: #2b304e;
   font-size: 30px;
   font-weight: 700;
 }
-.team-bottom div{
+.team-bottom div {
   position: relative;
   display: flex;
   width: 30%;
@@ -681,7 +723,7 @@ body {
   position: relative;
   display: block;
   height: 600px;
-  background: url('../images/korail.png') no-repeat top;
+  background: url("../images/korail.png") no-repeat top;
   background-size: contain;
   border-radius: 60px 0 0 100px;
 }
@@ -690,7 +732,7 @@ body {
   position: relative;
   display: block;
   height: 600px;
-  background: url('../images/mbghibli.jpg') no-repeat top;
+  background: url("../images/mbghibli.jpg") no-repeat top;
   background-size: cover;
 }
 
@@ -698,7 +740,7 @@ body {
   position: relative;
   display: block;
   height: 600px;
-  background: url('../images/phpall.png') no-repeat top;
+  background: url("../images/phpall.png") no-repeat top;
   background-size: cover;
   border-radius: 0 60px 60px 0;
 }
@@ -726,7 +768,7 @@ body {
 }
 
 .txt-box3 > h2::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 10px;

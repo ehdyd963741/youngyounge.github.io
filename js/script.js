@@ -10,13 +10,14 @@ window.onload = function () {
   // 처음 슬라이드 표현을 위해서 0번이 포커스 된다.
   slideMenu.eq(0).addClass("slide-menu-active");
 
-  let swSlide = new Swiper(".abc", {
+  let swSlide = new Swiper(".sw-port-cube", {
     effect: "cube",
     grabCursor: true,
     loop: true,
     speed: 800,
     autoplay: {
       delay: 1000,
+      disableOnInteraction: false,
     },
     cubeEffect: {
       shadow: true,
@@ -35,6 +36,13 @@ window.onload = function () {
     slideMenu.removeClass("slide-menu-active");
     // 나는 포커스 들어간다.
     slideMenu.eq(swSlide.realIndex).addClass("slide-menu-active");
+  });
+
+  $(".sw-port-cube").mouseenter(function () {
+    swSlide.autoplay.stop();
+  });
+  $(".sw-port-cube").mouseleave(function () {
+    swSlide.autoplay.start();
   });
 
   const $text = document.querySelector(".auto-text");
