@@ -4,7 +4,7 @@ window.onload = function () {
     $(this).click(function (event) {
       //href막기
       event.preventDefault();
-      switchSlide.slideTo(index + 1);
+      swSlide.slideTo(index + 1);
     });
   });
   // 처음 슬라이드 표현을 위해서 0번이 포커스 된다.
@@ -14,9 +14,9 @@ window.onload = function () {
     effect: "cube",
     grabCursor: true,
     loop: true,
-    speed: 1000,
+    speed: 800,
     autoplay: {
-      delay: 2000,
+      delay: 1000,
     },
     cubeEffect: {
       shadow: true,
