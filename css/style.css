@@ -437,7 +437,7 @@ body {
 .persnoal-top > h4 {
   position: relative;
   top: 0;
-  left: 0;
+  right: -60%;
   color: #2b304e;
   font-size: 30px;
   font-weight: 700;
@@ -547,6 +547,7 @@ body {
   position: relative;
   display: block;
 }
+
 .sw-port-cube .sw-port-thumb::before {
   content: "";
   position: absolute;
@@ -559,6 +560,7 @@ body {
   transition: all 0.5s;
   z-index: 1;
 }
+
 .sw-port-cube .sw-port-thumb:hover::before {
   opacity: 1;
 }
@@ -605,21 +607,6 @@ body {
   top: 30%;
   left: 50%;
 }
-
-/* .text-midle {
-  width: 100%;
-  font-size: 16px;
-  margin-left: 20px;
-} */
-
-/* .text-midle > button {
-  border: none;
-  margin-right: 10px;
-  background-color: #ffff;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-} */
 
 .st-list > p {
   color: #2b304e;
@@ -693,31 +680,92 @@ body {
 }
 
 /*  */
-
-.team-bottom {
-  position: relative;
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  right: 0;
-}
-
 .expr {
   padding-top: 50px;
   padding-bottom: 10px;
-  padding-left: 65%;
+  padding-left: 50%;
   color: #2b304e;
   font-size: 30px;
   font-weight: 700;
 }
-.team-bottom div {
+
+.team-bottom {
+  position: relative;
+  display: flex;
+  left: 10%;
+  width: 85%;
+  justify-content: space-evenly;
+  right: 0;
+}
+
+.thumb {
   position: relative;
   display: flex;
   width: 30%;
   height: 600px;
   background-size: cover;
   margin-bottom: 60px;
+  visibility: 0;
 }
+
+.thumb a {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  margin-bottom: 60px;
+}
+
+/* 123 */
+.team-bottom .thumb::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  border-radius: 100px 0 0 100px;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.team-bottom .thumb:hover::before {
+  border-radius: 100px 0 0 100px;
+  opacity: 1;
+}
+
+.co-port-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  opacity: 0;
+}
+
+.co-port-link a {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+}
+
+.co-port-link i {
+  position: relative;
+  font-size: 30px;
+}
+
+.team-bottom .thumb:hover .co-port-link {
+  opacity: 1;
+}
+
+/*  123- */
+
 
 .corail {
   position: relative;
@@ -725,7 +773,25 @@ body {
   height: 600px;
   background: url("../images/korail.png") no-repeat top;
   background-size: contain;
-  border-radius: 60px 0 0 100px;
+  border-radius: 100px 0 0 100px;
+}
+
+.corail::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.5s;
+  border-radius: 100px 0 0 100px;
+  z-index: 1;
+}
+
+.corail:hover::before {
+   opacity: 1;
 }
 
 .api {
@@ -736,13 +802,48 @@ body {
   background-size: cover;
 }
 
+.api::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.api:hover::before{
+  opacity: 1;
+}
+
 .blog {
   position: relative;
   display: block;
   height: 600px;
   background: url("../images/phpall.png") no-repeat top;
   background-size: cover;
-  border-radius: 0 60px 60px 0;
+
+  border-radius: 0 100px 100px 0;
+}
+
+.blog::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.5s;
+  border-radius: 0 100px 100px 0;
+  z-index: 1;
+}
+.blog:hover::before {
+  opacity: 1;
 }
 
 .txt-box3 {
