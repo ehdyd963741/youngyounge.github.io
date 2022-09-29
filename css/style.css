@@ -24,6 +24,7 @@ img {
 
 html {
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -679,132 +680,47 @@ body {
   height: 500px;
 }
 
-/*  */
+/* team,Api,php */
+
+.team-bottom {
+  position: relative;
+  display: block;
+}
+
 .expr {
-  padding-top: 50px;
-  padding-bottom: 10px;
-  padding-left: 50%;
+  text-align: right;
+  padding-right: 6%;
+  padding-top: 30px;
+  padding-bottom: 30px;
   color: #2b304e;
   font-size: 30px;
   font-weight: 700;
 }
 
-.team-bottom {
+.bottom-container {
   position: relative;
   display: flex;
-  left: 10%;
-  width: 85%;
-  justify-content: space-evenly;
-  right: 0;
+  justify-content:space-between ;
+  width: 95%;
+  padding-left: 10%;
 }
 
-.thumb {
-  position: relative;
-  display: flex;
+.bottom-container .img-thumb{
   width: 30%;
-  height: 600px;
-  background-size: cover;
-  margin-bottom: 60px;
-  visibility: 0;
 }
-
-.thumb a {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 600px;
-  background-size: cover;
-  margin-bottom: 60px;
-}
-
-/* 123 */
-.team-bottom .thumb::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  opacity: 0;
-  border-radius: 100px 0 0 100px;
-  transition: all 0.5s;
-  z-index: 1;
-}
-
-.team-bottom .thumb:hover::before {
-  border-radius: 100px 0 0 100px;
-  opacity: 1;
-}
-
-.co-port-link {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  width: 100%;
-  text-align: center;
-  z-index: 2;
-  opacity: 0;
-}
-
-.co-port-link a {
-  position: relative;
-  display: inline-block;
-  font-size: 20px;
-  color: #fff;
-}
-
-.co-port-link i {
-  position: relative;
-  font-size: 30px;
-}
-
-.team-bottom .thumb:hover .co-port-link {
-  opacity: 1;
-}
-
-/*  123- */
-
-
-.corail {
+.bottom-container .img-thumb > a {
   position: relative;
   display: block;
-  height: 600px;
-  background: url("../images/korail.png") no-repeat top;
-  background-size: contain;
-  border-radius: 100px 0 0 100px;
 }
 
-.corail::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
+.bottom-container .img-thumb > a img {
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  opacity: 0;
-  transition: all 0.5s;
-  border-radius: 100px 0 0 100px;
-  z-index: 1;
 }
 
-.corail:hover::before {
-   opacity: 1;
-}
-
-.api {
-  position: relative;
-  display: block;
-  height: 600px;
-  background: url("../images/mbghibli.jpg") no-repeat top;
-  background-size: cover;
-}
-
-.api::before {
+.bottom-container .img-thumb > a::before {
   content: "";
   position: absolute;
+  display: block;
   left: 0;
   top: 0;
   width: 100%;
@@ -815,35 +731,9 @@ body {
   z-index: 1;
 }
 
-.api:hover::before{
+.bottom-container .img-thumb > a:hover::before {
   opacity: 1;
-}
-
-.blog {
-  position: relative;
-  display: block;
-  height: 600px;
-  background: url("../images/phpall.png") no-repeat top;
-  background-size: cover;
-
-  border-radius: 0 100px 100px 0;
-}
-
-.blog::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  opacity: 0;
-  transition: all 0.5s;
-  border-radius: 0 100px 100px 0;
   z-index: 1;
-}
-.blog:hover::before {
-  opacity: 1;
 }
 
 .txt-box3 {
@@ -877,6 +767,15 @@ body {
   height: 10px;
   background: yellow;
   z-index: 99;
+}
+
+.about {
+  position: relative;
+  display: block;
+}
+.about .inner {
+  position: relative;
+  display: block;
 }
 
 .footer {
