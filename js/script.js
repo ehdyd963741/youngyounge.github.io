@@ -139,29 +139,14 @@ window.onload = function () {
     easing: "bounce",
     duration: 1400,
     color: "#108ee9",
-    trailColor: "#108ee99",
+    trailColor: "#eee",
     StrokeColor: "#108ee99",
     trailWidth: 4,
     svgStyle: { width: "100%", height: "100%" },
-    text: {
-      style: {
-        // Text color.
-        // Default: same as stroke color (options.color)
-        color: "#999",
-        position: "absolute",
-        right: "0",
-        top: "30px",
-        padding: 0,
-        margin: 0,
-        transform: null,
-      },
-      autoStyleContainer: false,
-    },
     from: { color: "#FFEA82" },
     to: { color: "#ED6A5A" },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
-      bar.setText(Math.round(bar.value() * 100) + " %");
     },
   });
   bar.animate(1.0);
@@ -172,28 +157,13 @@ window.onload = function () {
     easing: "bounce",
     duration: 1500,
     color: "#20f099",
-    trailColor: "#eeeee",
+    trailColor: "#eee",
     trailWidth: 1,
     svgStyle: { width: "100%", height: "100%" },
-    text: {
-      style: {
-        // Text color.
-        // Default: same as stroke color (options.color)
-        color: "#999",
-        position: "absolute",
-        right: "0",
-        top: "30px",
-        padding: 0,
-        margin: 0,
-        transform: null,
-      },
-      autoStyleContainer: false,
-    },
     from: { color: "#20fff5" },
     to: { color: "#c5f099" },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
-      bar.setText(Math.round(bar.value() * 100) + " %");
     },
   });
   bar1.animate(1.0); // Number from 0.0 to 1.0
@@ -224,25 +194,10 @@ window.onload = function () {
     trailColor: "#eee",
     trailWidth: 1,
     svgStyle: { width: "50%", height: "100%" },
-    text: {
-      style: {
-        // Text color.
-        // Default: same as stroke color (options.color)
-        color: "#999",
-        position: "absolute",
-        right: "0",
-        top: "30px",
-        padding: 0,
-        margin: 0,
-        transform: null,
-      },
-      autoStyleContainer: false,
-    },
     from: { color: "#57631c" },
     to: { color: "#570f2a" },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
-      bar.setText(Math.round(bar.value() * 50) + " %");
     },
   });
   bar3.animate(1.0); // Number from 0.0 to 1.0
@@ -256,25 +211,10 @@ window.onload = function () {
     trailColor: "#eee",
     trailWidth: 1,
     svgStyle: { width: "100%", height: "100%" },
-    text: {
-      style: {
-        // Text color.
-        // Default: same as stroke color (options.color)
-        color: "#999",
-        position: "absolute",
-        right: "0",
-        top: "30px",
-        padding: 0,
-        margin: 0,
-        transform: null,
-      },
-      autoStyleContainer: false,
-    },
     from: { color: "#b3b8c2" },
     to: { color: "#b3c2ff" },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
-      bar.setText(Math.round(bar.value() * 100) + " %");
     },
   });
   bar4.animate(1.0); // Number from 0.0 to 1.0
