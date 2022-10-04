@@ -81,15 +81,14 @@ body {
   z-index: 9999;
 }
 
-.header .inner {
-}
+.header .inner {}
 
 .gnb {
   position: relative;
   display: inline-block;
 }
 
-.gnb > li {
+.gnb>li {
   position: relative;
   display: inline-block;
   white-space: nowrap;
@@ -98,7 +97,7 @@ body {
   z-index: 99999;
 }
 
-.gnb > li > a {
+.gnb>li>a {
   display: block;
   line-height: 70px;
   text-transform: uppercase;
@@ -191,7 +190,7 @@ body {
   display: block;
 }
 
-.profile .inner > h2 {
+.profile .inner>h2 {
   position: relative;
   display: inline-block;
   color: #2b304e;
@@ -221,27 +220,26 @@ body {
   height: 600px;
 }
 
-.about-box-left > ul {
+.about-box-left>ul {
   position: relative;
   display: block;
   top: 10%;
 }
 
-.about-box-left > ul > li {
-}
+.about-box-left>ul>li {}
 
-.about-box-left > ul > li > h3 {
+.about-box-left>ul>li>h3 {
   font-size: 50px;
 }
 
-.about-box-left > ul > li > p {
+.about-box-left>ul>li>p {
   padding: 20px 0;
   padding-left: 100px;
   text-align: left;
   font-size: 30px;
 }
 
-.about-box-left > ul > li > span {
+.about-box-left>ul>li>span {
   display: inline-block;
   padding-top: 15px;
   padding-left: 300px;
@@ -288,7 +286,7 @@ body {
   bottom: -80%;
 }
 
-.about-box-right > p {
+.about-box-right>p {
   font-size: 20px;
 }
 
@@ -347,7 +345,7 @@ body {
   display: block;
 }
 
-.portfolio .inner > h2 {
+.portfolio .inner>h2 {
   position: relative;
   display: inline-block;
   text-align: center;
@@ -450,7 +448,7 @@ body {
   left: 10%;
 }
 
-.persnoal-top > h4 {
+.persnoal-top>h4 {
   position: relative;
   top: 0;
   right: -60%;
@@ -511,12 +509,12 @@ body {
   transform: translateY(-450%);
 }
 
-.pr-textbox > li {
+.pr-textbox>li {
   padding: 10px 0;
   padding-left: 20px;
 }
 
-.pr-textbox > li > a {
+.pr-textbox>li>a {
   font-size: 16px;
 }
 
@@ -526,7 +524,7 @@ body {
   transform: translateY(-5%);
 }
 
-.study-midle > h4 {
+.study-midle>h4 {
   position: relative;
   display: block;
   color: #2b304e;
@@ -536,6 +534,7 @@ body {
   padding-bottom: 40px;
 }
 
+/* 스와이퍼 슬라이드 연동하기 */
 .swiper-inner {
   position: relative;
   display: block;
@@ -610,7 +609,7 @@ body {
   opacity: 1;
 }
 
-.swiper-slide > a > img {
+.swiper-slide>a>img {
   display: block;
   width: 500px;
   height: 400px;
@@ -624,7 +623,7 @@ body {
   left: 50%;
 }
 
-.st-list > p {
+.st-list>p {
   color: #2b304e;
   width: 400px;
   padding-left: 20px;
@@ -632,7 +631,7 @@ body {
   font-weight: 700;
 }
 
-.st-list > p::after {
+.st-list>p::after {
   content: "";
   position: absolute;
   left: 10px;
@@ -643,7 +642,7 @@ body {
   z-index: 99;
 }
 
-.st-list > li {
+.st-list>li {
   position: relative;
   display: block;
   text-align: left;
@@ -651,7 +650,7 @@ body {
   padding-bottom: 10px;
 }
 
-.st-list > li > a {
+.st-list>li>a {
   color: #2b304e;
 }
 
@@ -725,16 +724,16 @@ body {
   width: 30%;
 }
 
-.bottom-container .img-thumb > a {
+.bottom-container .img-thumb>a {
   position: relative;
   display: block;
 }
 
-.bottom-container .img-thumb > a img {
+.bottom-container .img-thumb>a img {
   width: 100%;
 }
 
-.bottom-container .img-thumb > a::before {
+.bottom-container .img-thumb>a::before {
   content: "";
   position: absolute;
   display: block;
@@ -748,7 +747,7 @@ body {
   z-index: 1;
 }
 
-.bottom-container .img-thumb > a:hover::before {
+.bottom-container .img-thumb>a:hover::before {
   opacity: 1;
   z-index: 1;
 }
@@ -759,7 +758,7 @@ body {
   padding-left: 130px;
 }
 
-.txt-box3 > h2 {
+.txt-box3>h2 {
   text-align: left;
   position: relative;
   display: block;
@@ -770,12 +769,12 @@ body {
   padding-bottom: 20px;
 }
 
-.txt-box3 > li {
+.txt-box3>li {
   padding-left: 30px;
   padding-bottom: 10px;
 }
 
-.txt-box3 > h2::after {
+.txt-box3>h2::after {
   content: "";
   position: absolute;
   left: 0;
@@ -805,7 +804,7 @@ body {
   padding-bottom: 50px;
 }
 
-.ab-text > h3 {
+.ab-text>h3 {
   position: relative;
   text-align: center;
   color: #2b304e;
@@ -839,7 +838,7 @@ body {
   font-weight: 500;
 }
 
-.skill-about-container > div > i {
+.skill-about-container>div>i {
   font-size: 50px;
 }
 
@@ -971,6 +970,17 @@ body {
   transform: translateY(40%);
 }
 
+.md-text::before {
+  content: "";
+  position: absolute;
+  right: 8%;
+  bottom: 30px;
+  width: 55%;
+  height: 10px;
+  background: yellow;
+  z-index: -1;
+}
+
 .lifetext {
   position: relative;
   display: block;
@@ -978,7 +988,7 @@ body {
   padding: 40px 0;
 }
 
-.lifetext > h3 {
+.lifetext>h3 {
   color: #2b304e;
   font-size: 44px;
   font-weight: 700;
@@ -992,10 +1002,21 @@ body {
   padding-bottom: 10px;
 }
 
-.exptext > p {
+.exptext>p {
   font-size: 36px;
   font-weight: 500;
   color: #2b304e;
+}
+
+.exptext>p::before {
+  content: "";
+  position: absolute;
+  left: 5%;
+  bottom: 20px;
+  width: 60%;
+  height: 10px;
+  background: yellow;
+  z-index: -1;
 }
 
 .lifetext2 {
@@ -1004,7 +1025,7 @@ body {
   text-align: left;
 }
 
-.lifetext2 > p {
+.lifetext2>p {
   font-size: 36px;
   font-weight: 500;
   color: #2b304e;
@@ -1033,7 +1054,7 @@ body {
   z-index: 99;
 }
 
-.jobcover > p {
+.jobcover>p {
   color: #fff;
   display: inline-block;
   opacity: 0;
@@ -1045,34 +1066,34 @@ body {
   transition: all 0.5s;
 }
 
-.experience > .job1:hover > .jobcover {
+.experience>.job1:hover>.jobcover {
   width: 100%;
   opacity: 1;
   font-size: 18px;
 }
 
-.experience > .job1:hover > .jobcover > p {
+.experience>.job1:hover>.jobcover>p {
   opacity: 1;
   padding-left: 70px;
 }
 
-.experience > .job2:hover > .jobcover {
+.experience>.job2:hover>.jobcover {
   width: 100%;
   opacity: 1;
   font-size: 18px;
 }
 
-.experience > .job2:hover > .jobcover > p {
+.experience>.job2:hover>.jobcover>p {
   opacity: 1;
 }
 
-.experience > .job3:hover > .jobcover {
+.experience>.job3:hover>.jobcover {
   width: 100%;
   opacity: 1;
   font-size: 18px;
 }
 
-.experience > .job3:hover > .jobcover > p {
+.experience>.job3:hover>.jobcover>p {
   opacity: 1;
   padding-left: 70px;
 }
@@ -1088,7 +1109,7 @@ body {
   transition: all 0.5s;
 }
 
-.job1 > a > img {
+.job1>a>img {
   width: 360px;
   height: 350px;
 }
@@ -1100,7 +1121,7 @@ body {
   align-items: center;
 }
 
-.job2 > a > img {
+.job2>a>img {
   position: relative;
   display: block;
   width: 360px;
@@ -1116,7 +1137,7 @@ body {
   /* transform: translateY(20%); */
 }
 
-.job3 > a > img {
+.job3>a>img {
   width: 360px;
   height: 350px;
 }
@@ -1141,7 +1162,7 @@ body {
   transition: all 0.5s;
 }
 
-.reading > a > img {
+.reading>a>img {
   width: 360px;
   height: 350px;
 }
@@ -1154,7 +1175,7 @@ body {
   align-items: center;
 }
 
-.draw > a > img {
+.draw>a>img {
   position: relative;
   display: block;
   width: 360px;
@@ -1169,36 +1190,36 @@ body {
   align-items: center;
 }
 
-.travel > a > img {
+.travel>a>img {
   width: 360px;
   height: 350px;
 }
 
-.experience2 > .reading:hover > .jobcover {
+.experience2>.reading:hover>.jobcover {
   width: 100%;
   opacity: 1;
 }
 
-.experience2 > .reading:hover > .jobcover > p {
+.experience2>.reading:hover>.jobcover>p {
   opacity: 1;
   padding-left: 70px;
 }
 
-.experience2 > .draw:hover > .jobcover {
+.experience2>.draw:hover>.jobcover {
   width: 100%;
   opacity: 1;
 }
 
-.experience2 > .draw:hover > .jobcover > p {
+.experience2>.draw:hover>.jobcover>p {
   opacity: 1;
 }
 
-.experience2 > .travel:hover > .jobcover {
+.experience2>.travel:hover>.jobcover {
   width: 100%;
   opacity: 1;
 }
 
-.experience2 > .travel:hover > .jobcover > p {
+.experience2>.travel:hover>.jobcover>p {
   opacity: 1;
   padding-left: 70px;
 }
@@ -1213,7 +1234,7 @@ body {
   padding-bottom: 100px;
 }
 
-.lifeinfo > div {
+.lifeinfo>div {
   width: 30%;
 }
 
@@ -1235,27 +1256,110 @@ body {
 }
 
 /* vison */
-.vison {
+.vision {
   position: relative;
   display: block;
+  background: #fff;
 }
 
-.vison .inner {
+.vision .inner {
   position: relative;
   display: block;
-  height: 500px;
+  background-color: #fff;
+  padding-bottom: 50px;
 }
+
+.sw-contain {
+  position: relative;
+  display: block;
+  width: 100%;
+  left: -450px;
+  margin-top: 200px;
+}
+
+.swiper {
+  position: relative;
+  display: block;
+  width: 1200px;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  width: 100%;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide .vision1>h2 {
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  color: #2b304e;
+}
+
+.textvision1 {
+  text-align: center;
+}
+
+.textvision1>ul>p {
+  color: #2b304e;
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+
+.textvision1>ul>li>p {
+  color: #2b304e;
+}
+
+:root {
+  --swiper-theme-color: yellow;
+}
+
+/* footer */
 
 .footer {
   position: relative;
   display: block;
-  width: 100%;
-  background-color: #2b304e;
+  background: #2b304e;
 }
-
-.contact {
+.footer .inner {
   position: relative;
   display: block;
-  height: 350px;
-  background-color: #2b304e;
+}
+
+.contact-box {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 100px;
+  color: #fff;
+}
+.contact-box > h2 {
+  font-size: 36px;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+.contact-box >ul > span {
+  padding-right: 20px;
+}
+.kakao {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url('../images/kakaoicon2.png') no-repeat center;
+  background-size: cover;
 }
