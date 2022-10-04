@@ -50,7 +50,7 @@ window.onload = function () {
   const letters = [
     "HELLOW",
     "MyFortPolio",
-    "Always From Development ㅡㅡㅡ is ㅡㅡㅡ 'WooJunKim' ㅡㅡㅡㅡㅡㅡㅡ ",
+    "Always From Development 'WooJunKim'",
   ];
   const letters2 = ["From"];
   const letters3 = ["DevelopMent"];

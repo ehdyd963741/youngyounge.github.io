@@ -58,7 +58,7 @@ body {
   display: block;
 }
 
-/* 헤더작업 */
+/* header */
 .logo {
   position: absolute;
   display: block;
@@ -107,6 +107,8 @@ body {
   margin: 0 10px;
 }
 
+/* visual */
+
 .visual {
   position: relative;
   display: block;
@@ -135,7 +137,7 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  height: 80vh;
+  height: 900px;
   background: url("../images/my.jpg") no-repeat center;
   background-size: contain;
   z-index: -1;
@@ -145,9 +147,8 @@ body {
   position: absolute;
   top: 60%;
   left: 65%;
-  width: 20vw;
-  height: 45vh;
-  background: rgba(10, 120, 0, 0.3);
+  width: 400px;
+  /* background: rgba(10, 120, 0, 0.3); */
   transform: translateY(-50%);
 }
 
@@ -314,27 +315,8 @@ body {
   right: 0;
 }
 
-/* .myskill-center{
-  
-}
 
-.txtbox li {
-  padding: 20px;
-}
-
-.txtbox li:first-child {
-  padding-top: 40px;
-}
-
-.myskill-center i {
-  font-size: 30px;
-}
-
-.mylife-right{
-
-} */
-
-/* Project */
+/* portfolio */
 .portfolio {
   position: relative;
   display: block;
@@ -1031,14 +1013,25 @@ body {
   color: #2b304e;
 }
 
-.experience {
+/* .experience {
   position: relative;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
   padding: 50px 0;
+} */
+
+.experience {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px 0;
+  padding-bottom: 200px;
 }
+
 
 .jobcover {
   position: absolute;
@@ -1059,6 +1052,7 @@ body {
   display: inline-block;
   opacity: 0;
   width: 300px;
+  height: 350px;
   font-size: 24px;
   text-align: center;
   padding-top: 130px;
@@ -1335,6 +1329,7 @@ body {
   display: block;
   background: #2b304e;
 }
+
 .footer .inner {
   position: relative;
   display: block;
@@ -1347,14 +1342,17 @@ body {
   padding: 100px;
   color: #fff;
 }
-.contact-box > h2 {
+
+.contact-box>h2 {
   font-size: 36px;
   font-weight: 500;
   padding-bottom: 25px;
 }
-.contact-box >ul > span {
+
+.contact-box>ul>span {
   padding-right: 20px;
 }
+
 .kakao {
   position: relative;
   display: inline-block;
