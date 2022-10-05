@@ -80,6 +80,8 @@ body {
 .header {
   position: fixed;
   display: block;
+  top: 0;
+  left: 0;
   width: 100%;
   text-align: right;
   /* background: url('../images/computerg.png'); */
@@ -172,8 +174,8 @@ body {
 
 .auto-text::after {
   content: "";
-  padding-right: 0.6rem;
-  animation: cursor 0.9s infinite steps(2);
+  padding-right: 2.6rem;
+  animation: cursor 1.9s infinite steps(2);
 }
 
 @keyframes cursor {
@@ -207,7 +209,7 @@ body {
   padding-left: 100px;
   font-size: 110px;
   font-weight: 700;
-  font-family: "CookieRun";
+  /* font-family: "CookieRun"; */
   color: #246094;
 }
 
@@ -260,6 +262,7 @@ body {
 }
 
 .profiletbox > p {
+  color: #222;
   font-size: 20px;
 }
 
