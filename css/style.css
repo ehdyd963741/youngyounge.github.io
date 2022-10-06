@@ -69,12 +69,12 @@ body {
 .logo {
   position: absolute;
   display: block;
-  left: -20px;
+  left: -32%;
   top: 8px;
   width: 160px;
   height: 60px;
   background: url("../images/logo2.png") no-repeat center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .header {
@@ -84,9 +84,8 @@ body {
   left: 0;
   width: 100%;
   text-align: right;
-  /* background: url('../images/computerg.png'); */
-  background-color: rgba(1, 1, 50, 0.4);
-  border-bottom: 1px solid #999;
+  box-shadow: 0px 3px 8px 0px rgb(21 47 95 / 12%);
+  background: #fff;
   z-index: 9999;
 }
 
@@ -99,69 +98,114 @@ body {
 
 .gnb>li {
   position: relative;
+  text-align: center;
   display: inline-block;
   white-space: nowrap;
-  font-size: 0;
-  margin: 0 30px;
+  margin: 0 18px;
   z-index: 99999;
 }
-
+.gnb>li:last-child {
+  margin-right: 200px;
+}
 .gnb>li>a {
   display: block;
-  line-height: 70px;
-  text-transform: uppercase;
+  line-height: 78px;
   font-size: 16px;
-  font-weight: 500;
-  color: #fff;
+  font-weight: 400;
+  color: #000;
   margin: 0 10px;
 }
 
 /* visual */
-
 .visual {
   position: relative;
   display: block;
+  height: 900px;
+  background: #fcfcfc;
 }
-
 .visual .inner {
   position: relative;
   display: block;
 }
 
-.my-img {
-  position: absolute;
-  display: block;
-  top: 20%;
-  left: 0;
-  background: url("../images/my2.jpg") no-repeat center;
-  background-size: cover;
-  width: 540px;
-  height: 427px;
-  z-index: -2;
-}
-
-.vs-img {
+.visual-left {
   position: relative;
   display: block;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 900px;
-  background: url("../images/my.jpg") no-repeat center;
-  background-size: contain;
-  z-index: -1;
+  width: 50%;
+  height: 100%;
 }
 
-.text-box {
+.visual-left > img {
   position: absolute;
-  top: 60%;
-  left: 65%;
-  width: 400px;
-  /* background: rgba(10, 120, 0, 0.3); */
-  transform: translateY(-50%);
+  display: block;
+  top: -100px;
+  left: -200px;
+  width: 700px;
+  height: 1000px;
 }
 
-.auto-text {
+.visual-right {
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 800px;
+  right: 0;
+}
+
+.visual-right-box {
+  position: absolute;
+  display: block;
+  top: 30%;
+  left: -14%;
+  width: 200px;
+  height: 500px;
+  background: #fcc52c;
+}
+.visual-right-textbox {
+  position: relative;
+  display: block;
+  top: 45%;
+  left: -8%;
+  padding-left: 50px;
+}
+
+.visual-right-textbox > p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2b304e;
+  padding-bottom: 10px;
+  letter-spacing: 6;
+}
+
+.visual-right-textbox > h5 {
+  color: #2b304e;
+  font-size: 50px;
+  font-weight: 500;
+}
+.visual-right-textbox > h3 {
+  color: #2b304e;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.visual-right-bt {
+  position: relative;
+  display: block;
+  border: none;
+  background: #ffffff;
+  border: 1px soli #ffff;
+  box-shadow: 0px 10px 20px 0px rgb(57 42 0 / 20%);
+  padding: 15px 35px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.visual-right-bt:hover {
+  box-shadow: none;
+}
+
+/* .auto-text {
   font-size: 48px;
   font-weight: 800;
   color: #2b304e;
@@ -186,10 +230,60 @@ body {
   to {
     border-left: 3px solid #777;
   }
-}
+} */
 
 /* profile */
+
 .profile {
+  position: relative;
+  display: block;
+  height: 800px;
+}
+.profile .inner {
+  position: relative;
+  display: block;
+}
+.profile-left {
+  position: relative;
+  display: block;
+  width: 50%;
+  height: 100%;
+}
+
+.porfile-left-img {
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 250px;
+  top: 100px;
+  transform: translateX();
+  border-radius: 50%;
+  background: url('../images/itsme.png') no-repeat center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.profile-left > span {
+  position: relative;
+  display: block;
+  font-size: 50px;
+  font-weight: 500;
+  padding-left: 100px;
+  color: #fcc52c;
+}
+.profile-left > span::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 40%;
+  width: 100px;
+  height: 10px;
+  background: #000;
+}
+
+
+
+/* .profile {
   position: relative;
   display: block;
 }
@@ -198,6 +292,7 @@ body {
   position: relative;
   display: block;
 }
+
 .profile-top {
   position: relative;
   display: block;
@@ -209,8 +304,8 @@ body {
   padding-left: 100px;
   font-size: 110px;
   font-weight: 700;
-  /* font-family: "CookieRun"; */
-  color: #246094;
+  font-family: "CookieRun";
+  color: #2b304e;
 }
 
 .myficture {
@@ -222,7 +317,7 @@ body {
   height: 300px;
   background: url("../images/trip3.jpg") no-repeat top;
   background-size: cover;
-  /* border-radius: 50%; */
+  border-radius: 50%;
 }
 
 .profile-bottom {
@@ -250,7 +345,7 @@ body {
   left: 20%;
   width: 300px;
   height: 270px;
-  background: #246094;
+  background: #2b304e;
   z-index: -1;
 }
 
@@ -273,18 +368,9 @@ body {
   color: #fff;
   padding-left: 20px;
   padding-right: 700px;
-  border: 1px solid #246094;
-  background: #246094;
+  border: 1px solid #2b304e;
+  background: #2b304e;
 }
-
-
-/* .info-left > h3 {
-  text-align: right;
-  padding-right: 250px;
-  color: #ffd800;
-  font-size: 25px;
-  font-weight: 500;
-} */
 
 .about-box-right {
   position: absolute;
@@ -318,12 +404,14 @@ body {
   display: inline-block;
   top: 50%;
   right: 0;
-}
+} */
+
 
 /* portfolio */
 .portfolio {
   position: relative;
   display: block;
+  background: #ffff;
 }
 
 .portfolio .inner {
@@ -334,7 +422,7 @@ body {
 .portfolio .inner>h2 {
   position: relative;
   display: inline-block;
-  text-align: center;
+  text-align: left;
   color: #2b304e;
   font-size: 30px;
   font-weight: 800;
