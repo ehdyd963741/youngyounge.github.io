@@ -512,7 +512,7 @@ body {
   width: 400px;
   height: 300px;
 
-  background: url("../images/jung.png") no-repeat top;
+  background: url("../images/junguk.png") no-repeat center;
   background-size: cover;
   box-shadow: 0 0 10px gray;
   transition: all 0.5s;
@@ -533,7 +533,7 @@ body {
   height: 300px;
   left: 30%;
   transform: translateY(-30%);
-  background: url("../images/suzuki.png") no-repeat top;
+  background: url("../images/suzuki2.png") no-repeat center;
   background-size: cover;
   box-shadow: 0 0 10px gray;
   transition: all 0.5s;
