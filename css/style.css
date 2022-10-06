@@ -141,7 +141,7 @@ body {
 .visual-left>img {
   position: absolute;
   display: block;
-  transform:scaleX(-1);
+  transform: scaleX(-1);
   top: -100px;
   left: -200px;
   width: 700px;
@@ -269,14 +269,14 @@ body {
   top: 40px;
   left: 150px;
   border-radius: 50%;
-  background: url('../images/itsme.png') no-repeat center;
+  background: url("../images/itsme.png") no-repeat center;
   background-size: cover;
   opacity: 0.6;
   transition: all 0.3s;
 }
 
 .porfile-left-img:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .profile-left>span {
@@ -286,7 +286,7 @@ body {
   top: -40px;
   text-transform: capitalize;
   font-weight: 700;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   color: #32333c;
   padding-bottom: 20px;
   margin-top: 0;
@@ -295,7 +295,7 @@ body {
 }
 
 .profile-left>span::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -319,7 +319,7 @@ body {
 
 .profile-right-textbox>p {
   font-size: 16px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 400;
   line-height: 28px;
   color: #8a8fa3;
@@ -364,7 +364,6 @@ body {
   font-weight: 500;
   background: #ffff;
 }
-
 
 /* portfolio */
 .portfolio {
@@ -998,12 +997,12 @@ body {
   height: 8px;
 }
 
-/* my life */
+/* experience */
 .experience {
   position: relative;
   display: block;
   background: #fcfcfc;
-  padding: 120px 0px 150px 0px ;
+  padding: 120px 0px 150px 0px;
 }
 
 .experience .inner {
@@ -1029,7 +1028,7 @@ body {
 }
 
 .experience-title-box>h2::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 45%;
@@ -1038,7 +1037,7 @@ body {
   background: #fcc52c;
 }
 
-.experience-title-box > p {
+.experience-title-box>p {
   text-align: center;
   margin: 0 200px 70px 200px;
 }
@@ -1048,7 +1047,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%
+  width: 100%;
 }
 
 .experience-item {
@@ -1060,370 +1059,164 @@ body {
   padding: 75px 40px 75px 40px;
   transition: all 0.5s;
 }
+
 .experience-item:hover {
   background: #fcc52c;
 }
+
 .experience-item:last-child {
   border-right: 1px solid #edecec;
 }
 
-.experience-item > p {
-    font-size: 15px;
-    line-height: 28px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    transition: all 0.3s;
+.experience-item>p {
+  font-size: 15px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  transition: all 0.3s;
 }
 
-.experience-item > h3 {
+.experience-item>h3 {
   color: #32333c;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
 }
-.experience-item > span {
+
+.experience-item>span {
   max-width: 770px;
   width: 100%;
   margin: 0 auto 80px;
 }
-/* .mylife {
+
+/* life */
+.life {
   position: relative;
   display: block;
-  background: #fcfcfc;
+  padding: 120px 0px 150px 0px;
 }
 
-.mylife .inner {
+.life .inner {
   position: relative;
   display: block;
 }
 
-.md-text {
-  color: #2b304e;
-  text-align: center;
-
-  font-size: 44px;
-  font-weight: 500;
-  padding-bottom: 20px;
-  transform: translateY(40%);
-}
-
-.md-text::before {
-  content: "";
-  position: absolute;
-  right: -5%;
-  bottom: 30px;
-  width: 55%;
-  height: 10px;
-  background: yellow;
-  z-index: -1;
-}
-
-.lifetext {
-  position: relative;
-  display: block;
-  text-align: center;
-  padding: 40px 0;
-}
-
-.lifetext>h3 {
-  color: #2b304e;
-  font-size: 44px;
-  font-weight: 700;
-  padding-bottom: 20px;
-}
-
-.exptext {
-  position: relative;
-  display: block;
-  text-align: left;
-  padding-bottom: 10px;
-}
-
-.exptext>p {
-  font-size: 36px;
-  font-weight: 500;
-  color: #2b304e;
-}
-
-.exptext>p::before {
-  content: "";
-  position: absolute;
-  left: 5%;
-  bottom: 20px;
-  width: 60%;
-  height: 10px;
-  background: yellow;
-  z-index: -1;
-}
-
-.lifetext2 {
-  position: relative;
-  display: block;
-  text-align: left;
-}
-
-.lifetext2>p {
-  font-size: 36px;
-  font-weight: 500;
-  color: #2b304e;
-}
-
-.experience {
+.life-container {
   position: relative;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  top: 10px;
-  width: 100%;
-  padding: 10px 0;
-  padding-bottom: 50px;
-}
-
-.jobcover {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 0px;
-  font-size: 0;
-  height: 0px;
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: all 0.5s;
-  z-index: 99;
-}
-
-.jobcover>p {
-  color: #fff;
-  display: inline-block;
-  opacity: 0;
-  width: 280px;
-  height: 280px;
-  font-size: 24px;
-  text-align: center;
-  padding-top: 130px;
-  padding-left: 60px;
-  transition: all 0.5s;
-}
-
-.experience>.job1:hover>.jobcover {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  font-size: 18px;
-  transform: scale(1.2);
-}
-
-.experience>.job1:hover>.jobcover>p {
-  opacity: 1;
-  padding-left: 70px;
-}
-
-.experience>.job2:hover>.jobcover {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  font-size: 18px;
-  transform: scale(1.2);
-}
-
-.experience>.job2:hover>.jobcover>p {
-  opacity: 1;
-}
-
-.experience>.job3:hover>.jobcover {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  font-size: 18px;
-  transform: scale(1.2);
-}
-
-.experience>.job3:hover>.jobcover>p {
-  opacity: 1;
-  padding-left: 70px;
-}
-
-.job1 {
-  position: relative;
-  display: block;
   align-items: center;
-  top: 75px;
-  background-color: #444;
-  transform: scale(1);
-  transition: all 0.5s;
-}
-
-.job1>a>img {
-  width: 280px;
-  height: 280px;
-}
-
-.job2 {
-  position: relative;
-  display: block;
-  align-items: center;
-  background-color: #444;
-  transform: scale(1);
-  transition: all 0.5s;
-}
-
-.job2>a>img {
-  position: relative;
-  display: block;
-  width: 280px;
-  height: 280px;
-}
-
-.job3 {
-  position: relative;
-  display: block;
-  top: -50px;
-  align-items: center;
-  background-color: #444;
-  transform: scale(1);
-  transition: right 0.5s;
-}
-
-.job3>a>img {
-  width: 280px;
-  height: 280px;
-}
-
-.experience2 {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 100%;
-  padding-left: 40px;
-  padding-bottom: 200px;
-}
-
-.reading {
-  position: relative;
-  display: block;
-  align-items: center;
-  background-color: #444;
-  transform: scale(1);
-  transition: all 0.5s;
-}
-
-.reading>a>img {
-  width: 280px;
-  height: 280px;
-}
-
-.draw {
-  position: relative;
-  display: block;
-  top: 50px;
-  align-items: center;
-}
-
-.draw>a>img {
-  position: relative;
-  display: block;
-  width: 280px;
-  height: 280px;
-}
-
-.travel {
-  position: relative;
-  display: block;
-  top: 100px;
-  align-items: center;
-}
-
-.travel>a>img {
-  width: 280px;
-  height: 280px;
-}
-
-.experience2>.reading:hover>.jobcover {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  transform: scale(1.2);
-}
-
-.experience2>.reading:hover>.jobcover>p {
-  opacity: 1;
-  padding-left: 70px;
-}
-
-.experience2>.draw:hover>.jobcover {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  transform: scale(1.2);
-}
-
-.experience2>.draw:hover>.jobcover>p {
-  opacity: 1;
-}
-
-.experience2>.travel:hover>.jobcover {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  transform: scale(1.2);
-}
-
-.experience2>.travel:hover>.jobcover>p {
-  opacity: 1;
-  padding-left: 70px;
-}
-
-.lifeinfo {
-  position: relative;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
   width: 100%;
-  padding-bottom: 100px;
 }
 
-.lifeinfo>div {
+.life-item {
   width: 30%;
+  background: #fff;
+  padding-bottom: 75px;
+  box-shadow: 0px 4px 6px 0px rgb(0 12 29 / 8%);
+  transition: all 0.5s;
 }
 
-.work {
-  position: relative;
-  display: block;
-  height: 250px;
-  margin-left: 50px;
-  background-color: #000;
-  border: 1px solid #2b304e;
+.life-item .life-item-study {
+  width: 360px;
+  height: 240px;
+  background: url("../images/studyfrends2.png") no-repeat center;
+  background-size: cover;
+  transition: all 0.5s;
 }
 
-.ficture {
+.life-item .life-item-tiproad {
+  width: 360px;
+  height: 240px;
+  background: url('../images/tripfoodG.gif') no-repeat center;
+  background-size: cover;
+  transition: all 0.5s;
+}
+
+.life-item .life-item-drow {
+  width: 360px;
+  height: 240px;
+  background: url('../images/painting2.png') no-repeat center;
+  background-size: cover;
+  transition: all 0.5s;
+}
+
+.life-item:hover img {
+  opacity: 0;
+}
+
+.life-item img {
+  opacity: 1;
+  width: 100%;
+  height: 240px;
+  transition: all 0.5s;
+}
+
+.life-item-text {
+  padding: 33px 35px;
+  white-space: wrap;
+}
+
+.life-item-text>h3 {
+  color: #fec110;
+  font: 500 14px/30px "Poppins", sans-serif;
+  text-transform: uppercase;
   position: relative;
-  display: block;
-  height: 250px;
-  margin-right: 50px;
-  background-color: #000;
-} */
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.life-item-text>h3::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 1px;
+  background: #fec110;
+}
+
+.life-item-text>span {
+  color: #022144;
+  font: 400 20px/30px "Poppins", sans-serif;
+}
+
+.life-item-text>p {
+  color: #8a8fa3;
+  font: 300 16px/28px "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+.experience-item {
+  width: 30%;
+  border-top: 1px solid #edecec;
+  border-bottom: 1px solid #edecec;
+  border-left: 1px solid #edecec;
+  background: #fff;
+  padding: 75px 40px 75px 40px;
+  transition: all 0.5s;
+}
 
 /* vison */
 .vision {
   position: relative;
   display: block;
-  background: #fff;
+  background: #fcfcfc;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .vision .inner {
   position: relative;
   display: block;
-  background-color: #fff;
-  padding-bottom: 50px;
+  background: #fcfcfc;
+  /* padding-bottom: 50px; */
 }
 
 .vision-t {
   position: absolute;
   display: block;
-  top: -50px;
+  padding-top: 50px;
   left: 36%;
   z-index: 999;
 }
@@ -1438,8 +1231,10 @@ body {
   position: relative;
   display: block;
   width: 100%;
+  top: 120px;
   left: -450px;
-  margin-top: 200px;
+  margin-top: 100px;
+  /* margin-top: 200px; */
 }
 
 .swiper {
@@ -1450,8 +1245,9 @@ body {
 
 .swiper-slide {
   font-size: 18px;
-  background: #fff;
+  background: #fcfcfc;
   width: 100%;
+  height: 70%;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
