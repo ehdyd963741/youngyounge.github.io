@@ -141,10 +141,11 @@ body {
 .visual-left>img {
   position: absolute;
   display: block;
+  transform:scaleX(-1);
   top: -100px;
   left: -200px;
   width: 700px;
-  height: 1000px;
+  height: 950px;
   opacity: 0.8;
 }
 
@@ -273,9 +274,11 @@ body {
   opacity: 0.6;
   transition: all 0.3s;
 }
+
 .porfile-left-img:hover {
   opacity: 1.0;
 }
+
 .profile-left>span {
   position: relative;
   font-size: 45px;
@@ -323,6 +326,7 @@ body {
   margin-bottom: 30px;
   transition: all 0.3s;
 }
+
 .profile-right-bt {
   border: none;
   background: #fcc52c;
@@ -354,6 +358,7 @@ body {
   font-weight: 500;
   background: #ffff;
 }
+
 .profile-right-bt2:hover {
   color: #fcc52c;
   font-weight: 500;
@@ -382,7 +387,7 @@ body {
   margin-bottom: 40px;
 }
 
-.portfolio-title > h2 {
+.portfolio-title>h2 {
   position: relative;
   display: inline-block;
   text-align: center;
@@ -394,11 +399,12 @@ body {
   padding-bottom: 40px;
 }
 
-.portfolio-title > span {
+.portfolio-title>span {
   text-align: center;
   color: #8a8fa3;
   z-index: 99;
 }
+
 /* canbus */
 .business {
   position: relative;
@@ -745,7 +751,7 @@ body {
 .expr {
   text-align: right;
   padding-top: 50px;
-  padding-bottom: 50px; 
+  padding-bottom: 50px;
   padding-right: 150px;
   color: #2b304e;
   font-size: 30px;
@@ -993,7 +999,94 @@ body {
 }
 
 /* my life */
-.mylife {
+.experience {
+  position: relative;
+  display: block;
+  background: #fcfcfc;
+  padding: 120px 0px 150px 0px ;
+}
+
+.experience .inner {
+  position: relative;
+  display: block;
+}
+
+.experience-title-box {
+  position: relative;
+  display: block;
+}
+
+.experience-title-box>h2 {
+  position: relative;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  color: #32333c;
+  padding-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 35px;
+  transition: all 0.3s;
+}
+
+.experience-title-box>h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  width: 100px;
+  height: 4px;
+  background: #fcc52c;
+}
+
+.experience-title-box > p {
+  text-align: center;
+  margin: 0 200px 70px 200px;
+}
+
+.experience-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%
+}
+
+.experience-item {
+  width: 30%;
+  border-top: 1px solid #edecec;
+  border-bottom: 1px solid #edecec;
+  border-left: 1px solid #edecec;
+  background: #fff;
+  padding: 75px 40px 75px 40px;
+  transition: all 0.5s;
+}
+.experience-item:hover {
+  background: #fcc52c;
+}
+.experience-item:last-child {
+  border-right: 1px solid #edecec;
+}
+
+.experience-item > p {
+    font-size: 15px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+
+.experience-item > h3 {
+  color: #32333c;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.experience-item > span {
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto 80px;
+}
+/* .mylife {
   position: relative;
   display: block;
   background: #fcfcfc;
@@ -1154,7 +1247,6 @@ body {
 .job1 {
   position: relative;
   display: block;
-  /* height: 350px; */
   align-items: center;
   top: 75px;
   background-color: #444;
@@ -1211,7 +1303,6 @@ body {
 .reading {
   position: relative;
   display: block;
-  /* height: 350px; */
   align-items: center;
   background-color: #444;
   transform: scale(1);
@@ -1227,7 +1318,6 @@ body {
   position: relative;
   display: block;
   top: 50px;
-  /* width: 360px; */
   align-items: center;
 }
 
@@ -1242,7 +1332,6 @@ body {
   position: relative;
   display: block;
   top: 100px;
-  /* height: 350px; */
   align-items: center;
 }
 
@@ -1315,7 +1404,7 @@ body {
   height: 250px;
   margin-right: 50px;
   background-color: #000;
-}
+} */
 
 /* vison */
 .vision {
