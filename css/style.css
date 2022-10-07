@@ -89,14 +89,15 @@ body {
   z-index: 9999;
 }
 
-.header .inner {}
+.header .inner {
+}
 
 .gnb {
   position: relative;
   display: inline-block;
 }
 
-.gnb>li {
+.gnb > li {
   position: relative;
   text-align: center;
   display: inline-block;
@@ -105,11 +106,11 @@ body {
   z-index: 99999;
 }
 
-.gnb>li:last-child {
+.gnb > li:last-child {
   margin-right: 200px;
 }
 
-.gnb>li>a {
+.gnb > li > a {
   display: block;
   line-height: 78px;
   font-size: 16px;
@@ -138,7 +139,7 @@ body {
   height: 100%;
 }
 
-.visual-left>img {
+.visual-left > img {
   position: absolute;
   display: block;
   transform: scaleX(-1);
@@ -174,7 +175,7 @@ body {
   padding-left: 50px;
 }
 
-.visual-right-textbox>p {
+.visual-right-textbox > p {
   font-size: 14px;
   font-weight: 500;
   color: #2b304e;
@@ -182,13 +183,13 @@ body {
   letter-spacing: 6;
 }
 
-.visual-right-textbox>h5 {
+.visual-right-textbox > h5 {
   color: #2b304e;
   font-size: 50px;
   font-weight: 500;
 }
 
-.visual-right-textbox>h3 {
+.visual-right-textbox > h3 {
   color: #2b304e;
   font-size: 50px;
   font-weight: 700;
@@ -278,7 +279,7 @@ body {
   opacity: 1;
 }
 
-.profile-left>span {
+.profile-left > span {
   position: relative;
   font-size: 45px;
   left: 30px;
@@ -293,7 +294,7 @@ body {
   transition: all 0.3s;
 }
 
-.profile-left>span::after {
+.profile-left > span::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -316,7 +317,7 @@ body {
   display: block;
 }
 
-.profile-right-textbox>p {
+.profile-right-textbox > p {
   font-size: 16px;
   font-family: "Poppins";
   font-weight: 400;
@@ -385,7 +386,7 @@ body {
   margin-bottom: 40px;
 }
 
-.portfolio-title>h2 {
+.portfolio-title > h2 {
   position: relative;
   display: inline-block;
   text-align: center;
@@ -397,7 +398,7 @@ body {
   padding-bottom: 40px;
 }
 
-.portfolio-title>span {
+.portfolio-title > span {
   text-align: center;
   color: #8a8fa3;
   z-index: 99;
@@ -466,7 +467,7 @@ body {
   padding-bottom: 20px;
 }
 
-.portfolio p::after {
+/* .portfolio p::after {
   content: "";
   position: absolute;
   left: -10px;
@@ -475,7 +476,7 @@ body {
   height: 10px;
   background: yellow;
   z-index: 99;
-}
+} */
 
 .allpr {
   position: relative;
@@ -493,7 +494,7 @@ body {
   left: 10%;
 }
 
-.persnoal-top>h4 {
+.persnoal-top > h4 {
   position: relative;
   top: 0;
   right: -60%;
@@ -539,12 +540,6 @@ body {
   z-index: 3;
 }
 
-/* .pr-img2:hover {
-  background: url('../images/suzuki.png') no-repeat top;
-  background-size: contain;
-  opacity: 0.15;
-} */
-
 .pr-textbox {
   position: relative;
   float: right;
@@ -553,12 +548,23 @@ body {
   transform: translateY(-450%);
 }
 
-.pr-textbox>li {
+.pr-textbox > p::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 30px;
+  width: 400px;
+  height: 10px;
+  background: yellow;
+  z-index: 99;
+}
+
+.pr-textbox > li {
   padding: 10px 0;
   padding-left: 20px;
 }
 
-.pr-textbox>li>a {
+.pr-textbox > li > a {
   font-size: 16px;
 }
 
@@ -568,7 +574,7 @@ body {
   transform: translateY(-5%);
 }
 
-.study-midle>h4 {
+.study-midle > h4 {
   position: relative;
   display: block;
   color: #2b304e;
@@ -653,7 +659,7 @@ body {
   opacity: 1;
 }
 
-.swiper-slide>a>img {
+.swiper-slide > a > img {
   display: block;
   width: 500px;
   height: 400px;
@@ -667,7 +673,7 @@ body {
   left: 50%;
 }
 
-.st-list>p {
+.st-list > p {
   color: #2b304e;
   width: 400px;
   padding-left: 20px;
@@ -675,7 +681,7 @@ body {
   font-weight: 700;
 }
 
-.st-list>p::after {
+.st-list > p::after {
   content: "";
   position: absolute;
   left: 10px;
@@ -686,7 +692,7 @@ body {
   z-index: 99;
 }
 
-.st-list>li {
+.st-list > li {
   position: relative;
   display: block;
   text-align: left;
@@ -694,7 +700,7 @@ body {
   padding-bottom: 10px;
 }
 
-.st-list>li>a {
+.st-list > li > a {
   color: #2b304e;
 }
 
@@ -745,7 +751,7 @@ body {
   display: block;
 }
 
-.allproject-title-box>h2 {
+.allproject-title-box > h2 {
   position: relative;
   font-size: 30px;
   font-weight: 700;
@@ -757,7 +763,7 @@ body {
   transition: all 0.3s;
 }
 
-.allproject-title-box>h2::after {
+.allproject-title-box > h2::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -767,16 +773,81 @@ body {
   background: #fcc52c;
 }
 
+.allproject-title-box > p {
+  text-align: center;
+  color: #022144;
+}
 
+.allproject-menubar {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
 
+.allproject-menubar > ul {
+  position: relative;
+  display: inline-block;
+}
 
+.allproject-menubar > ul > li {
+  position: relative;
+  display: inline-block;
+  padding: 20px 20px;
+  white-space: nowrap;
+  margin: 0 auto;
+  color: #8a8fa3;
+  font: 700 16px/28px "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
 
+.allproject-container {
+}
+
+.allproject-title-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.allproject-item {
+  position: relative;
+  display: block;
+  border: 1px solid #fcc52c;
+  margin-bottom: 30px;
+  box-shadow: 0px 8px 12px 0px rgb(0 12 29 / 8%);
+}
+
+.allproject-item > img {
+  width: 280px;
+  height: 260px;
+}
+
+.item-mack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 260px;
+  background: rgba(0, 0, 0, 0.7);
+
+  transition: all 0.5s;
+}
+
+.allproject-item:hover .item-mack {
+  transform: scale(1.2);
+  z-index: 20;
+  background: none;
+}
+/* 
 .team-bottom {
   position: relative;
   display: block;
-}
+} */
 
-.expr {
+/* .expr {
   text-align: right;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -784,9 +855,9 @@ body {
   color: #2b304e;
   font-size: 30px;
   font-weight: 700;
-}
+} */
 
-.bottom-container {
+/* .bottom-container {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -798,16 +869,16 @@ body {
   width: 30%;
 }
 
-.bottom-container .img-thumb>a {
+.bottom-container .img-thumb > a {
   position: relative;
   display: block;
 }
 
-.bottom-container .img-thumb>a img {
+.bottom-container .img-thumb > a img {
   width: 100%;
 }
 
-.bottom-container .img-thumb>a::before {
+.bottom-container .img-thumb > a::before {
   content: "";
   position: absolute;
   display: block;
@@ -821,7 +892,7 @@ body {
   z-index: 1;
 }
 
-.bottom-container .img-thumb>a:hover::before {
+.bottom-container .img-thumb > a:hover::before {
   opacity: 1;
   z-index: 1;
 }
@@ -832,7 +903,7 @@ body {
   padding-left: 130px;
 }
 
-.txt-box3>h2 {
+.txt-box3 > h2 {
   text-align: left;
   position: relative;
   display: block;
@@ -843,12 +914,12 @@ body {
   padding-bottom: 20px;
 }
 
-.txt-box3>li {
+.txt-box3 > li {
   padding-left: 30px;
   padding-bottom: 10px;
 }
 
-.txt-box3>h2::after {
+.txt-box3 > h2::after {
   content: "";
   position: absolute;
   left: 0;
@@ -857,7 +928,7 @@ body {
   height: 10px;
   background: yellow;
   z-index: 99;
-}
+} */
 
 /* about */
 .skill {
@@ -881,7 +952,7 @@ body {
   padding-bottom: 50px;
 }
 
-.ab-text>h3 {
+.ab-text > h3 {
   position: relative;
   text-align: center;
   color: #32333c;
@@ -915,7 +986,7 @@ body {
   font-weight: 500;
 }
 
-.skill-about-container>div>i {
+.skill-about-container > div > i {
   font-size: 50px;
 }
 
@@ -1045,7 +1116,7 @@ body {
   display: block;
 }
 
-.experience-title-box>h2 {
+.experience-title-box > h2 {
   position: relative;
   font-size: 45px;
   font-weight: 700;
@@ -1057,7 +1128,7 @@ body {
   transition: all 0.3s;
 }
 
-.experience-title-box>h2::after {
+.experience-title-box > h2::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1067,7 +1138,7 @@ body {
   background: #fcc52c;
 }
 
-.experience-title-box>p {
+.experience-title-box > p {
   text-align: center;
   margin: 0 200px 70px 200px;
 }
@@ -1098,7 +1169,7 @@ body {
   border-right: 1px solid #edecec;
 }
 
-.experience-item>p {
+.experience-item > p {
   font-size: 15px;
   line-height: 28px;
   text-transform: uppercase;
@@ -1106,14 +1177,14 @@ body {
   transition: all 0.3s;
 }
 
-.experience-item>h3 {
+.experience-item > h3 {
   color: #32333c;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-.experience-item>span {
+.experience-item > span {
   max-width: 770px;
   width: 100%;
   margin: 0 auto 80px;
@@ -1158,7 +1229,7 @@ body {
 .life-item .life-item-tiproad {
   width: 360px;
   height: 240px;
-  background: url('../images/tripfoodG.gif') no-repeat center;
+  background: url("../images/tripfoodG.gif") no-repeat center;
   background-size: cover;
   transition: all 0.5s;
 }
@@ -1166,7 +1237,7 @@ body {
 .life-item .life-item-drow {
   width: 360px;
   height: 240px;
-  background: url('../images/painting2.png') no-repeat center;
+  background: url("../images/painting2.png") no-repeat center;
   background-size: cover;
   transition: all 0.5s;
 }
@@ -1187,7 +1258,7 @@ body {
   white-space: wrap;
 }
 
-.life-item-text>h3 {
+.life-item-text > h3 {
   color: #fec110;
   font: 500 14px/30px "Poppins", sans-serif;
   text-transform: uppercase;
@@ -1196,7 +1267,7 @@ body {
   margin-top: 0;
 }
 
-.life-item-text>h3::after {
+.life-item-text > h3::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -1206,12 +1277,12 @@ body {
   background: #fec110;
 }
 
-.life-item-text>span {
+.life-item-text > span {
   color: #022144;
   font: 400 20px/30px "Poppins", sans-serif;
 }
 
-.life-item-text>p {
+.life-item-text > p {
   color: #8a8fa3;
   font: 300 16px/28px "Poppins", sans-serif;
   margin-bottom: 10px;
@@ -1251,7 +1322,7 @@ body {
   z-index: 999;
 }
 
-.vision-t>h2 {
+.vision-t > h2 {
   color: #2b304e;
   font-size: 44px;
   font-weight: 700;
@@ -1293,7 +1364,7 @@ body {
   align-items: center;
 }
 
-.swiper-slide .vision1>h2 {
+.swiper-slide .vision1 > h2 {
   padding-bottom: 40px;
   text-align: center;
   font-size: 36px;
@@ -1305,13 +1376,13 @@ body {
   text-align: center;
 }
 
-.textvision1>ul>p {
+.textvision1 > ul > p {
   color: #2b304e;
   font-size: 30px;
   padding-bottom: 40px;
 }
 
-.textvision1>ul>li>p {
+.textvision1 > ul > li > p {
   color: #2b304e;
 }
 
@@ -1340,13 +1411,13 @@ body {
   color: #fff;
 }
 
-.contact-box>h2 {
+.contact-box > h2 {
   font-size: 36px;
   font-weight: 500;
   padding-bottom: 25px;
 }
 
-.contact-box>ul>span {
+.contact-box > ul > span {
   padding-right: 20px;
 }
 
