@@ -266,7 +266,7 @@ body {
   width: 250px;
   height: 250px;
   top: 40px;
-  left: 150px;
+  left: 0;
   border-radius: 50%;
   background: url("../images/itsme.png") no-repeat center;
   background-size: cover;
@@ -281,8 +281,8 @@ body {
 .profile-left>span {
   position: relative;
   font-size: 45px;
-  left: 33%;
-  top: -40px;
+  left: 30px;
+  top: 30px;
   text-transform: capitalize;
   font-weight: 700;
   font-family: "Poppins";
