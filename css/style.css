@@ -817,12 +817,14 @@ body {
   display: block;
   border: 1px solid #fcc52c;
   margin-bottom: 30px;
+  border-radius: 20px 0px 20px 0px;
   box-shadow: 0px 8px 12px 0px rgb(0 12 29 / 8%);
 }
 
 .allproject-item > img {
   width: 280px;
   height: 260px;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .item-mack {
@@ -831,7 +833,8 @@ body {
   left: 0;
   width: 280px;
   height: 260px;
-  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px 0px 20px 0px;
+  background: rgba(0, 0, 0, 0.2);
 
   transition: all 0.5s;
 }
@@ -839,6 +842,7 @@ body {
 .allproject-item:hover .item-mack {
   transform: scale(1.2);
   z-index: 20;
+  border-radius: 20px 20px 20px 20px;
   background: none;
 }
 /* 
