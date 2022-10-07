@@ -864,6 +864,7 @@ body {
   position: relative;
   display: block;
   margin-top: 100px;
+  z-index: 9999;
 }
 
 .skill .inner {
