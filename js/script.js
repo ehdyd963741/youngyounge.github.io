@@ -132,7 +132,6 @@ window.onload = function () {
     })
     .resize();
 
-  
   // progressbar
   var bar = new ProgressBar.Line(H, {
     strokeWidth: 4,
@@ -268,7 +267,7 @@ window.onload = function () {
       bar.path.setAttribute("stroke", state.color);
     },
   });
-  bar7.animate(1.0); 
+  bar7.animate(1.0);
 
   // progressbar8
   var bar8 = new ProgressBar.Line(M, {
@@ -285,7 +284,7 @@ window.onload = function () {
       bar.path.setAttribute("stroke", state.color);
     },
   });
-  bar8.animate(1.0); 
+  bar8.animate(1.0);
 
   // progressbar9
   var bar9 = new ProgressBar.Line(F, {
@@ -302,7 +301,7 @@ window.onload = function () {
       bar.path.setAttribute("stroke", state.color);
     },
   });
-  bar9.animate(1.0); 
+  bar9.animate(1.0);
 
   // progressbar10
   var bar10 = new ProgressBar.Line(T, {
@@ -319,7 +318,7 @@ window.onload = function () {
       bar.path.setAttribute("stroke", state.color);
     },
   });
-  bar10.animate(1.0); 
+  bar10.animate(1.0);
 
   // progressbar11
   var bar11 = new ProgressBar.Line(L, {
@@ -336,8 +335,8 @@ window.onload = function () {
       bar.path.setAttribute("stroke", state.color);
     },
   });
-  bar11.animate(1.0); 
-  
+  bar11.animate(1.0);
+
   let swiper = new Swiper(".visionswiper", {
     // grabCursor: true,
     loop: true,
@@ -355,5 +354,14 @@ window.onload = function () {
       prevEl: ".swiper-button-prev",
     },
   });
-
+  //mixitup
+  var mixer = mixitup(".mix-wrapper", {
+    animation: {
+      duration: 313,
+      nudge: false,
+      reverseOut: false,
+      effects: "fade scale(0.3) translateX(36%) translateY(25%) rotateY(90deg)",
+    },
+  });
 };
+

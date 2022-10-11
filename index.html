@@ -113,6 +113,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+
+    <!-- mixitup -->
+    <script src="js/mixitup.min.js"></script>
+    <!-- swiper -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="js/swiper/swiper.min.css" />
     <script src="js/swiper/swiper.min.js"></script>
@@ -162,18 +167,14 @@
           </div>
           <div class="profile-right">
             <div class="profile-right-textbox">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Dolores modi voluptatum nisi iusto doloribus, odit aspernatur
-                consequuntur, eligendi itaque aperiam asperiores sed nobis quae
-                facere, veritatis dolor eos! Molestiae, sint?
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-                illum vel aperiam itaque corrupti? Velit soluta, quidem officia,
-                sint dolorum, placeat neque est adipisci id odio vitae eum et
-                beatae!
-              </p>
+              <ul>
+                InFormation
+                <li>Birth : January / 1993year</li>
+                <li>E-mail : ehdyd963741@naver.com</li>
+                <li>Location : Deagu</li>
+                <li>MBTI : INFJ-T</li>
+              </ul>
+              <p>어제보다 나은 오늘의 내가 되자!가 모토인 김우준 입니다 : )</p>
             </div>
             <button class="profile-right-bt">View Work</button>
             <button class="profile-right-bt2">Git Hub</button>
@@ -454,112 +455,72 @@
           <div class="allproject">
             <div class="allproject-title-box">
               <h2>All Project Works</h2>
-              <p>
+              <p>제가 직접 작성한 클론코딩 및 Vue 프로젝트 입니다.</p>
+            </div>
 
-              </p>
+            <div class="container allproject-menubar">
+              <button type="button" data-filter="all">
+                <p>All ProJect Works</p>
+              </button>
+              <button type="button" data-filter=".persnoal">
+                <p>Persnoal Work</p>
+              </button>
+              <button type="button" data-filter=".secons">
+                <p>Team / API / PHP Project</p>
+              </button>
             </div>
-            <div class="allproject-menubar">
-              <ul>
-                <li>All ProJect Works</li>
-                <li>Team / API / PHP Project</li>
-              </ul>
-            </div>
-            <div class="allproject-container">
-              <div class="allproject-title-item">
-                <div class="allproject-item">
-                  <div class="item-mack"></div>
-                  <img src="images/suzukiap.png" alt="" />
-                </div>
-                <div class="allproject-item">
-                  <div class="item-mack"></div>
-                  <img src="images/jungap.png" alt="" />
-                </div>
-                <div class="allproject-item">
-                  <div class="item-mack"></div>
-                  <img src="images/kwaterap.png" alt="" />
-                </div>
-                <div class="allproject-item">
-                  <div class="item-mack"></div>
-                  <img src="images/gejeap.png" alt="" />
-                </div>
-                <div class="allproject-item">
-                  <div class="item-mack"></div>
-                  <img src="images/noeloap.png" alt="" />
-                </div>
-                <div class="allproject-item">
-                  <div class="item-mack"></div>
-                  <img src="images/masiap.png" alt="" />
-                </div>
-                <div class="allproject-item">
-                  <div class="item-mack"></div>
-                  <img src="images/stxap.png" alt="" />
-                </div>
-                <div class="allproject-item">
-                  <div class="item-mack"></div>
-                  <img src="images/corailap.png" alt="" />
-                </div>
-                <div class="allproject-item">
-                  <div class="item-mack"></div>
-                  <img src="images/ghibliap.png" alt="" />
-                </div>
-                <div class="allproject-item">
-                  <div class="item-mack"></div>
-                  <img src="images/toyap.png" alt="" />
-                </div>
-                <div class="allproject-item">
-                  <div class="item-mack"></div>
-                  <img src="images/noneap.png" alt="" />
-                </div>
-                <div class="allproject-item">
-                  <div class="item-mack"></div>
-                  <img src="images/noneap.png" alt="" />
-                </div>
+
+            <div class="mix-wrapper allproject-title-item">
+              <div class="mix persnoal allproject-item" data-order="1">
+                <div class="item-mack"></div>
+                <img src="images/suzukiap.png" alt="" />
+              </div>
+              <div class="mix persnoal allproject-item" data-order="2">
+                <div class="item-mack"></div>
+                <img src="images/jungap.png" alt="" />
+              </div>
+              <div class="mix allproject-item" data-order="3">
+                <div class="item-mack"></div>
+                <img src="images/kwaterap.png" alt="" />
+              </div>
+              <div class="mix allproject-item" data-order="4">
+                <div class="item-mack"></div>
+                <img src="images/gejeap.png" alt="" />
+              </div>
+              <div class="mix allproject-item" data-order="5">
+                <div class="item-mack"></div>
+                <img src="images/noeloap.png" alt="" />
+              </div>
+              <div class="mix allproject-item" data-order="6">
+                <div class="item-mack"></div>
+                <img src="images/masiap.png" alt="" />
+              </div>
+              <div class="mix allproject-item" data-order="7">
+                <div class="item-mack"></div>
+                <img src="images/stxap.png" alt="" />
+              </div>
+              <div class="mix secons allproject-item" data-order="8">
+                <div class="item-mack"></div>
+                <img src="images/corailap.png" alt="" />
+              </div>
+              <div class="mix secons allproject-item" data-order="9">
+                <div class="item-mack"></div>
+                <img src="images/ghibliap.png" alt="" />
+              </div>
+              <div class="mix secons allproject-item" data-order="10">
+                <div class="item-mack"></div>
+                <img src="images/toyap.png" alt="" />
+              </div>
+              <div class="mix persnoal allproject-item" data-order="11">
+                <div class="item-mack"></div>
+                <img src="images/noneap.png" alt="" />
+              </div>
+              <div class="mix persnoal allproject-item" data-order="12">
+                <div class="item-mack"></div>
+                <img src="images/noneap.png" alt="" />
               </div>
             </div>
           </div>
-
-          <!-- <div class="team-bottom">
-            <h2 class="expr">Team, API, PHP Project</h2>
-            <div class="bottom-container">
-              <div class="img-thumb">
-                <a href="https://qwertymi.github.io/korail/" target="_blank">
-                  <img src="images/corail400x800.png" alt="" />
-                </a>
-                <div class="bottom-link">
-                  <a href="#"></a>
-                  <a href="#"></a>
-                </div>
-              </div>
-              <div class="img-thumb">
-                <a
-                  href="https://ehdyd963741.github.io/page-ghibli/"
-                  target="_blank"
-                >
-                  <img src="images/ghibli2.png" alt="" />
-                </a>
-                <div class="bottom-link">
-                  <a href="#"></a>
-                  <a href="#"></a>
-                </div>
-              </div>
-              <div class="img-thumb">
-                <a href="http://ehdyd963741.dothome.co.kr/" target="_blank">
-                  <img src="images/phpstudy.png" alt="" />
-                </a>
-                <div class="bottom-link">
-                  <a href="#"></a>
-                  <a href="#"></a>
-                </div>
-              </div>
-            </div>
-
-            <ul class="txt-box3">
-              <h2>Explanation</h2>
-              <li><a href="#">Team Project : Corail (Github)</a></li>
-              <li><a href="#">API Project : GibliStudio</a></li>
-              <li><a href="#">PHP Project : MiniBlog</a></li>
-            </ul>
-          </div> -->
         </div>
       </section>
 
