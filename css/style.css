@@ -91,7 +91,7 @@ body {
 .fix-menu {
   position: fixed;
   right: 10px;
-  top: 50%;
+  top: 40%;
   display: block;
   text-align: center;
   line-height: 4.5;
@@ -403,14 +403,36 @@ body {
   white-space: wrap;
 }
 
+.profile-center-textbox ul {
+  padding-bottom: 20px;
+}
+
+.profile-center-textbox ul p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #32333c;
+  padding-bottom: 5px;
+}
+.profile-center-textbox ul li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #8a8fa3;
+}
+
 .profile-center-textbox > p {
   font-size: 16px;
   font-family: "Poppins";
-  font-weight: 400;
+  font-weight: 700;
   line-height: 28px;
   color: #8a8fa3;
   margin-bottom: 30px;
   transition: all 0.3s;
+}
+
+.profile-center-textbox > span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #32333c;
 }
 
 .profile-center-bt {
@@ -457,31 +479,41 @@ body {
   transition: all 0.5s;
 }
 
-.profile-right-img {
+.profile-right {
   position: relative;
-  width: 380px;
-  height: 380px;
-  padding-bottom: 20px;
-  background: url("../images/foligon.png") no-repeat center;
-  background-size: cover;
+  display: block;
+}
+.profile-right-education {
+  padding-bottom: 45px;
+}
+.profile-right-education ul {
+  position: relative;
+  display: block;
+}
+.profile-right-education ul h4 {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.profile-right-education ul li {
+  color: #8a8fa3;
 }
 
-.profile-right-img::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 360px;
-  height: 360px;
-  background: url("../images/stat2.png") no-repeat center;
-  background-size: cover;
-  opacity: 0;
-  transition: center 0.5s;
+.profile-right-experience {
+  position: relative;
+  display: block;
 }
-
-.profile-right:hover > .profile-right-img::after {
-  opacity: 1;
-  transition: all 0.5s;
+.profile-right-experience ul {
+  position: relative;
+  display: block;
+}
+.profile-right-experience ul h4 {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.profile-right-experience ul li {
+  color: #8a8fa3;
 }
 
 /* portfolio */
@@ -977,16 +1009,9 @@ body {
 .skill {
   position: relative;
   display: block;
-  /* margin-top: 100px; */
 }
 
-.skill .inner {
-  position: relative;
-  display: block;
-  /* margin-top: 200px; */
-  height: 650px;
-}
-.skill-back {
+.skill > .skill-back {
   position: absolute;
   top: 0;
   left: 0;
@@ -997,9 +1022,9 @@ body {
   background-size: cover;
 }
 
-.skill-back2 {
+.skill > .skill-back2 {
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   right: 0;
   opacity: 0.4;
   width: 570px;
@@ -1009,12 +1034,18 @@ body {
   rotate: 180deg;
 }
 
+.skill .inner {
+  position: relative;
+  display: block;
+  height: 650px;
+  margin-bottom: 100px;
+}
+
 .ab-text {
   position: relative;
   display: block;
-  /* top: -100px; */
   padding-top: 50px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .ab-text > h3 {
@@ -1024,6 +1055,7 @@ body {
   font-size: 44px;
   font-weight: 700;
 }
+
 .ab-text > h3::after {
   content: "";
   position: absolute;
@@ -1033,21 +1065,17 @@ body {
   height: 4px;
   background: #fcc52c;
 }
-/* .skill-i {
-  position: absolute;
-  top: 50px;
-  left: 39%;
-  width: 44px;
-  height: 44px;
-  background: url("../images/skill2.png") no-repeat center;
-  background-size: cover;
-} */
+.ab-text > span {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+}
 
 .skill-about-container {
   position: relative;
   display: flex;
   width: 100%;
-  /* top: -50px; */
   justify-content: space-between;
 }
 
@@ -1058,12 +1086,13 @@ body {
   padding: 10px 0;
   font-weight: 500;
 }
+
 .skill-about-container > div {
   position: relative;
   display: block;
-  /* background: pink; */
   height: 350px;
 }
+
 .skill-about-container > div > i {
   font-size: 50px;
 }
@@ -1118,6 +1147,10 @@ body {
 
 .experience-title-box > p {
   text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Poppins";
+  color: #8a8fa3;
   margin: 0 200px 70px 200px;
 }
 
@@ -1131,6 +1164,7 @@ body {
 
 .experience-item {
   width: 30%;
+  height: 300px;
   border-top: 1px solid #edecec;
   border-bottom: 1px solid #edecec;
   border-left: 1px solid #edecec;
@@ -1151,6 +1185,7 @@ body {
   font-size: 15px;
   line-height: 28px;
   text-transform: uppercase;
+  color: #8a8fa3;
   margin-bottom: 5px;
   transition: all 0.3s;
 }
@@ -1162,10 +1197,16 @@ body {
   margin-bottom: 5px;
 }
 
-.experience-item > span {
+.experience-item > .experience-item-list {
   max-width: 770px;
   width: 100%;
+  height: 300px;
   margin: 0 auto 80px;
+}
+.experience-item-list > li {
+  font-size: 12px;
+  font-weight: 300;
+  color: #8a8fa3;
 }
 
 /* life */
@@ -1402,8 +1443,8 @@ body {
 .kakao {
   position: relative;
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  background: url("../images/kakaoicon2.png") no-repeat center;
+  width: 27px;
+  height: 27px;
+  background: url("../images/kakao3.png") no-repeat center;
   background-size: cover;
 }

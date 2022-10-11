@@ -413,3 +413,18 @@ $(document).ready(function () {
     );
   });
 });
+
+// 스크롤 적용
+setTimeout(function () {
+  $(".experience-item").niceScroll({
+    cursorwidth: "8px",
+    cursoropacitymax: 0.7,
+  });
+}, 3000);
+
+$(window).resize(function () {
+  $(".experience-item").niceScroll({
+    cursorwidth: "8px",
+    cursoropacitymax: 0.7,
+  });
+});
