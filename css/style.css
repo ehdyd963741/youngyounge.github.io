@@ -65,6 +65,78 @@ body {
   display: block;
 }
 
+/* gotop */
+.gotop {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url('../images/gotop.png') no-repeat center;
+  background-size: cover;
+  background-color: #2b304e;
+  border: 0;
+  cursor: pointer;
+  z-index: 999;
+  transition: all 0.3s;
+}
+.gotop:hover {
+  width: 60px;
+  height: 60px;
+}
+
+/* 고정메뉴 */
+.fix-menu {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  display: block;
+  text-align: center;
+  line-height: 4.5;
+  z-index: 99999;
+}
+
+.fix-menu a {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  width: 75px;
+  height: 75px;
+  border:2px solid #8a8fa3;
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px 0px rgb(21 47 95 / 12%);
+  transition: all 0.3s;
+}
+
+.fix-menu a:hover {
+  width: 80px;
+  height: 80px;
+  font-size: 18px;
+  background: #2b304e;
+  border:2px solid #000;
+}
+
+.fix-menu a:hover > i {
+  color: #ffff;
+}
+
+.fix-menu a:hover > span {
+  color: #fff;
+  font-weight: 700;
+}
+.fix-menu a > i {
+  display: inline-block;
+  font-size: 16px;
+  color: #8a8fa3;
+  padding-right: 3px;
+}
+
+.fix-menu a > span {
+  color: #8a8fa3;
+}
+
 /* header */
 .logo {
   position: absolute;
@@ -257,9 +329,15 @@ body {
   padding-bottom: 130px;
 }
 
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .profile-left {
   position: relative;
-  width: 50%;
   margin-right: 0;
 }
 
@@ -306,20 +384,20 @@ body {
   background: #fcc52c;
 }
 
-.profile-right {
+.profile-center {
   position: relative;
   display: block;
-  width: 50%;
-  top: -250px;
-  left: 30%;
+  top: 70px;
+  padding-left: 50px;
 }
 
-.profile-right-textbox {
+.profile-center-textbox {
   position: relative;
   display: block;
+  white-space: wrap;
 }
 
-.profile-right-textbox > p {
+.profile-center-textbox > p {
   font-size: 16px;
   font-family: "Poppins";
   font-weight: 400;
@@ -329,7 +407,7 @@ body {
   transition: all 0.3s;
 }
 
-.profile-right-bt {
+.profile-center-bt {
   border: none;
   background: #fcc52c;
   border: 1px solid #fcc52c;
@@ -342,7 +420,7 @@ body {
   margin-right: 20px;
 }
 
-.profile-right-bt2 {
+.profile-center-bt2 {
   border: none;
   background: #fcc52c;
   border: 1px solid #fcc52c;
@@ -355,17 +433,51 @@ body {
   margin-right: 20px;
 }
 
-.profile-right-bt:hover {
+.profile-center-bt:hover {
   color: #fcc52c;
   font-weight: 500;
   background: #ffff;
 }
 
-.profile-right-bt2:hover {
+.profile-center-bt2:hover {
   color: #fcc52c;
   font-weight: 500;
   background: #ffff;
 }
+
+.profile-right {
+  position: relative;
+  display: block;
+  transition: all 0.5s;
+}
+
+.profile-right-img {
+  position: relative;
+  width: 380px;
+  height: 380px;
+  padding-bottom: 20px;
+  background: url("../images/foligon.png") no-repeat center;
+  background-size: cover;
+}
+
+.profile-right-img::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 360px;
+  height: 360px;
+  background: url("../images/stat2.png") no-repeat center;
+  background-size: cover;
+  opacity: 0;
+  transition: center 0.5s;
+}
+
+.profile-right:hover > .profile-right-img::after {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
 /* portfolio */
 .portfolio {
   position: relative;
@@ -556,7 +668,7 @@ body {
   top: 30px;
   width: 400px;
   height: 10px;
-  background: yellow;
+  background: #fcc52c;
   z-index: 99;
 }
 
@@ -689,7 +801,7 @@ body {
   top: 30px;
   width: 300px;
   height: 10px;
-  background: yellow;
+  background: #fcc52c;
   z-index: 99;
 }
 
@@ -858,7 +970,6 @@ body {
   position: relative;
   display: block;
   margin-top: 100px;
-  z-index: 9999;
 }
 
 .skill .inner {

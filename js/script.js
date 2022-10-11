@@ -364,4 +364,16 @@ window.onload = function () {
     },
   });
 };
-
+// 위로올리기
+$(document).ready(function () {
+  //위로가기 기능
+  let go_top = $(".gotop");
+  go_top.click(function () {
+    $("html").animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
+  });
+});
