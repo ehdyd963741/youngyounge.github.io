@@ -62,7 +62,7 @@ window.onload = function () {
     const letter = letters[i].split("");
     while (letter.length) {
       await wait(speed);
-      $text.innerHTML += letter.shift();
+      // $text.innerHTML += letter.shift();
     }
     // 잠시 대기
     await wait(500);
@@ -148,7 +148,6 @@ window.onload = function () {
       bar.path.setAttribute("stroke", state.color);
     },
   });
-  bar.animate(1.0);
 
   // progressbar1
   var bar1 = new ProgressBar.Line(C, {
@@ -165,7 +164,6 @@ window.onload = function () {
       bar.path.setAttribute("stroke", state.color);
     },
   });
-  bar1.animate(1.0); // Number from 0.0 to 1.0
 
   // progressbar2
   var bar2 = new ProgressBar.Line(J, {
@@ -175,31 +173,29 @@ window.onload = function () {
     color: "#FFEA82",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "100%", height: "100%" },
+    svgStyle: { width: "90%", height: "90%" },
     from: { color: "#579f89" },
     to: { color: "#5763c7" },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
   });
-  bar2.animate(1.0); // Number from 0.0 to 1.0
 
   // progressbar3
   var bar3 = new ProgressBar.Line(S, {
-    strokeWidth: 4,
+    strokeWidth: 4.5,
     easing: "bounce",
     duration: 1700,
     color: "#57de10",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "50%", height: "100%" },
+    svgStyle: { width: "80%", height: "100%" },
     from: { color: "#57631c" },
-    to: { color: "#570f2a" },
+    to: { color: "#d7bed7" },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
   });
-  bar3.animate(1.0); // Number from 0.0 to 1.0
 
   // progressbar4
   var bar4 = new ProgressBar.Line(G, {
@@ -216,126 +212,118 @@ window.onload = function () {
       bar.path.setAttribute("stroke", state.color);
     },
   });
-  bar4.animate(1.0); // Number from 0.0 to 1.0
 
   // progressbar5
   var bar5 = new ProgressBar.Line(V, {
-    strokeWidth: 4,
+    strokeWidth: 9,
     easing: "bounce",
-    duration: 1900,
-    color: "#1f4dac",
+    duration: 1700,
+    color: "#57de10",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "93%", height: "100%" },
-    from: { color: "#10768c" },
-    to: { color: "#10757b" },
+    svgStyle: { width: "40%", height: "100%" },
+    from: { color: "#57631c" },
+    to: { color: "#ff980c" },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
   });
-  bar5.animate(1.0); // Number from 0.0 to 1.0
 
   // progressbar6
   var bar6 = new ProgressBar.Line(P, {
-    strokeWidth: 4,
+    strokeWidth: 11,
     easing: "bounce",
-    duration: 2000,
-    color: "#dfe599",
+    duration: 1700,
+    color: "#57de10",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "80%", height: "100%" },
-    from: { color: "#b3e599" },
-    to: { color: "#67e599" },
+    svgStyle: { width: "35%", height: "100%" },
+    from: { color: "#57631c" },
+    to: { color: "#ffbc0d" },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
   });
-  bar6.animate(1.0); // Number from 0.0 to 1.0
 
   // progressbar7
   var bar7 = new ProgressBar.Line(Q, {
-    strokeWidth: 4,
+    strokeWidth: 5,
     easing: "bounce",
-    duration: 2100,
-    color: "#cc78e1",
+    duration: 1700,
+    color: "#57de10",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "90%", height: "100%" },
-    from: { color: "#9278e1" },
-    to: { color: "#4d78e1" },
+    svgStyle: { width: "75%", height: "100%" },
+    from: { color: "#57631c" },
+    to: { color: "#b17dc9" },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
   });
-  bar7.animate(1.0);
 
   // progressbar8
   var bar8 = new ProgressBar.Line(M, {
+    strokeWidth: 11,
+    easing: "bounce",
+    duration: 1700,
+    color: "#57de10",
+    trailColor: "#eee",
+    trailWidth: 1,
+    svgStyle: { width: "30%", height: "100%" },
+    from: { color: "#57631c" },
+    to: { color: "#ffd214" },
+    step: (state, bar) => {
+      bar.path.setAttribute("stroke", state.color);
+    },
+  });
+
+  // progressbar9
+  var bar9 = new ProgressBar.Line(F, {
     strokeWidth: 4,
+    easing: "bounce",
+    duration: 1700,
+    color: "#57de10",
+    trailColor: "#eee",
+    trailWidth: 1,
+    svgStyle: { width: "95%", height: "100%" },
+    from: { color: "#57631c" },
+    to: { color: "#00bed7" },
+    step: (state, bar) => {
+      bar.path.setAttribute("stroke", state.color);
+    },
+  });
+
+  // progressbar10
+  var bar10 = new ProgressBar.Line(T, {
+    strokeWidth: 6,
+    easing: "bounce",
+    duration: 1700,
+    color: "#57de10",
+    trailColor: "#eee",
+    trailWidth: 1,
+    svgStyle: { width: "60%", height: "100%" },
+    from: { color: "#57631c" },
+    to: { color: "#bcbed7" },
+    step: (state, bar) => {
+      bar.path.setAttribute("stroke", state.color);
+    },
+  });
+
+  // progressbar11
+  var bar11 = new ProgressBar.Line(L, {
+    strokeWidth: 12,
     easing: "bounce",
     duration: 2200,
     color: "#ff9330",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "70%", height: "100%" },
+    svgStyle: { width: "25%", height: "100%" },
     from: { color: "#ffa429" },
     to: { color: "#ffe61f" },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
   });
-  bar8.animate(1.0);
-
-  // progressbar9
-  var bar9 = new ProgressBar.Line(F, {
-    strokeWidth: 4,
-    easing: "bounce",
-    duration: 2300,
-    color: "#FFEA82",
-    trailColor: "#eee",
-    trailWidth: 1,
-    svgStyle: { width: "40%", height: "100%" },
-    from: { color: "#20fff5" },
-    to: { color: "#c5f099" },
-    step: (state, bar) => {
-      bar.path.setAttribute("stroke", state.color);
-    },
-  });
-  bar9.animate(1.0);
-
-  // progressbar10
-  var bar10 = new ProgressBar.Line(T, {
-    strokeWidth: 4,
-    easing: "bounce",
-    duration: 2400,
-    color: "#a8de39",
-    trailColor: "#eee",
-    trailWidth: 1,
-    svgStyle: { width: "70%", height: "100%" },
-    from: { color: "#90de39" },
-    to: { color: "#63de39" },
-    step: (state, bar) => {
-      bar.path.setAttribute("stroke", state.color);
-    },
-  });
-  bar10.animate(1.0);
-
-  // progressbar11
-  var bar11 = new ProgressBar.Line(L, {
-    strokeWidth: 4,
-    easing: "bounce",
-    duration: 2500,
-    color: "#ff0ddd",
-    trailColor: "#eee",
-    trailWidth: 1,
-    svgStyle: { width: "50%", height: "100%" },
-    from: { color: "#d90ddd" },
-    to: { color: "#8a0ddd" },
-    step: (state, bar) => {
-      bar.path.setAttribute("stroke", state.color);
-    },
-  });
-  bar11.animate(1.0);
 
   let swiper = new Swiper(".visionswiper", {
     // grabCursor: true,
@@ -362,6 +350,54 @@ window.onload = function () {
       reverseOut: false,
       effects: "fade scale(0.3) translateX(36%) translateY(25%) rotateY(90deg)",
     },
+  });
+
+  // help 메뉴
+  new Waypoint({
+    element: $(".fix-menu"),
+    handler: function (direction) {
+      if (direction == "down") {
+        $(".fix-menu").addClass("fix-menu-show");
+      } else if (direction == "up") {
+        $(".fix-menu").removeClass("fix-menu-show");
+      }
+    },
+    offset: "0%",
+  });
+  // Skill 기능
+
+  new Waypoint({
+    element: $(".skill"),
+    handler: function (direction) {
+      if (direction == "down") {
+        bar.animate(1.0);
+        bar1.animate(1.0);
+        bar2.animate(1.0);
+        bar3.animate(1.0);
+        bar4.animate(1.0);
+        bar5.animate(1.0);
+        bar6.animate(1.0);
+        bar7.animate(1.0);
+        bar8.animate(1.0);
+        bar9.animate(1.0);
+        bar10.animate(1.0);
+        bar11.animate(1.0);
+      } else if (direction == "up") {
+        bar.animate(0.0);
+        bar1.animate(0.0);
+        bar2.animate(0.0);
+        bar3.animate(0.0);
+        bar4.animate(0.0);
+        bar5.animate(0.0);
+        bar6.animate(0.0);
+        bar7.animate(0.0);
+        bar8.animate(0.0);
+        bar9.animate(0.0);
+        bar10.animate(0.0);
+        bar11.animate(0.0);
+      }
+    },
+    offset: "70%",
   });
 };
 // 위로올리기

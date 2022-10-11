@@ -73,10 +73,11 @@ body {
   display: block;
   width: 50px;
   height: 50px;
-  background: url('../images/gotop.png') no-repeat center;
+  background: url("../images/gotop.png") no-repeat center;
   background-size: cover;
   background-color: #2b304e;
   border: 0;
+  border-radius: 10px;
   cursor: pointer;
   z-index: 999;
   transition: all 0.3s;
@@ -95,6 +96,13 @@ body {
   text-align: center;
   line-height: 4.5;
   z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.fix-menu-show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .fix-menu a {
@@ -104,7 +112,7 @@ body {
   white-space: nowrap;
   width: 75px;
   height: 75px;
-  border:2px solid #8a8fa3;
+  border: 2px solid #8a8fa3;
   border-radius: 50%;
   box-shadow: 0px 3px 8px 0px rgb(21 47 95 / 12%);
   transition: all 0.3s;
@@ -115,7 +123,7 @@ body {
   height: 80px;
   font-size: 18px;
   background: #2b304e;
-  border:2px solid #000;
+  border: 2px solid #000;
 }
 
 .fix-menu a:hover > i {
@@ -214,11 +222,11 @@ body {
 .visual-left > img {
   position: absolute;
   display: block;
-  transform: scaleX(-1);
-  top: 0;
-  left: -10%;
-  width: 600px;
-  opacity: 0.8;
+  /* transform: scaleX(-1); */
+  top: 140px;
+  /* left: -10%; */
+  width: 522px;
+  /* opacity: 0.8; */
 }
 
 .visual-right {
@@ -323,8 +331,6 @@ body {
 .profile .inner {
   position: relative;
   display: block;
-  width: 100%;
-  height: 600px;
   padding-top: 120px;
   padding-bottom: 130px;
 }
@@ -387,7 +393,7 @@ body {
 .profile-center {
   position: relative;
   display: block;
-  top: 70px;
+  top: 0;
   padding-left: 50px;
 }
 
@@ -857,11 +863,13 @@ body {
 .allproject {
   position: relative;
   display: block;
+  margin-bottom: 50px;
 }
 
 .allproject-title-box {
   position: relative;
   display: block;
+  padding-top: 50px;
 }
 
 .allproject-title-box > h2 {
@@ -896,7 +904,7 @@ body {
   display: block;
   text-align: center;
   width: 100%;
-  margin: 30px auto;
+  /* margin: 30px auto; */
 }
 
 .allproject-menubar > button {
@@ -969,20 +977,43 @@ body {
 .skill {
   position: relative;
   display: block;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 .skill .inner {
   position: relative;
   display: block;
-  margin-top: 200px;
+  /* margin-top: 200px; */
   height: 650px;
+}
+.skill-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  width: 570px;
+  height: 386px;
+  background: url('../images/skillback.png') no-repeat center;
+  background-size: cover;
+}
+
+.skill-back2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.4;
+  width: 570px;
+  height: 386px;
+  background: url('../images/skillback.png') no-repeat center;
+  background-size: cover;
+  rotate: 180deg;
 }
 
 .ab-text {
   position: relative;
   display: block;
-  top: -100px;
+  /* top: -100px; */
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -993,22 +1024,30 @@ body {
   font-size: 44px;
   font-weight: 700;
 }
-
-.skill-i {
+.ab-text > h3::after {
+  content: "";
   position: absolute;
-  top: 0;
+  bottom: -15px;
+  left: 45%;
+  width: 100px;
+  height: 4px;
+  background: #fcc52c;
+}
+/* .skill-i {
+  position: absolute;
+  top: 50px;
   left: 39%;
   width: 44px;
   height: 44px;
   background: url("../images/skill2.png") no-repeat center;
   background-size: cover;
-}
+} */
 
 .skill-about-container {
   position: relative;
   display: flex;
   width: 100%;
-  top: -50px;
+  /* top: -50px; */
   justify-content: space-between;
 }
 
@@ -1019,117 +1058,22 @@ body {
   padding: 10px 0;
   font-weight: 500;
 }
-
+.skill-about-container > div {
+  position: relative;
+  display: block;
+  /* background: pink; */
+  height: 350px;
+}
 .skill-about-container > div > i {
   font-size: 50px;
 }
-
-#H {
+.skill-about-container > div > div {
   position: absolute;
+  left: calc(50% + 10px);
+  top: 100px;
   transform: rotate(90deg);
-  bottom: -190px;
-  left: -148px;
+  transform-origin: 0 0;
   width: 350px;
-  height: 8px;
-}
-
-#C {
-  position: absolute;
-  transform: rotate(90deg);
-  bottom: -190px;
-  left: -50px;
-  width: 350px;
-  height: 8px;
-}
-
-#J {
-  position: absolute;
-  transform: rotate(90deg);
-  bottom: -190px;
-  left: 60px;
-  width: 350px;
-  height: 8px;
-}
-
-#S {
-  position: absolute;
-  transform: rotate(90deg);
-  bottom: -190px;
-  left: 180px;
-  width: 350px;
-  height: 8px;
-}
-
-#G {
-  position: absolute;
-  transform: rotate(90deg);
-  bottom: -190px;
-  left: 288px;
-  width: 350px;
-  height: 8px;
-}
-
-#V {
-  position: absolute;
-  transform: rotate(90deg);
-  bottom: -190px;
-  left: 380px;
-  width: 350px;
-  height: 8px;
-}
-
-#P {
-  position: absolute;
-  transform: rotate(90deg);
-  bottom: -190px;
-  left: 480px;
-  width: 350px;
-  height: 8px;
-}
-
-#Q {
-  position: absolute;
-  transform: rotate(90deg);
-  bottom: -190px;
-  left: 590px;
-  width: 350px;
-  height: 8px;
-}
-
-#M {
-  position: absolute;
-  transform: rotate(90deg);
-  bottom: -190px;
-  left: 695px;
-  width: 350px;
-  height: 8px;
-}
-
-#F {
-  position: absolute;
-  transform: rotate(90deg);
-  bottom: -190px;
-  left: 795px;
-  width: 350px;
-  height: 8px;
-}
-
-#T {
-  position: absolute;
-  transform: rotate(90deg);
-  bottom: -190px;
-  left: 900px;
-  width: 350px;
-  height: 8px;
-}
-
-#L {
-  position: absolute;
-  transform: rotate(90deg);
-  bottom: -190px;
-  left: 1010px;
-  width: 350px;
-  height: 8px;
 }
 
 /* experience */
