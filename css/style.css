@@ -954,12 +954,12 @@ body {
   white-space: nowrap;
   margin: 0 auto;
   margin-right: 20px;
-  
+
   color: #8a8fa3;
   font: 700 16px/28px "Poppins", sans-serif;
   border: 1px solid #8a8fa3;
   border-radius: 7px 20px 7px 20px;
-  
+
   transition: all 0.3s;
 }
 
@@ -1010,7 +1010,7 @@ body {
   display: block;
   bottom: 0;
   left: 0;
-  content: '';
+  content: "";
   width: 280px;
   height: 0px;
   border-radius: 0px 0px 20px 0px;
@@ -1038,11 +1038,9 @@ body {
   background: rgba(0, 0, 0, 0.9);
   border: 1.8px solid #fcc52c;
   color: #fcc52c;
-
 }
 
 .item-mack2 > a > i {
-
 }
 
 .allproject-item:hover .item-mack {
@@ -1058,7 +1056,6 @@ body {
   z-index: 999;
 }
 
-
 /* about */
 .skill {
   position: relative;
@@ -1072,7 +1069,7 @@ body {
   opacity: 0.15;
   width: 570px;
   height: 386px;
-  background: url('../images/skillback.png') no-repeat center;
+  background: url("../images/skillback.png") no-repeat center;
   background-size: cover;
 }
 
@@ -1083,7 +1080,7 @@ body {
   opacity: 0.15;
   width: 570px;
   height: 386px;
-  background: url('../images/skillback.png') no-repeat center;
+  background: url("../images/skillback.png") no-repeat center;
   background-size: cover;
   rotate: 180deg;
 }
@@ -1448,14 +1445,75 @@ body {
   color: #2b304e;
 }
 
+.vision-img {
+  position: absolute;
+  display: block;
+  top: 18px;
+  left: 0;
+  width: 500px;
+  height: 362px;
+  background: url("../images/begener.png") no-repeat center;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.vision-img2 {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 380px;
+  background: url("../images/expert.png") no-repeat center;
+  background-size: cover;
+  opacity: 0.7;
+}
+.vision-img3 {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 480px;
+  height: 218px;
+  background: url("../images/master.png") no-repeat center;
+  background-size: cover;
+  opacity: 0.7;
+}
 .textvision1 {
-  text-align: center;
+  position: relative;
+  display: block;
+  width: 500px;
+  left: 30%;
+}
+
+.textvision1 > ul > h4 {
+  position: relative;
+  display: block;
+  width: 600px;
+  font-size: 32px;
+  color: #2b304e;
+  font-weight: 500;
+  padding: 30px 0;
+  text-shadow: 0px 4px 6px 0px rgb(0 12 29 / 8%);
+  z-index: 99;
+}
+
+.textvision1 > ul > h4::after {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  width: 550px;
+  height: 10px;
+  background: #fcc52c;
+  z-index: -1;
 }
 
 .textvision1 > ul > p {
   color: #2b304e;
   font-size: 30px;
   padding-bottom: 40px;
+  text-align: left;
 }
 
 .textvision1 > ul > li > p {
@@ -1495,7 +1553,6 @@ body {
 
 .contact-box > ul > span {
   padding-right: 20px;
-  
 }
 
 .kakao {

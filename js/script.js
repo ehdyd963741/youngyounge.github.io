@@ -330,7 +330,7 @@ window.onload = function () {
     loop: true,
     speed: 1500,
     autoplay: {
-      delay: 2500,
+      delay: 5000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -342,6 +342,7 @@ window.onload = function () {
       prevEl: ".swiper-button-prev",
     },
   });
+
   //mixitup
   var mixer = mixitup(".mix-wrapper", {
     animation: {
