@@ -325,12 +325,12 @@ window.onload = function () {
     },
   });
 
-  let swiper = new Swiper(".visionswiper", {
+  let visonSwiper = new Swiper(".visionswiper", {
     // grabCursor: true,
     loop: true,
     speed: 1500,
     autoplay: {
-      delay: 5000,
+      delay: 1500,
       disableOnInteraction: false,
     },
     pagination: {
@@ -342,6 +342,12 @@ window.onload = function () {
       prevEl: ".swiper-button-prev",
     },
   });
+    $(".visionswiper").mouseenter(function () {
+      visonSwiper.autoplay.stop();
+    });
+    $(".visionswiper").mouseleave(function () {
+      visonSwiper.autoplay.start();
+    });
 
   //mixitup
   var mixer = mixitup(".mix-wrapper", {
