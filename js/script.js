@@ -1,4 +1,28 @@
 window.onload = function () {
+  let gnbMenuA = $(".gnb > li > a");
+  let sectionArr = $(".wrap > section");
+
+  $.each(sectionArr, function (index, item) {
+    new Waypoint({
+      element: $(this),
+      handler: function (direction) {
+        if (direction == "down") {
+          // 스크롤을 아래로 내릴떄
+          gnbMenuA.removeClass("gnb-active");
+          gnbMenuA.eq(index).addClass("gnb-active");
+        } else if (direction == "up") {
+          // 스크롤을 위로 올릴떄
+          let tempIndex = index - 1;
+          if (index != 0) {
+            gnbMenuA.removeClass("gnb-active");
+            gnbMenuA.eq(tempIndex).addClass("gnb-active");
+          }
+        }
+      },
+      offset: "50%",
+    });
+  });
+
   let slideMenu = $(".st-list a");
   $.each(slideMenu, function (index, item) {
     $(this).click(function (event) {
@@ -26,10 +50,6 @@ window.onload = function () {
       shadowScale: 0.94,
     },
   });
-  // let swStList = new Swiper(".sw-stlist", {
-  //   loop: true,
-  // });
-  // swSlide.controller.control = swStList;
 
   swSlide.on("slideChange", function () {
     // 일단 모두 포커스 class 지운다.
@@ -324,7 +344,7 @@ window.onload = function () {
       bar.path.setAttribute("stroke", state.color);
     },
   });
-
+  // vision스와이퍼 부분
   let visonSwiper = new Swiper(".visionswiper", {
     // grabCursor: true,
     loop: true,
@@ -342,12 +362,13 @@ window.onload = function () {
       prevEl: ".swiper-button-prev",
     },
   });
-    $(".visionswiper").mouseenter(function () {
-      visonSwiper.autoplay.stop();
-    });
-    $(".visionswiper").mouseleave(function () {
-      visonSwiper.autoplay.start();
-    });
+
+  $(".visionswiper").mouseenter(function () {
+    visonSwiper.autoplay.stop();
+  });
+  $(".visionswiper").mouseleave(function () {
+    visonSwiper.autoplay.start();
+  });
 
   //mixitup
   var mixer = mixitup(".mix-wrapper", {
