@@ -1,4 +1,7 @@
 window.onload = function () {
+  AOS.init();
+
+  // 메뉴바의 포커스 유지
   let gnbMenuA = $(".gnb > li > a");
   let sectionArr = $(".wrap > section");
 
@@ -23,7 +26,7 @@ window.onload = function () {
     });
   });
 
-  let slideMenu = $(".st-list a");
+  let slideMenu = $(".st-list li a");
   $.each(slideMenu, function (index, item) {
     $(this).click(function (event) {
       //href막기
@@ -350,7 +353,7 @@ window.onload = function () {
     loop: true,
     speed: 1500,
     autoplay: {
-      delay: 1500,
+      delay: 5000,
       disableOnInteraction: false,
     },
     pagination: {

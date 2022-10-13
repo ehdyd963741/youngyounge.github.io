@@ -60,8 +60,6 @@ body {
   margin: 0 auto;
 }
 
-
-
 /* gotop */
 .gotop {
   position: fixed;
@@ -80,6 +78,7 @@ body {
   z-index: 999;
   transition: all 0.3s;
 }
+
 .gotop:hover {
   transform: scale(1.2);
 }
@@ -98,6 +97,7 @@ body {
   visibility: hidden;
   transition: all 0.3s;
 }
+
 .fix-menu-show {
   opacity: 1;
   visibility: visible;
@@ -132,6 +132,7 @@ body {
   color: #fff;
   font-weight: 700;
 }
+
 .fix-menu a > i {
   display: inline-block;
   font-size: 16px;
@@ -199,6 +200,7 @@ body {
   margin: 0 10px;
 }
 
+/* header 메뉴바 효과 */
 .gnb li:hover a {
   color: #4d5079;
 }
@@ -438,13 +440,14 @@ body {
   color: #32333c;
   padding-bottom: 5px;
 }
+
 .profile-center-textbox ul li {
   font-size: 16px;
   font-weight: 500;
   color: #8a8fa3;
 }
 
-.profile-center-textbox > p {
+.profile-center-textbox > div > p {
   font-size: 16px;
   font-family: "Poppins";
   font-weight: 700;
@@ -454,10 +457,16 @@ body {
   transition: all 0.3s;
 }
 
-.profile-center-textbox > span {
+.profile-center-textbox > div > span {
   font-size: 20px;
   font-weight: 500;
   color: #32333c;
+}
+
+.profile-bt {
+  position: relative;
+  display: block;
+  margin-top: 20px;
 }
 
 .profile-center-bt {
@@ -508,18 +517,22 @@ body {
   position: relative;
   display: block;
 }
+
 .profile-right-education {
   padding-bottom: 45px;
 }
+
 .profile-right-education ul {
   position: relative;
   display: block;
 }
+
 .profile-right-education ul h4 {
   font-size: 18px;
   font-weight: 700;
   padding-bottom: 10px;
 }
+
 .profile-right-education ul li {
   color: #8a8fa3;
 }
@@ -528,15 +541,18 @@ body {
   position: relative;
   display: block;
 }
+
 .profile-right-experience ul {
   position: relative;
   display: block;
 }
+
 .profile-right-experience ul h4 {
   font-size: 18px;
   font-weight: 700;
   padding-bottom: 10px;
 }
+
 .profile-right-experience ul li {
   color: #8a8fa3;
 }
@@ -709,14 +725,18 @@ body {
 }
 
 .pr-textbox {
-  position: relative;
-  float: right;
-  right: 35%;
-  top: 0;
-  transform: translateY(-450%);
+  position: absolute;
+  display: block;
+  top: 10%;
+  right: 30%;
 }
 
-.pr-textbox > p::after {
+.pr-textbox > ul {
+  position: relative;
+  float: right;
+}
+
+.pr-textbox > ul > p::after {
   content: "";
   position: absolute;
   left: -10px;
@@ -727,12 +747,12 @@ body {
   z-index: 99;
 }
 
-.pr-textbox > li {
+.pr-textbox > ul > li {
   padding: 10px 0;
   padding-left: 20px;
 }
 
-.pr-textbox > li > a {
+.pr-textbox > ul > li > a {
   font-size: 16px;
 }
 
@@ -827,11 +847,16 @@ body {
   opacity: 1;
 }
 
-.swiper-slide > a > img {
+.slide-cube-item > a > img {
   display: block;
   width: 500px;
   height: 400px;
   box-shadow: 0 0 3px gray;
+}
+
+.slide-menu {
+  position: relative;
+  display: block;
 }
 
 .st-list {
@@ -869,43 +894,26 @@ body {
 }
 
 .st-list > li > a {
-  color: #2b304e;
-}
-
-/* 예제 */
-.slide {
-  width: 900px;
-  margin: 0 auto;
-}
-
-.slide-menu a {
   position: relative;
   display: inline-block;
   margin: 0 20px;
+  font-weight: 500;
+  color: #2b304e;
 }
 
-.slide-menu a::after {
+.slide-menu .st-list > li > a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 0%;
   height: 2px;
-  background: #000;
+  background: #2b304e;
   transition: all 0.5s;
 }
 
-/* 탭메뉴 효과 */
-.slide-menu-active {
-  font-weight: 700;
-}
-
-.slide-menu-active::after {
-  width: 100% !important;
-}
-
-.sw-slide {
-  height: 500px;
+.slide-menu .st-list > li > a.slide-menu-active::after {
+  width: 100%;
 }
 
 /* allproject */
@@ -987,6 +995,15 @@ body {
   border: 2.5px solid #fcc52c;
   font: 700 16px/28px "Poppins", sans-serif;
   transform: scale(1.2);
+}
+
+.allproject-menubar {
+  color: #4d5079 !important;
+}
+
+.allproject-menubar::after {
+  display: block !important;
+  width: 100% !important;
 }
 
 .allproject-title-item {
@@ -1136,6 +1153,7 @@ body {
   height: 4px;
   background: #fcc52c;
 }
+
 .ab-text > span {
   position: relative;
   display: block;
@@ -1167,6 +1185,7 @@ body {
 .skill-about-container > div > i {
   font-size: 50px;
 }
+
 .skill-about-container > div > div {
   position: absolute;
   left: calc(50% + 10px);
@@ -1274,6 +1293,7 @@ body {
   height: 300px;
   margin: 0 auto 80px;
 }
+
 .experience-item-list > li {
   font-size: 12px;
   font-weight: 300;
@@ -1495,9 +1515,11 @@ body {
   display: block;
   width: 100%;
 }
+
 .textvision1 > ul {
   padding-left: 10%;
 }
+
 .textvision1 > ul > h4 {
   position: relative;
   display: block;
@@ -1531,7 +1553,6 @@ body {
   background: #fcc52c;
   z-index: -1;
 }
-
 
 .textvision1 > ul > li > p {
   color: #8a8fa3;
