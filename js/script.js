@@ -164,9 +164,16 @@ window.onload = function () {
     trailColor: "#eee",
     StrokeColor: "#108ee99",
     trailWidth: 4,
-    svgStyle: { width: "100%", height: "100%" },
-    from: { color: "#FFEA82" },
-    to: { color: "#ED6A5A" },
+    svgStyle: {
+      width: "100%",
+      height: "100%"
+    },
+    from: {
+      color: "#FFEA82"
+    },
+    to: {
+      color: "#ED6A5A"
+    },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
@@ -180,9 +187,16 @@ window.onload = function () {
     color: "#20f099",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "100%", height: "100%" },
-    from: { color: "#20fff5" },
-    to: { color: "#c5f099" },
+    svgStyle: {
+      width: "100%",
+      height: "100%"
+    },
+    from: {
+      color: "#20fff5"
+    },
+    to: {
+      color: "#c5f099"
+    },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
@@ -196,9 +210,16 @@ window.onload = function () {
     color: "#FFEA82",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "90%", height: "90%" },
-    from: { color: "#579f89" },
-    to: { color: "#5763c7" },
+    svgStyle: {
+      width: "90%",
+      height: "90%"
+    },
+    from: {
+      color: "#579f89"
+    },
+    to: {
+      color: "#5763c7"
+    },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
@@ -212,9 +233,16 @@ window.onload = function () {
     color: "#57de10",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "80%", height: "100%" },
-    from: { color: "#57631c" },
-    to: { color: "#d7bed7" },
+    svgStyle: {
+      width: "80%",
+      height: "100%"
+    },
+    from: {
+      color: "#57631c"
+    },
+    to: {
+      color: "#d7bed7"
+    },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
@@ -228,9 +256,16 @@ window.onload = function () {
     color: "#e0b8c2",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "100%", height: "100%" },
-    from: { color: "#b3b8c2" },
-    to: { color: "#b3c2ff" },
+    svgStyle: {
+      width: "100%",
+      height: "100%"
+    },
+    from: {
+      color: "#b3b8c2"
+    },
+    to: {
+      color: "#b3c2ff"
+    },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
@@ -244,9 +279,16 @@ window.onload = function () {
     color: "#57de10",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "40%", height: "100%" },
-    from: { color: "#57631c" },
-    to: { color: "#ff980c" },
+    svgStyle: {
+      width: "40%",
+      height: "100%"
+    },
+    from: {
+      color: "#57631c"
+    },
+    to: {
+      color: "#ff980c"
+    },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
@@ -260,9 +302,16 @@ window.onload = function () {
     color: "#57de10",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "35%", height: "100%" },
-    from: { color: "#57631c" },
-    to: { color: "#ffbc0d" },
+    svgStyle: {
+      width: "35%",
+      height: "100%"
+    },
+    from: {
+      color: "#57631c"
+    },
+    to: {
+      color: "#ffbc0d"
+    },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
@@ -276,9 +325,16 @@ window.onload = function () {
     color: "#57de10",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "75%", height: "100%" },
-    from: { color: "#57631c" },
-    to: { color: "#b17dc9" },
+    svgStyle: {
+      width: "75%",
+      height: "100%"
+    },
+    from: {
+      color: "#57631c"
+    },
+    to: {
+      color: "#b17dc9"
+    },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
@@ -292,9 +348,16 @@ window.onload = function () {
     color: "#57de10",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "30%", height: "100%" },
-    from: { color: "#57631c" },
-    to: { color: "#ffd214" },
+    svgStyle: {
+      width: "30%",
+      height: "100%"
+    },
+    from: {
+      color: "#57631c"
+    },
+    to: {
+      color: "#ffd214"
+    },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
@@ -308,9 +371,16 @@ window.onload = function () {
     color: "#57de10",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "95%", height: "100%" },
-    from: { color: "#57631c" },
-    to: { color: "#00bed7" },
+    svgStyle: {
+      width: "95%",
+      height: "100%"
+    },
+    from: {
+      color: "#57631c"
+    },
+    to: {
+      color: "#00bed7"
+    },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
@@ -324,9 +394,16 @@ window.onload = function () {
     color: "#57de10",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "60%", height: "100%" },
-    from: { color: "#57631c" },
-    to: { color: "#bcbed7" },
+    svgStyle: {
+      width: "60%",
+      height: "100%"
+    },
+    from: {
+      color: "#57631c"
+    },
+    to: {
+      color: "#bcbed7"
+    },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
@@ -340,9 +417,16 @@ window.onload = function () {
     color: "#ff9330",
     trailColor: "#eee",
     trailWidth: 1,
-    svgStyle: { width: "25%", height: "100%" },
-    from: { color: "#ffa429" },
-    to: { color: "#ffe61f" },
+    svgStyle: {
+      width: "25%",
+      height: "100%"
+    },
+    from: {
+      color: "#ffa429"
+    },
+    to: {
+      color: "#ffe61f"
+    },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
     },
@@ -436,8 +520,7 @@ $(document).ready(function () {
   //위로가기 기능
   let go_top = $(".gotop");
   go_top.click(function () {
-    $("html").animate(
-      {
+    $("html").animate({
         scrollTop: 0,
       },
       1000
