@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
+
 @font-face {
   font-family: "CookieRun";
   src: url("../fonts/CookieRun-Regular.woff");
@@ -64,8 +65,8 @@ body {
 .gotop {
   position: fixed;
   display: block;
-  right: 20px;
-  bottom: 50px;
+  right: 1.667vw;
+  bottom: 4.1667vw;
   display: block;
   width: 50px;
   height: 50px;
@@ -92,7 +93,7 @@ body {
   display: block;
   text-align: center;
   line-height: 4.5;
-  z-index: 99999;
+  z-index: 9999;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
@@ -124,25 +125,154 @@ body {
   border: 2px solid #000;
 }
 
-.fix-menu a:hover > i {
+.fix-menu a:hover>i {
   color: #ffff;
 }
 
-.fix-menu a:hover > span {
+.fix-menu a:hover>span {
   color: #fff;
   font-weight: 700;
 }
 
-.fix-menu a > i {
+.fix-menu a>i {
   display: inline-block;
   font-size: 16px;
   color: #8a8fa3;
   padding-right: 3px;
 }
 
-.fix-menu a > span {
+.fix-menu a>span {
   color: #8a8fa3;
 }
+/* 모바일 메뉴 버튼 */
+/* 모바일 관련 */
+/* 모바일 메뉴 */
+.mb-bt {
+  position: fixed;
+  right: 5%;
+  top: 34px;
+  display: none;
+  width: 28px;
+  height: 18px;
+  z-index: 99999;
+}
+
+.mb-bt::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  transition: all 0.3s;
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  transition: all 0.3s;
+}
+
+.mb-bt::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+
+  transition: all 0.3s;
+}
+
+.mb-bt-open::before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.mb-bt-open .line {
+  width: 0;
+}
+
+.mb-bt-open::after {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+/* 모바일 메뉴 내용 */
+.mb-wrap {
+  position: fixed;
+  right: -300px;
+  top: 0;
+  display: block;
+  width: 300px;
+  height: 100%;
+  padding: 0 20px;
+  background-color: #fff;
+  z-index: 99998;
+  transition: all 0.3s;
+}
+
+.mb-wrap-open {
+  right: 0;
+}
+
+.mb-wrap-main {
+  position: relative;
+  display: block;
+  width: 100%;
+  top: 10%;
+  text-align: center;
+  /* height: calc(100% - 124px); */
+  overflow-x: hidden;
+}
+
+.mb-menu {
+  position: relative;
+  display: block;
+}
+
+.mb-menu > li {
+  position: relative;
+  display: block;
+  background: #ffff;
+  width: 100%;
+  height: 60px;
+  transition: all 0.5s;
+  z-index: 99999;
+}
+
+.mb-mainmenu {
+  color: #4d5079;
+  font-weight: 500;
+}
+
+/* 모바일 메뉴 가림막 */
+.mb-dim {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background:rgba(0, 0, 0, 0.5);
+  z-index: 99997;
+}
+
+.mb-dim-open {
+  display: block;
+}
+
+
 
 /* header */
 .logo {
@@ -150,10 +280,11 @@ body {
   display: block;
   left: 0;
   top: 9px;
-  width: 160px;
+  width: 13.33vw;
   height: 60px;
   background: url("../images/logo2.png") no-repeat center;
   background-size: contain;
+  transition: all 0.3s;
 }
 
 .header {
@@ -162,7 +293,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  text-align: right;
   box-shadow: 0px 3px 8px 0px rgb(21 47 95 / 12%);
   background: #fff;
   z-index: 9999;
@@ -171,32 +301,31 @@ body {
 .header .inner {
   position: relative;
   display: block;
+  text-align: center;
+  transition: all 0.3s;
 }
 
 .gnb {
   position: relative;
   display: inline-block;
+  white-space: nowrap;
+  transition: all 0.3s;
 }
 
-.gnb > li {
+.gnb>li {
   position: relative;
-  text-align: center;
   display: inline-block;
   white-space: nowrap;
   margin: 0 18px;
   z-index: 99999;
 }
 
-.gnb > li:last-child {
-  margin-right: 200px;
-}
-
-.gnb > li > a {
+.gnb>li>a {
   display: block;
   line-height: 78px;
   font-size: 16px;
   font-weight: 400;
-  color: #000;
+  color: #4d5079;
   margin: 0 10px;
 }
 
@@ -236,21 +365,23 @@ body {
 .visual {
   position: relative;
   display: block;
-  height: 900px;
+  height: 850px;
   background: #fcfcfc;
 }
 
 .visual-left {
   position: relative;
   display: block;
+  width: 50%;
+  transition: all 0.5s;
 }
 
-.visual-left > img {
+.visual-left>img {
   position: absolute;
   display: block;
   /* transform: scaleX(-1); */
   top: 140px;
-  left: 19%;
+  left: 36%;
   /* left: -10%; */
   width: 522px;
   /* opacity: 0.8; */
@@ -262,6 +393,7 @@ body {
   width: 50%;
   height: 800px;
   right: 0;
+  transition: all 0.5s;
 }
 
 .visual-right-box {
@@ -269,7 +401,7 @@ body {
   display: block;
   top: 30%;
   left: -4%;
-  width: 200px;
+  width: 10.79vw;
   height: 500px;
   background: #fcc52c;
 }
@@ -280,9 +412,10 @@ body {
   top: 45%;
   left: 0;
   padding-left: 50px;
+  transition: all 0.5s;
 }
 
-.visual-right-textbox > p {
+.visual-right-textbox>p {
   font-size: 14px;
   font-weight: 500;
   color: #2b304e;
@@ -290,13 +423,13 @@ body {
   letter-spacing: 6;
 }
 
-.visual-right-textbox > h5 {
+.visual-right-textbox>h5 {
   color: #2b304e;
   font-size: 50px;
   font-weight: 500;
 }
 
-.visual-right-textbox > h3 {
+.visual-right-textbox>h3 {
   color: #2b304e;
   font-size: 50px;
   font-weight: 700;
@@ -372,6 +505,7 @@ body {
 .profile-left {
   position: relative;
   margin-right: 0;
+  transition: all 0.5s;
 }
 
 .porfile-left-img {
@@ -392,8 +526,9 @@ body {
   opacity: 1;
 }
 
-.profile-left > span {
+.profile-left>span {
   position: relative;
+  display: block;
   font-size: 45px;
   left: 30px;
   top: 30px;
@@ -407,7 +542,7 @@ body {
   transition: all 0.3s;
 }
 
-.profile-left > span::after {
+.profile-left>span::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -447,7 +582,7 @@ body {
   color: #8a8fa3;
 }
 
-.profile-center-textbox > div > p {
+.profile-center-textbox>div>p {
   font-size: 16px;
   font-family: "Poppins";
   font-weight: 700;
@@ -457,7 +592,7 @@ body {
   transition: all 0.3s;
 }
 
-.profile-center-textbox > div > span {
+.profile-center-textbox>div>span {
   font-size: 20px;
   font-weight: 500;
   color: #32333c;
@@ -578,7 +713,7 @@ body {
   margin-bottom: 40px;
 }
 
-.portfolio-title > h2 {
+.portfolio-title>h2 {
   position: relative;
   display: inline-block;
   text-align: center;
@@ -590,7 +725,7 @@ body {
   padding-bottom: 40px;
 }
 
-.portfolio-title > span {
+.portfolio-title>span {
   text-align: center;
   color: #8a8fa3;
   z-index: 99;
@@ -643,7 +778,6 @@ body {
   font-size: 0;
 }
 
-/*  */
 
 .portfolio p {
   position: relative;
@@ -651,16 +785,6 @@ body {
   padding-bottom: 20px;
 }
 
-/* .portfolio p::after {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: 30px;
-  width: 400px;
-  height: 10px;
-  background: yellow;
-  z-index: 99;
-} */
 
 .allpr {
   position: relative;
@@ -678,7 +802,7 @@ body {
   left: 10%;
 }
 
-.persnoal-top > h4 {
+.persnoal-top>h4 {
   position: relative;
   top: 0;
   right: -60%;
@@ -731,12 +855,12 @@ body {
   right: 30%;
 }
 
-.pr-textbox > ul {
+.pr-textbox>ul {
   position: relative;
   float: right;
 }
 
-.pr-textbox > ul > p::after {
+.pr-textbox>ul>p::after {
   content: "";
   position: absolute;
   left: -10px;
@@ -747,12 +871,12 @@ body {
   z-index: 99;
 }
 
-.pr-textbox > ul > li {
+.pr-textbox>ul>li {
   padding: 10px 0;
   padding-left: 20px;
 }
 
-.pr-textbox > ul > li > a {
+.pr-textbox>ul>li>a {
   font-size: 16px;
 }
 
@@ -762,7 +886,7 @@ body {
   transform: translateY(-5%);
 }
 
-.study-midle > h4 {
+.study-midle>h4 {
   position: relative;
   display: block;
   color: #2b304e;
@@ -847,7 +971,7 @@ body {
   opacity: 1;
 }
 
-.slide-cube-item > a > img {
+.slide-cube-item>a>img {
   display: block;
   width: 500px;
   height: 400px;
@@ -866,7 +990,7 @@ body {
   left: 50%;
 }
 
-.st-list > p {
+.st-list>p {
   color: #2b304e;
   width: 400px;
   padding-left: 20px;
@@ -874,7 +998,7 @@ body {
   font-weight: 700;
 }
 
-.st-list > p::after {
+.st-list>p::after {
   content: "";
   position: absolute;
   left: 10px;
@@ -885,7 +1009,7 @@ body {
   z-index: 99;
 }
 
-.st-list > li {
+.st-list>li {
   position: relative;
   display: block;
   text-align: left;
@@ -893,7 +1017,7 @@ body {
   padding-bottom: 10px;
 }
 
-.st-list > li > a {
+.st-list>li>a {
   position: relative;
   display: inline-block;
   margin: 0 20px;
@@ -901,7 +1025,7 @@ body {
   color: #2b304e;
 }
 
-.slide-menu .st-list > li > a::after {
+.slide-menu .st-list>li>a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -912,7 +1036,7 @@ body {
   transition: all 0.5s;
 }
 
-.slide-menu .st-list > li > a.slide-menu-active::after {
+.slide-menu .st-list>li>a.slide-menu-active::after {
   width: 100%;
 }
 
@@ -929,7 +1053,7 @@ body {
   padding-top: 50px;
 }
 
-.allproject-title-box > h2 {
+.allproject-title-box>h2 {
   position: relative;
   font-size: 30px;
   font-weight: 700;
@@ -941,7 +1065,7 @@ body {
   transition: all 0.3s;
 }
 
-.allproject-title-box > h2::after {
+.allproject-title-box>h2::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -951,7 +1075,7 @@ body {
   background: #fcc52c;
 }
 
-.allproject-title-box > p {
+.allproject-title-box>p {
   text-align: center;
   color: #022144;
   padding-bottom: 35px;
@@ -966,14 +1090,14 @@ body {
   /* margin: 30px auto; */
 }
 
-.allproject-menubar > button {
+.allproject-menubar>button {
   border: none;
   cursor: pointer;
   background: none;
   margin-bottom: 35px;
 }
 
-.allproject-menubar > button > p {
+.allproject-menubar>button>p {
   position: relative;
   display: inline-block;
   padding: 10px 10px;
@@ -989,7 +1113,7 @@ body {
   transition: all 0.3s;
 }
 
-.allproject-menubar > button > p:hover {
+.allproject-menubar>button>p:hover {
   color: #fcc52c;
   font-weight: 700;
   border: 2.5px solid #fcc52c;
@@ -1012,6 +1136,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+  transition: all 0.5s;
 }
 
 .allproject-item {
@@ -1023,7 +1148,7 @@ body {
   box-shadow: 0px 8px 12px 0px rgb(0 12 29 / 8%);
 }
 
-.allproject-item > img {
+.allproject-item>img {
   width: 280px;
   height: 260px;
   border-radius: 20px 0px 20px 0px;
@@ -1057,7 +1182,7 @@ body {
   overflow: hidden;
 }
 
-.item-mack2 > a {
+.item-mack2>a {
   display: inline-block;
   border: 1px solid #ffff;
   border-radius: 20px;
@@ -1069,7 +1194,7 @@ body {
   margin-right: 1px;
 }
 
-.item-mack2 > a:hover {
+.item-mack2>a:hover {
   transform: scale(1.1);
   font-weight: 600;
   background: rgba(0, 0, 0, 0.9);
@@ -1077,8 +1202,7 @@ body {
   color: #fcc52c;
 }
 
-.item-mack2 > a > i {
-}
+.item-mack2>a>i {}
 
 .allproject-item:hover .item-mack {
   transform: scale(1.1);
@@ -1099,7 +1223,7 @@ body {
   display: block;
 }
 
-.skill > .skill-back {
+.skill>.skill-back {
   position: absolute;
   top: 0;
   left: 0;
@@ -1110,7 +1234,7 @@ body {
   background-size: cover;
 }
 
-.skill > .skill-back2 {
+.skill>.skill-back2 {
   position: absolute;
   bottom: -100px;
   right: 0;
@@ -1136,7 +1260,7 @@ body {
   margin-bottom: 50px;
 }
 
-.ab-text > h3 {
+.ab-text>h3 {
   position: relative;
   text-align: center;
   color: #32333c;
@@ -1144,7 +1268,7 @@ body {
   font-weight: 700;
 }
 
-.ab-text > h3::after {
+.ab-text>h3::after {
   content: "";
   position: absolute;
   bottom: -15px;
@@ -1154,7 +1278,7 @@ body {
   background: #fcc52c;
 }
 
-.ab-text > span {
+.ab-text>span {
   position: relative;
   display: block;
   text-align: center;
@@ -1176,17 +1300,17 @@ body {
   font-weight: 500;
 }
 
-.skill-about-container > div {
+.skill-about-container>div {
   position: relative;
   display: block;
   height: 350px;
 }
 
-.skill-about-container > div > i {
+.skill-about-container>div>i {
   font-size: 50px;
 }
 
-.skill-about-container > div > div {
+.skill-about-container>div>div {
   position: absolute;
   left: calc(50% + 10px);
   top: 100px;
@@ -1213,7 +1337,7 @@ body {
   display: block;
 }
 
-.experience-title-box > h2 {
+.experience-title-box>h2 {
   position: relative;
   font-size: 45px;
   font-weight: 700;
@@ -1225,7 +1349,7 @@ body {
   transition: all 0.3s;
 }
 
-.experience-title-box > h2::after {
+.experience-title-box>h2::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1235,7 +1359,7 @@ body {
   background: #fcc52c;
 }
 
-.experience-title-box > p {
+.experience-title-box>p {
   text-align: center;
   font-weight: 600;
   font-size: 18px;
@@ -1263,6 +1387,12 @@ body {
   transition: all 0.5s;
 }
 
+/* 나이스 스크롤 */
+.nicescroll-rails .nicescroll-rails-vr {
+  position: relative;
+  display: block;
+}
+
 .experience-item:hover {
   background: #fcc52c;
 }
@@ -1271,7 +1401,7 @@ body {
   border-right: 1px solid #edecec;
 }
 
-.experience-item > p {
+.experience-item>p {
   font-size: 15px;
   line-height: 28px;
   text-transform: uppercase;
@@ -1280,21 +1410,21 @@ body {
   transition: all 0.3s;
 }
 
-.experience-item > h3 {
+.experience-item>h3 {
   color: #32333c;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-.experience-item > .experience-item-list {
+.experience-item>.experience-item-list {
   max-width: 770px;
   width: 100%;
   height: 300px;
   margin: 0 auto 80px;
 }
 
-.experience-item-list > li {
+.experience-item-list>li {
   font-size: 12px;
   font-weight: 300;
   color: #8a8fa3;
@@ -1329,7 +1459,7 @@ body {
   transition: all 0.5s;
 }
 
-.life-item > div > img {
+.life-item>div>img {
   width: 360px;
   height: 240px;
   box-shadow: 0px 4px 6px 0px rgb(0 12 29 / 8%);
@@ -1369,7 +1499,7 @@ body {
   white-space: wrap;
 }
 
-.life-item-text > h3 {
+.life-item-text>h3 {
   color: #fec110;
   font: 500 14px/30px "Poppins", sans-serif;
   text-transform: uppercase;
@@ -1378,7 +1508,7 @@ body {
   margin-top: 0;
 }
 
-.life-item-text > h3::after {
+.life-item-text>h3::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -1388,14 +1518,14 @@ body {
   background: #fec110;
 }
 
-.life-item-text > span {
+.life-item-text>span {
   display: block;
   color: #022144;
   font: 400 20px/30px "Poppins", sans-serif;
   padding-bottom: 30px;
 }
 
-.life-item-text > p {
+.life-item-text>p {
   color: #8a8fa3;
   font: 300 16px/28px "Poppins", sans-serif;
   margin-bottom: 10px;
@@ -1431,7 +1561,7 @@ body {
   text-align: center;
 }
 
-.vision-t > h2 {
+.vision-t>h2 {
   color: #2b304e;
   font-size: 44px;
   font-weight: 700;
@@ -1466,7 +1596,7 @@ body {
   align-items: center;
 }
 
-.swiper-slide .visionslide-item > h2 {
+.swiper-slide .visionslide-item>h2 {
   padding-bottom: 40px;
   text-align: center;
   font-size: 36px;
@@ -1516,11 +1646,11 @@ body {
   width: 100%;
 }
 
-.textvision1 > ul {
+.textvision1>ul {
   padding-left: 10%;
 }
 
-.textvision1 > ul > h4 {
+.textvision1>ul>h4 {
   position: relative;
   display: block;
   font-size: 32px;
@@ -1531,7 +1661,7 @@ body {
   z-index: 99;
 }
 
-.textvision1 > ul > h5 {
+.textvision1>ul>h5 {
   position: relative;
   display: block;
   font-size: 32px;
@@ -1543,7 +1673,7 @@ body {
   margin-bottom: 30px;
 }
 
-.textvision1 > ul > h5::after {
+.textvision1>ul>h5::after {
   content: "";
   position: absolute;
   bottom: 10px;
@@ -1554,7 +1684,7 @@ body {
   z-index: -1;
 }
 
-.textvision1 > ul > li > p {
+.textvision1>ul>li>p {
   color: #8a8fa3;
   font-size: 20px;
   font-weight: 500;
@@ -1585,17 +1715,17 @@ body {
   color: #fff;
 }
 
-.contact-box > h2 {
+.contact-box>h2 {
   font-size: 36px;
   font-weight: 500;
   padding-bottom: 25px;
 }
 
-.contact-box > ul > span {
+.contact-box>ul>span {
   padding-right: 20px;
 }
 
-.contact-box > h5 {
+.contact-box>h5 {
   padding-top: 20px;
 }
 

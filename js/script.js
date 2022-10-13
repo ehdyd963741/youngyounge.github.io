@@ -1,5 +1,63 @@
 window.onload = function () {
-  AOS.init();
+  // AOS
+  // AOS.init();
+  // 모바일 메뉴 버튼
+  // 모바일 메뉴 기능
+  // .mb-bt 를 저장해서 활용하자.
+  $(".mb-bt").click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass("mb-bt-open");
+    $(".mb-dim").toggleClass("mb-dim-open");
+    $(".mb-wrap").toggleClass("mb-wrap-open");
+  });
+
+  //모바일 버튼 기능 초기화
+  function buttonReset() {
+    $(".mb-bt").removeClass("mb-bt-open");
+    $(".mb-dim").removeClass("mb-dim-open");
+    $(".mb-wrap").removeClass("mb-wrap-open");
+    $(".mb-menu>li").height(60);
+    $(".mb-mainmenu").removeClass("mb-mainmenu-open");
+  }
+
+  // 화면 사이즈 체크
+  $(window).resize(function () {
+    // 화면 너비를 계산한다.
+    let temp = $(window).width();
+    // 1000 px 보다 크면
+    if (temp > 1000) {
+      // 모바일 버튼 기능 초기화
+      buttonReset();
+    }
+  });
+
+  // 모바일 메뉴 펼치기 기능
+  // 1. 모바일 메뉴 저장
+  let mb_mainmenu = $(".mb-mainmenu");
+
+  // 최종 결과
+  let mb_li = $(".mb-menu > li");
+  $.each(mb_mainmenu, function (index) {
+    $(this).click(function (e) {
+      // mb-mainmenu-open 를 toggleClass 한다.
+      $(this).toggleClass("mb-mainmenu-open");
+      // 만약에 mb-mainmenu-open 이 있으면 펼치고
+      // 없으면 닫고
+      let active = $(this).hasClass("mb-mainmenu-open");
+      if (active) {
+        let temp = mb_submenu_high[index];
+        mb_li.eq(index).height(temp + 60);
+      } else {
+        mb_li.eq(index).height(60);
+      }
+    });
+  });
+  // 모바일 메뉴 배경 클릭시 사라짐.
+  let mb_dim = $(".mb-dim");
+  mb_dim.click(function () {
+    // 모바일 버튼 기능 초기화
+    buttonReset();
+  });
 
   // 메뉴바의 포커스 유지
   let gnbMenuA = $(".gnb > li > a");
@@ -166,13 +224,13 @@ window.onload = function () {
     trailWidth: 4,
     svgStyle: {
       width: "100%",
-      height: "100%"
+      height: "100%",
     },
     from: {
-      color: "#FFEA82"
+      color: "#FFEA82",
     },
     to: {
-      color: "#ED6A5A"
+      color: "#ED6A5A",
     },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
@@ -189,13 +247,13 @@ window.onload = function () {
     trailWidth: 1,
     svgStyle: {
       width: "100%",
-      height: "100%"
+      height: "100%",
     },
     from: {
-      color: "#20fff5"
+      color: "#20fff5",
     },
     to: {
-      color: "#c5f099"
+      color: "#c5f099",
     },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
@@ -212,13 +270,13 @@ window.onload = function () {
     trailWidth: 1,
     svgStyle: {
       width: "90%",
-      height: "90%"
+      height: "90%",
     },
     from: {
-      color: "#579f89"
+      color: "#579f89",
     },
     to: {
-      color: "#5763c7"
+      color: "#5763c7",
     },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
@@ -235,13 +293,13 @@ window.onload = function () {
     trailWidth: 1,
     svgStyle: {
       width: "80%",
-      height: "100%"
+      height: "100%",
     },
     from: {
-      color: "#57631c"
+      color: "#57631c",
     },
     to: {
-      color: "#d7bed7"
+      color: "#d7bed7",
     },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
@@ -258,13 +316,13 @@ window.onload = function () {
     trailWidth: 1,
     svgStyle: {
       width: "100%",
-      height: "100%"
+      height: "100%",
     },
     from: {
-      color: "#b3b8c2"
+      color: "#b3b8c2",
     },
     to: {
-      color: "#b3c2ff"
+      color: "#b3c2ff",
     },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
@@ -281,13 +339,13 @@ window.onload = function () {
     trailWidth: 1,
     svgStyle: {
       width: "40%",
-      height: "100%"
+      height: "100%",
     },
     from: {
-      color: "#57631c"
+      color: "#57631c",
     },
     to: {
-      color: "#ff980c"
+      color: "#ff980c",
     },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
@@ -304,13 +362,13 @@ window.onload = function () {
     trailWidth: 1,
     svgStyle: {
       width: "35%",
-      height: "100%"
+      height: "100%",
     },
     from: {
-      color: "#57631c"
+      color: "#57631c",
     },
     to: {
-      color: "#ffbc0d"
+      color: "#ffbc0d",
     },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
@@ -327,13 +385,13 @@ window.onload = function () {
     trailWidth: 1,
     svgStyle: {
       width: "75%",
-      height: "100%"
+      height: "100%",
     },
     from: {
-      color: "#57631c"
+      color: "#57631c",
     },
     to: {
-      color: "#b17dc9"
+      color: "#b17dc9",
     },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
@@ -350,13 +408,13 @@ window.onload = function () {
     trailWidth: 1,
     svgStyle: {
       width: "30%",
-      height: "100%"
+      height: "100%",
     },
     from: {
-      color: "#57631c"
+      color: "#57631c",
     },
     to: {
-      color: "#ffd214"
+      color: "#ffd214",
     },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
@@ -373,13 +431,13 @@ window.onload = function () {
     trailWidth: 1,
     svgStyle: {
       width: "95%",
-      height: "100%"
+      height: "100%",
     },
     from: {
-      color: "#57631c"
+      color: "#57631c",
     },
     to: {
-      color: "#00bed7"
+      color: "#00bed7",
     },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
@@ -396,13 +454,13 @@ window.onload = function () {
     trailWidth: 1,
     svgStyle: {
       width: "60%",
-      height: "100%"
+      height: "100%",
     },
     from: {
-      color: "#57631c"
+      color: "#57631c",
     },
     to: {
-      color: "#bcbed7"
+      color: "#bcbed7",
     },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);
@@ -419,13 +477,13 @@ window.onload = function () {
     trailWidth: 1,
     svgStyle: {
       width: "25%",
-      height: "100%"
+      height: "100%",
     },
     from: {
-      color: "#ffa429"
+      color: "#ffa429",
     },
     to: {
-      color: "#ffe61f"
+      color: "#ffe61f",
     },
     step: (state, bar) => {
       bar.path.setAttribute("stroke", state.color);

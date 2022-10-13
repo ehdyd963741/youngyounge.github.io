@@ -52,8 +52,8 @@
   <script src="js/jquery.waypoints.js"></script>
 
   <!-- aos 관련 코드 -->
-  <link href="js/aos/aos.css" rel="stylesheet" />
-  <script src="js/aos/aos.js"></script>
+  <!-- <link href="js/aos/aos.css" rel="stylesheet" />
+  <script src="js/aos/aos.js"></script> -->
 
   <!-- gsap -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
@@ -82,13 +82,47 @@
   <script src="js/swiper/swiper.min.js"></script>
   <!-- 스크롤바 -->
   <script src="js/jquery.nicescroll.min.js"></script>
-
+  <link rel="stylesheet" href="css/responce.css">
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/script.js"></script>
 </head>
 
 <body>
   <div class="wrap">
+      <!-- 모바일 버튼 -->
+    <a href="#" class="mb-bt">
+      <span class="line"></span>
+    </a>
+    <!-- 모바일 메뉴 내용 -->
+  <div class="mb-wrap">
+    <div class="mb-wrap-main">
+      <ul class="mb-menu">
+        <li>
+          <a href="#visual" class="mb-mainmenu">Home</a>
+        </li>
+        <li>
+          <a href="#profile" class="mb-mainmenu">Profile</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="mb-mainmenu">Portfolio</a>
+        </li>
+        <li>
+          <a href="#skill" class="mb-mainmenu">My Skill</a>
+        </li>
+        <li>
+          <a href="#experience" class="mb-mainmenu">My Experience & Life</a>
+        </li>
+        <li>
+          <a href="#vision" class="mb-mainmenu">Vision</a>
+        </li>
+        <li>
+          <a href="#footer" class="mb-mainmenu">Footer</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 모바일 메뉴 가림막 -->
+  <div class="mb-dim"></div>
     <!-- 위로올리기 -->
     <div class="gotop"></div>
     <!-- 오른쪽 고정 메뉴 -->
@@ -97,6 +131,7 @@
       <a href="images/김우준.pdf"><i class="fa-solid fa-file-pdf"></i><span>PDF</span></a>
       <a href="#"><i class="fa-solid fa-file-contract"></i><span>이력서</span></a>
     </div>
+
     <header class="header">
       <a href="#" class="logo"></a>
       <div class="inner">
@@ -491,7 +526,7 @@
               <div class="item-mack"></div>
               <img src="images/ghibliap.png" alt="" />
               <div class="item-mack2">
-                <a href="https://ehdyd963741.github.io/page-stx/" target="_blank" class="sw-port-link-vue">
+                <a href="https://ehdyd963741.github.io/page-ghibli/" target="_blank" class="sw-port-link-vue">
                   <i class="fab fa-vuejs"></i>Vue.Build</a>
                 <a href="https://github.com/ehdyd963741/vuestx.git" target="_blank" class="sw-port-link-vue-git">
                   <i class="fa-solid fa-code-pull-request"></i>Vue.Code</a>
@@ -629,7 +664,7 @@
             노력을 했는지를 적어 보았습니다.
           </p>
         </div>
-        <div class="experience-container" data-aos="zoom-in" data-aos-delay="1800" data-aos-duration="700" data-aos-offset="400">
+        <div class="experience-container">
           <div class="experience-item">
             <p>JUNE 2012 - 2017</p>
             <h3>대한민국 육군 부사관</h3>
