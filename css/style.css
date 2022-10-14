@@ -1259,6 +1259,7 @@ body {
   display: block;
   height: 650px;
   margin-bottom: 100px;
+  transition: all 0.5s;
 }
 
 .ab-text {
@@ -1266,6 +1267,7 @@ body {
   display: block;
   padding-top: 50px;
   margin-bottom: 50px;
+  transition: all 0.5s;
 }
 
 .ab-text>h3 {
@@ -1274,6 +1276,7 @@ body {
   color: #32333c;
   font-size: 44px;
   font-weight: 700;
+  transition: all 0.5s;
 }
 
 .ab-text>h3::after {
@@ -1284,6 +1287,7 @@ body {
   width: 100px;
   height: 4px;
   background: #fcc52c;
+  transition: all 0.5s;
 }
 
 .ab-text>span {
@@ -1291,6 +1295,7 @@ body {
   display: block;
   text-align: center;
   padding-top: 50px;
+  transition: all 0.5s;
 }
 
 .skill-about-container {
@@ -1298,6 +1303,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  transition: all 0.5s;
 }
 
 .skill-about-container p {
@@ -1306,16 +1312,19 @@ body {
   color: #2b304e;
   padding: 10px 0;
   font-weight: 500;
+  transition: all 0.5s;
 }
 
 .skill-about-container>div {
   position: relative;
   display: block;
   height: 350px;
+  transition: all 0.5s;
 }
 
 .skill-about-container>div>i {
   font-size: 50px;
+  transition: all 0.5s;
 }
 
 .skill-about-container>div>div {
@@ -1325,6 +1334,7 @@ body {
   transform: rotate(90deg);
   transform-origin: 0 0;
   width: 350px;
+  transition: all 0.5s;
 }
 
 /* experience */
@@ -1333,6 +1343,7 @@ body {
   display: block;
   background: #fcfcfc;
   padding: 120px 0px 150px 0px;
+  transition: all 0.5s;
 }
 
 .experience .inner {
@@ -1374,6 +1385,7 @@ body {
   font-family: "Poppins";
   color: #8a8fa3;
   margin: 0 200px 70px 200px;
+  transition: all 0.5s;
 }
 
 .experience-container {
