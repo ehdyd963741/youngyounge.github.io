@@ -89,40 +89,40 @@
 
 <body>
   <div class="wrap">
-      <!-- 모바일 버튼 -->
+    <!-- 모바일 버튼 -->
     <a href="#" class="mb-bt">
       <span class="line"></span>
     </a>
     <!-- 모바일 메뉴 내용 -->
-  <div class="mb-wrap">
-    <div class="mb-wrap-main">
-      <ul class="mb-menu">
-        <li>
-          <a href="#visual" class="mb-mainmenu">Home</a>
-        </li>
-        <li>
-          <a href="#profile" class="mb-mainmenu">Profile</a>
-        </li>
-        <li>
-          <a href="#portfolio" class="mb-mainmenu">Portfolio</a>
-        </li>
-        <li>
-          <a href="#skill" class="mb-mainmenu">My Skill</a>
-        </li>
-        <li>
-          <a href="#experience" class="mb-mainmenu">My Experience & Life</a>
-        </li>
-        <li>
-          <a href="#vision" class="mb-mainmenu">Vision</a>
-        </li>
-        <li>
-          <a href="#footer" class="mb-mainmenu">Footer</a>
-        </li>
-      </ul>
+    <div class="mb-wrap">
+      <div class="mb-wrap-main">
+        <ul class="mb-menu">
+          <li>
+            <a href="#visual" class="mb-mainmenu">Home</a>
+          </li>
+          <li>
+            <a href="#profile" class="mb-mainmenu">Profile</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="mb-mainmenu">Portfolio</a>
+          </li>
+          <li>
+            <a href="#skill" class="mb-mainmenu">My Skill</a>
+          </li>
+          <li>
+            <a href="#experience" class="mb-mainmenu">My Experience & Life</a>
+          </li>
+          <li>
+            <a href="#vision" class="mb-mainmenu">Vision</a>
+          </li>
+          <li>
+            <a href="#footer" class="mb-mainmenu">Footer</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <!-- 모바일 메뉴 가림막 -->
-  <div class="mb-dim"></div>
+    <!-- 모바일 메뉴 가림막 -->
+    <div class="mb-dim"></div>
     <!-- 위로올리기 -->
     <div class="gotop"></div>
     <!-- 오른쪽 고정 메뉴 -->
@@ -193,8 +193,7 @@
                   코딩의 세계에 빠져들고부터 배우는것이 매일매일 새롭고,<br />
                   즐거운 마음으로 숙련된 FrontEnd 개발자가 되기위해 노력이라는
                   <br />
-                  비를 뿌리며 새싹에서 나무가 되듯이 결실의 열매가 맺히는 것이
-                  목표입니다.
+                  비를 뿌리며 새싹에서 나무가 되듯이 결실의 열매를 맺어가겠습니다.
                 </p>
                 <div class="profile-bt">
                   <a href="#portfolio">
@@ -234,7 +233,7 @@
 
     <section class="portfolio" id="portfolio">
       <div class="inner">
-        <!-- canvas -->
+
         <div id="scene" class="business_canvas">
           <div class="business_bg" data-depth="0.5">
             <span></span>
@@ -251,22 +250,30 @@
           <h2>ProJect Works</h2>
           <span></span>
         </div>
+        <!-- 문제생긴 녀석 -->
 
         <div class="persnoal-top" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="500">
-          <h4 data-aos="fade-left" data-aos-delay="800" data-aos-duration="700" data-aos-offset="500" >
-            Personal Work</h4>
-          <a href="#" class="pr-img1"></a>
-          <a href="https://ehdyd963741.github.io/Suzuki/" target="_blank" class="pr-img2"></a>
-          <div class="pr-textbox" data-aos="fade-left" data-aos-delay="1200" data-aos-duration="700" data-aos-offset="400" >
+          <h4 data-aos="fade-left" data-aos-delay="800" data-aos-duration="700" data-aos-offset="500">Personal Work</h4>
+          <div class="persnoal-img-box">
+            <a href="#" class="pr-img1"></a>
+            <a href="https://ehdyd963741.github.io/Suzuki/" target="_blank" class="pr-img2"></a>
+          </div>
+          <div class="pr-textbox clearfix" data-aos="fade-left" data-aos-delay="1200" data-aos-duration="700"
+            data-aos-offset="400">
             <ul>
               <p>Persnoal Work List</p>
               <li><a href="#">정육각(PC/Github)</a></li>
               <li><a href="#">스즈키(PC/Mobile/Github)</a></li>
             </ul>
           </div>
-          <div class="study-midle">
+        </div>
+
+
+        <div class="study-midle-all">
+          <div class="study-midle clearfix">
             <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500">StudyWork</h4>
-            <div class="slide-menu" data-aos="fade-left" data-aos-delay="1200" data-aos-duration="700" data-aos-offset="400">
+            <div class="slide-menu" data-aos="fade-left" data-aos-delay="1200" data-aos-duration="700"
+              data-aos-offset="400">
               <ul class="st-list">
                 <p>Study List</p>
                 <li>
@@ -286,100 +293,99 @@
                 </li>
               </ul>
             </div>
-
-            <!-- 스와이퍼 슬라이드 연동하기 -->
-            <div class="swiper-inner" data-aos="fade-down" data-aos-delay="1200" data-aos-duration="700" data-aos-offset="400">
-              <div class="swiper-container sw-port-cube">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide slide-cube-item">
-                    <div class="sw-port-thumb">
-                      <a href="https://ehdyd963741.github.io/page-geoje/" target="_blank">
-                        <img src="images/gejecube.png" alt="#" />
-                      </a>
-                      <div class="sw-port-link">
-                        <a href="https://ehdyd963741.github.io/geojeyouth-2-/" target="_blank"
-                          class="sw-port-link-work"><i class="fa-solid fa-file-code"></i>Work</a>
-                        <a href="https://github.com/ehdyd963741/geojeyouth-2-.git" target="_blank"
-                          class="sw-port-link-git"><i class="fab fa-github"></i>Git.code</a>
-                        <a href="https://ehdyd963741.github.io/page-geoje/" target="_blank" class="sw-port-link-vue"><i
-                            class="fab fa-vuejs"></i>Vue.Build</a>
-                        <a href="https://github.com/ehdyd963741/vue-geoje.git" target="_blank"
-                          class="sw-port-link-vue-git"><i class="fa-solid fa-code-pull-request"></i>Vue.Code</a>
-                        <a href="https://geojeyouth.com/web/" target="_blank" class="sw-port-link-origin"><i
-                            class="fa-regular fa-file-lines"></i>Origin</a>
-                      </div>
+          </div>
+          <div class="swiper-inner clearfix" data-aos="fade-down" data-aos-delay="1200" data-aos-duration="700"
+            data-aos-offset="400">
+            <div class="swiper-container sw-port-cube">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide-cube-item">
+                  <div class="sw-port-thumb">
+                    <a href="https://ehdyd963741.github.io/page-geoje/" target="_blank">
+                      <img src="images/gejecube.png" alt="#" />
+                    </a>
+                    <div class="sw-port-link">
+                      <a href="https://ehdyd963741.github.io/geojeyouth-2-/" target="_blank"
+                        class="sw-port-link-work"><i class="fa-solid fa-file-code"></i>Work</a>
+                      <a href="https://github.com/ehdyd963741/geojeyouth-2-.git" target="_blank"
+                        class="sw-port-link-git"><i class="fab fa-github"></i>Git.code</a>
+                      <a href="https://ehdyd963741.github.io/page-geoje/" target="_blank" class="sw-port-link-vue"><i
+                          class="fab fa-vuejs"></i>Vue.Build</a>
+                      <a href="https://github.com/ehdyd963741/vue-geoje.git" target="_blank"
+                        class="sw-port-link-vue-git"><i class="fa-solid fa-code-pull-request"></i>Vue.Code</a>
+                      <a href="https://geojeyouth.com/web/" target="_blank" class="sw-port-link-origin"><i
+                          class="fa-regular fa-file-lines"></i>Origin</a>
                     </div>
                   </div>
-                  <div class="swiper-slide slide-cube-item">
-                    <div class="sw-port-thumb">
-                      <a href="https://ehdyd963741.github.io/page-mashi/" target="_blank">
-                        <img src="images/masicube.png" alt="#" />
-                      </a>
-                      <div class="sw-port-link">
-                        <a href="https://ehdyd963741.github.io/Masigray/" target="_blank" class="sw-port-link-work"><i
-                            class="fa-solid fa-file-code"></i>Work</a>
-                        <a href="https://github.com/ehdyd963741/Masigray.git" target="_blank"
-                          class="sw-port-link-git"><i class="fab fa-github"></i>Git.code</a>
-                        <a href="https://ehdyd963741.github.io/page-mashi/ " target="_blank" class="sw-port-link-vue"><i
-                            class="fab fa-vuejs"></i>Vue.Build</a>
-                        <a href="https://github.com/ehdyd963741/vuemasi.git" target="_blank"
-                          class="sw-port-link-vue-git"><i class="fa-solid fa-code-pull-request"></i>Vue.Code</a>
-                        <a href="https://www.masigray.com:5021/main/main.asp" target="_blank"
-                          class="sw-port-link-origin"><i class="fa-regular fa-file-lines"></i>Origin</a>
-                      </div>
+                </div>
+                <div class="swiper-slide slide-cube-item">
+                  <div class="sw-port-thumb">
+                    <a href="https://ehdyd963741.github.io/page-mashi/" target="_blank">
+                      <img src="images/masicube.png" alt="#" />
+                    </a>
+                    <div class="sw-port-link">
+                      <a href="https://ehdyd963741.github.io/Masigray/" target="_blank" class="sw-port-link-work"><i
+                          class="fa-solid fa-file-code"></i>Work</a>
+                      <a href="https://github.com/ehdyd963741/Masigray.git" target="_blank" class="sw-port-link-git"><i
+                          class="fab fa-github"></i>Git.code</a>
+                      <a href="https://ehdyd963741.github.io/page-mashi/ " target="_blank" class="sw-port-link-vue"><i
+                          class="fab fa-vuejs"></i>Vue.Build</a>
+                      <a href="https://github.com/ehdyd963741/vuemasi.git" target="_blank"
+                        class="sw-port-link-vue-git"><i class="fa-solid fa-code-pull-request"></i>Vue.Code</a>
+                      <a href="https://www.masigray.com:5021/main/main.asp" target="_blank"
+                        class="sw-port-link-origin"><i class="fa-regular fa-file-lines"></i>Origin</a>
                     </div>
                   </div>
-                  <div class="swiper-slide slide-cube-item">
-                    <div class="sw-port-thumb">
-                      <a href="https://ehdyd963741.github.io/page-noelo/" target="_blank">
-                        <img src="images/noelocube.png" alt="#" />
-                      </a>
-                      <div class="sw-port-link">
-                        <a href="https://ehdyd963741.github.io/noelohills/" target="_blank" class="sw-port-link-work"><i
-                            class="fa-solid fa-file-code"></i>Work</a>
-                        <a href="https://github.com/ehdyd963741/noelohills.git" target="_blank"
-                          class="sw-port-link-git"><i class="fab fa-github"></i>Git.code</a>
-                        <a href="https://ehdyd963741.github.io/page-noelo/" target="_blank" class="sw-port-link-vue"><i
-                            class="fab fa-vuejs"></i>Vue.Build</a>
-                        <a href="https://github.com/ehdyd963741/vuenoelo.git" target="_blank"
-                          class="sw-port-link-vue-git"><i class="fa-solid fa-code-pull-request"></i>Vue.Code</a>
-                        <a href="https://noelohills.com/" target="_blank" class="sw-port-link-origin"><i
-                            class="fa-regular fa-file-lines"></i>Origin</a>
-                      </div>
+                </div>
+                <div class="swiper-slide slide-cube-item">
+                  <div class="sw-port-thumb">
+                    <a href="https://ehdyd963741.github.io/page-noelo/" target="_blank">
+                      <img src="images/noelocube.png" alt="#" />
+                    </a>
+                    <div class="sw-port-link">
+                      <a href="https://ehdyd963741.github.io/noelohills/" target="_blank" class="sw-port-link-work"><i
+                          class="fa-solid fa-file-code"></i>Work</a>
+                      <a href="https://github.com/ehdyd963741/noelohills.git" target="_blank"
+                        class="sw-port-link-git"><i class="fab fa-github"></i>Git.code</a>
+                      <a href="https://ehdyd963741.github.io/page-noelo/" target="_blank" class="sw-port-link-vue"><i
+                          class="fab fa-vuejs"></i>Vue.Build</a>
+                      <a href="https://github.com/ehdyd963741/vuenoelo.git" target="_blank"
+                        class="sw-port-link-vue-git"><i class="fa-solid fa-code-pull-request"></i>Vue.Code</a>
+                      <a href="https://noelohills.com/" target="_blank" class="sw-port-link-origin"><i
+                          class="fa-regular fa-file-lines"></i>Origin</a>
                     </div>
                   </div>
-                  <div class="swiper-slide slide-cube-item">
-                    <div class="sw-port-thumb">
-                      <a href="https://ehdyd963741.github.io/page-stx/" target="_blank">
-                        <img src="images/stxcube.png" alt="#" />
-                      </a>
-                      <div class="sw-port-link">
-                        <a href="https://ehdyd963741.github.io/STXconst/" target="_blank" class="sw-port-link-work"><i
-                            class="fa-solid fa-file-code"></i>Work</a>
-                        <a href="https://github.com/ehdyd963741/STXconst.git" target="_blank"
-                          class="sw-port-link-git"><i class="fab fa-github"></i>Git.code</a>
-                        <a href="https://ehdyd963741.github.io/page-stx/" target="_blank" class="sw-port-link-vue"><i
-                            class="fab fa-vuejs"></i>Vue.Build</a>
-                        <a href="https://github.com/ehdyd963741/vuestx.git" target="_blank"
-                          class="sw-port-link-vue-git"><i class="fa-solid fa-code-pull-request"></i>Vue.Code</a>
-                        <a href="http://www.stxconst.co.kr/" target="_blank" class="sw-port-link-origin"><i
-                            class="fa-regular fa-file-lines"></i>Origin</a>
-                      </div>
+                </div>
+                <div class="swiper-slide slide-cube-item">
+                  <div class="sw-port-thumb">
+                    <a href="https://ehdyd963741.github.io/page-stx/" target="_blank">
+                      <img src="images/stxcube.png" alt="#" />
+                    </a>
+                    <div class="sw-port-link">
+                      <a href="https://ehdyd963741.github.io/STXconst/" target="_blank" class="sw-port-link-work"><i
+                          class="fa-solid fa-file-code"></i>Work</a>
+                      <a href="https://github.com/ehdyd963741/STXconst.git" target="_blank" class="sw-port-link-git"><i
+                          class="fab fa-github"></i>Git.code</a>
+                      <a href="https://ehdyd963741.github.io/page-stx/" target="_blank" class="sw-port-link-vue"><i
+                          class="fab fa-vuejs"></i>Vue.Build</a>
+                      <a href="https://github.com/ehdyd963741/vuestx.git" target="_blank"
+                        class="sw-port-link-vue-git"><i class="fa-solid fa-code-pull-request"></i>Vue.Code</a>
+                      <a href="http://www.stxconst.co.kr/" target="_blank" class="sw-port-link-origin"><i
+                          class="fa-regular fa-file-lines"></i>Origin</a>
                     </div>
                   </div>
-                  <div class="swiper-slide slide-cube-item">
-                    <div class="sw-port-thumb">
-                      <a href="https://ehdyd963741.github.io/k-water/" target="_blank">
-                        <img src="images/k-watercube.png" alt="#" />
-                      </a>
-                      <div class="sw-port-link">
-                        <a href="https://ehdyd963741.github.io/k-water/" target="_blank" class="sw-port-link-work"><i
-                            class="fa-solid fa-file-code"></i>Work</a>
-                        <a href="https://github.com/ehdyd963741/k-water.git" target="_blank" class="sw-port-link-git"><i
-                            class="fab fa-github"></i>Git.code</a>
-                        <a href="https://www.kwater.or.kr/main.do?s_mid=1" target="_blank"
-                          class="sw-port-link-origin"><i class="fa-regular fa-file-lines"></i>Origin</a>
-                      </div>
+                </div>
+                <div class="swiper-slide slide-cube-item">
+                  <div class="sw-port-thumb">
+                    <a href="https://ehdyd963741.github.io/k-water/" target="_blank">
+                      <img src="images/k-watercube.png" alt="#" />
+                    </a>
+                    <div class="sw-port-link">
+                      <a href="https://ehdyd963741.github.io/k-water/" target="_blank" class="sw-port-link-work"><i
+                          class="fa-solid fa-file-code"></i>Work</a>
+                      <a href="https://github.com/ehdyd963741/k-water.git" target="_blank" class="sw-port-link-git"><i
+                          class="fab fa-github"></i>Git.code</a>
+                      <a href="https://www.kwater.or.kr/main.do?s_mid=1" target="_blank" class="sw-port-link-origin"><i
+                          class="fa-regular fa-file-lines"></i>Origin</a>
                     </div>
                   </div>
                 </div>
@@ -571,7 +577,8 @@
       <div class="inner">
         <div class="ab-text">
           <h3 data-aos="fade-up" data-aos-delay="1200" data-aos-duration="700" data-aos-offset="400">My Skills</h3>
-          <span data-aos="fade-up" data-aos-delay="1600" data-aos-duration="700" data-aos-offset="400">제가 사용한 Skill 들입니다.
+          <span data-aos="fade-up" data-aos-delay="1600" data-aos-duration="700" data-aos-offset="400">제가 사용한 Skill
+            들입니다.
             <strong style="color: #2b304e; font-weight: 500; font-size: 18px">아직은 미약한 부분이 많은 Skill </strong>이지만 항상 갈고 닦아
             <strong style="color: #2b304e; font-weight: 500; font-size: 18px">100%</strong>를 채울수 있도록 노력하는 현재 진행형
             입니다.</span>
@@ -656,12 +663,12 @@
     <section class="experience" id="experience">
       <div class="inner">
         <div class="experience-title-box">
-          <h2 data-aos="fade-up" data-aos-delay="1200" data-aos-duration="700" data-aos-offset="400">Work Experiences</h2>
+          <h2 data-aos="fade-up" data-aos-delay="1200" data-aos-duration="700" data-aos-offset="400">Work Experiences
+          </h2>
           <p data-aos="fade-up" data-aos-delay="1500" data-aos-duration="700" data-aos-offset="400">
             10년간의 직장을 다니며 쌓인 여러 경험들 입니다.<br />
-            이러한 경험들을 겪으며 김우준 이란 어떠한 사람인지, 직장내
-            동료들과 잘 어울리는 사람인지, 문제점과 문제점 개선을 위하여 어떤
-            노력을 했는지를 적어 보았습니다.
+            이러한 경험들을 통해 <strong style="color:#2b304e; font-weight:800;">'김우준'</strong> 이 어떤 사람인지 <br> 직장 내 동료들과 잘 어울릴
+            사람인지, 문제점 개선을 위하여 어떤 노력을 했는지를 적어 보았습니다.
           </p>
         </div>
         <div class="experience-container">
@@ -671,12 +678,12 @@
             <p>28사단 80연대.</p>
             <ul class="experience-item-list">
               <li style="font-weight: 500; font-size: 18px; padding: 10px 0">
-                첫번째 직장으로써<strong style="
+                첫번째 직장으로<br><strong style="
                       font-weight: 600;
                       font-size: 18px;
                       text-decoration: underline;
                       color: #2b304e;
-                    ">인생에서의 가치관</strong>을 배운 직장입니다.
+                    ">인생에 있어서의 가치관</strong> 을 <br>배운 직장입니다.
               </li>
               <li style="font-weight: 500; font-size: 16px; padding-top: 50px">
                 제가 배운 삶을 바꾸어준<br />
@@ -699,13 +706,13 @@
             <p>건설 기사.</p>
             <ul class="experience-item-list">
               <li style="font-weight: 500; font-size: 18px; padding: 10px 0">
-                두번째 직장으로써
+                두번째 직장으로<br>
                 <strong style="
                       font-weight: 600;
                       font-size: 18px;
                       text-decoration: underline;
                       color: #2b304e;
-                    ">전문 기술의 필요성</strong>을 알게 되었던 직장입니다.
+                    ">전문 기술의 필요성</strong> 을 <br> 배운 직장입니다.
               </li>
               <li style="font-weight: 500; font-size: 16px; padding-top: 50px">
                 우창 건설에서 배운 가치관을 소개합니다.
@@ -731,13 +738,13 @@
             <p>조립 파트.</p>
             <ul class="experience-item-list">
               <li style="font-weight: 500; font-size: 18px; padding: 10px 0">
-                저에게 어떠한
+                저에게 어떠한<br>
                 <strong style="
                       font-weight: 600;
                       font-size: 18px;
                       text-decoration: underline;
                       color: #2b304e;
-                    ">일 을 하는것이 중요한가</strong>를 일깨워준 직장입니다.
+                    ">일 을 하는것이 중요한가</strong> 를<br> 일깨워준 직장입니다.
               </li>
               <li style="font-weight: 500; font-size: 16px; padding-top: 50px">
                 태광 공업사에서 배운것을 소개합니다.
@@ -767,7 +774,8 @@
           <h2 data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" data-aos-offset="400">My Life Style</h2>
         </div>
         <div class="life-container">
-          <div class="life-item" data-aos="fade-right" data-aos-delay="1500" data-aos-duration="700" data-aos-offset="400">
+          <div class="life-item" data-aos="fade-right" data-aos-delay="1500" data-aos-duration="700"
+            data-aos-offset="400">
             <div class="life-item-study">
               <img src="images/studycaffe.jpg" alt="" />
             </div>
@@ -781,7 +789,8 @@
               <p>평소 Publishing 및 Vue , JavaScript를 공부합니다</p>
             </div>
           </div>
-          <div class="life-item" data-aos="fade-right" data-aos-delay="2000" data-aos-duration="700" data-aos-offset="400">
+          <div class="life-item" data-aos="fade-right" data-aos-delay="2000" data-aos-duration="700"
+            data-aos-offset="400">
             <div class="life-item-tiproad">
               <img class="triproad" src="images/triproad.jpg" alt="" />
             </div>
@@ -795,7 +804,8 @@
               <p>또한 가족들과의 여행도 자주 하는 편입니다</p>
             </div>
           </div>
-          <div class="life-item" data-aos="fade-right" data-aos-delay="2500" data-aos-duration="700" data-aos-offset="400">
+          <div class="life-item" data-aos="fade-right" data-aos-delay="2500" data-aos-duration="700"
+            data-aos-offset="400">
             <div class="life-item-drow">
               <img class="drow" src="images/drow.jpg" alt="" />
             </div>
@@ -812,7 +822,8 @@
       </div>
     </section>
 
-    <section class="vision" id="vision" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700" data-aos-offset="400">
+    <section class="vision" id="vision" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700"
+      data-aos-offset="400">
       <div class="inner">
         <div class="vision-t">
           <h2>N's Years Vision</h2>
