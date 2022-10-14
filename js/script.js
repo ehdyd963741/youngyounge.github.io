@@ -1,4 +1,8 @@
 window.onload = function () {
+  window.addEventListener("resize", () => {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  });
   // AOS
   // AOS.init();
   // 모바일 메뉴 버튼

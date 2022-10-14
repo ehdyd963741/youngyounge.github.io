@@ -124,23 +124,23 @@ body {
   border: 2px solid #000;
 }
 
-.fix-menu a:hover>i {
+.fix-menu a:hover > i {
   color: #ffff;
 }
 
-.fix-menu a:hover>span {
+.fix-menu a:hover > span {
   color: #fff;
   font-weight: 700;
 }
 
-.fix-menu a>i {
+.fix-menu a > i {
   display: inline-block;
   font-size: 16px;
   color: #8a8fa3;
   padding-right: 3px;
 }
 
-.fix-menu a>span {
+.fix-menu a > span {
   color: #8a8fa3;
 }
 
@@ -240,7 +240,7 @@ body {
   display: block;
 }
 
-.mb-menu>li {
+.mb-menu > li {
   position: relative;
   display: block;
   background: #ffff;
@@ -310,7 +310,7 @@ body {
   transition: all 0.3s;
 }
 
-.gnb>li {
+.gnb > li {
   position: relative;
   display: inline-block;
   white-space: nowrap;
@@ -318,7 +318,7 @@ body {
   z-index: 99999;
 }
 
-.gnb>li>a {
+.gnb > li > a {
   display: block;
   line-height: 78px;
   font-size: 16px;
@@ -374,7 +374,7 @@ body {
   transition: all 0.5s;
 }
 
-.visual-left>img {
+.visual-left > img {
   position: absolute;
   display: block;
   /* transform: scaleX(-1); */
@@ -413,7 +413,7 @@ body {
   transition: all 0.5s;
 }
 
-.visual-right-textbox>p {
+.visual-right-textbox > p {
   font-size: 14px;
   font-weight: 500;
   color: #2b304e;
@@ -421,13 +421,13 @@ body {
   letter-spacing: 6;
 }
 
-.visual-right-textbox>h5 {
+.visual-right-textbox > h5 {
   color: #2b304e;
   font-size: 50px;
   font-weight: 500;
 }
 
-.visual-right-textbox>h3 {
+.visual-right-textbox > h3 {
   color: #2b304e;
   font-size: 50px;
   font-weight: 700;
@@ -524,7 +524,7 @@ body {
   opacity: 1;
 }
 
-.profile-left>span {
+.profile-left > span {
   position: relative;
   display: block;
   font-size: 45px;
@@ -538,7 +538,7 @@ body {
   transition: all 0.3s;
 }
 
-.profile-left>span::after {
+.profile-left > span::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -558,7 +558,6 @@ body {
 .profile-center-textbox {
   position: relative;
   display: block;
-
 }
 
 .profile-center-textbox ul {
@@ -578,7 +577,7 @@ body {
   color: #8a8fa3;
 }
 
-.profile-center-textbox>div>p {
+.profile-center-textbox > div > p {
   font-size: 16px;
   font-family: "Poppins";
   font-weight: 700;
@@ -588,7 +587,7 @@ body {
   transition: all 0.3s;
 }
 
-.profile-center-textbox>div>span {
+.profile-center-textbox > div > span {
   font-size: 20px;
   font-weight: 500;
   color: #32333c;
@@ -711,7 +710,7 @@ body {
   margin-bottom: 40px;
 }
 
-.portfolio-title>h2 {
+.portfolio-title > h2 {
   position: relative;
   display: inline-block;
   text-align: center;
@@ -723,7 +722,7 @@ body {
   padding-bottom: 40px;
 }
 
-.portfolio-title>span {
+.portfolio-title > span {
   text-align: center;
   color: #8a8fa3;
   z-index: 99;
@@ -798,7 +797,7 @@ body {
   height: 700px;
 }
 
-.persnoal-top>h4 {
+.persnoal-top > h4 {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -852,12 +851,12 @@ body {
   right: 18%;
 }
 
-.pr-textbox>ul {
+.pr-textbox > ul {
   position: relative;
   float: right;
 }
 
-.pr-textbox>ul>p::after {
+.pr-textbox > ul > p::after {
   content: "";
   position: absolute;
   left: -10px;
@@ -868,12 +867,12 @@ body {
   z-index: 99;
 }
 
-.pr-textbox>ul>li {
+.pr-textbox > ul > li {
   padding: 10px 0;
   padding-left: 20px;
 }
 
-.pr-textbox>ul>li>a {
+.pr-textbox > ul > li > a {
   font-size: 16px;
 }
 
@@ -892,7 +891,7 @@ body {
   left: 10%;
 }
 
-.study-midle>h4 {
+.study-midle > h4 {
   position: relative;
   display: inline-block;
   left: 40%;
@@ -981,7 +980,7 @@ body {
   opacity: 1;
 }
 
-.slide-cube-item>a>img {
+.slide-cube-item > a > img {
   display: block;
   width: 500px;
   height: 400px;
@@ -1000,7 +999,7 @@ body {
   left: 50%;
 }
 
-.st-list>p {
+.st-list > p {
   color: #2b304e;
   width: 400px;
   padding-left: 20px;
@@ -1008,7 +1007,7 @@ body {
   font-weight: 700;
 }
 
-.st-list>p::after {
+.st-list > p::after {
   content: "";
   position: absolute;
   left: 10px;
@@ -1019,7 +1018,7 @@ body {
   z-index: 99;
 }
 
-.st-list>li {
+.st-list > li {
   position: relative;
   display: block;
   text-align: left;
@@ -1027,7 +1026,7 @@ body {
   padding-bottom: 10px;
 }
 
-.st-list>li>a {
+.st-list > li > a {
   position: relative;
   display: inline-block;
   margin: 0 20px;
@@ -1035,7 +1034,7 @@ body {
   color: #2b304e;
 }
 
-.slide-menu .st-list>li>a::after {
+.slide-menu .st-list > li > a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1046,7 +1045,7 @@ body {
   transition: all 0.5s;
 }
 
-.slide-menu .st-list>li>a.slide-menu-active::after {
+.slide-menu .st-list > li > a.slide-menu-active::after {
   width: 100%;
 }
 
@@ -1062,7 +1061,7 @@ body {
   display: block;
 }
 
-.allproject-title-box>h2 {
+.allproject-title-box > h2 {
   position: relative;
   font-size: 30px;
   font-weight: 700;
@@ -1073,7 +1072,7 @@ body {
   transition: all 0.3s;
 }
 
-.allproject-title-box>h2::after {
+.allproject-title-box > h2::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1083,7 +1082,7 @@ body {
   background: #fcc52c;
 }
 
-.allproject-title-box>p {
+.allproject-title-box > p {
   text-align: center;
   color: #022144;
   padding-bottom: 35px;
@@ -1098,14 +1097,14 @@ body {
   /* margin: 30px auto; */
 }
 
-.allproject-menubar>button {
+.allproject-menubar > button {
   border: none;
   cursor: pointer;
   background: none;
   margin-bottom: 35px;
 }
 
-.allproject-menubar>button>p {
+.allproject-menubar > button > p {
   position: relative;
   display: inline-block;
   padding: 10px 10px;
@@ -1121,7 +1120,7 @@ body {
   transition: all 0.3s;
 }
 
-.allproject-menubar>button>p:hover {
+.allproject-menubar > button > p:hover {
   color: #fcc52c;
   font-weight: 700;
   border: 2.5px solid #fcc52c;
@@ -1156,7 +1155,7 @@ body {
   box-shadow: 0px 8px 12px 0px rgb(0 12 29 / 8%);
 }
 
-.allproject-item>img {
+.allproject-item > img {
   width: 280px;
   height: 260px;
   border-radius: 20px 0px 20px 0px;
@@ -1190,7 +1189,7 @@ body {
   overflow: hidden;
 }
 
-.item-mack2>a {
+.item-mack2 > a {
   display: inline-block;
   border: 1px solid #ffff;
   border-radius: 20px;
@@ -1202,7 +1201,7 @@ body {
   margin-right: 1px;
 }
 
-.item-mack2>a:hover {
+.item-mack2 > a:hover {
   transform: scale(1.1);
   font-weight: 600;
   background: rgba(0, 0, 0, 0.9);
@@ -1210,7 +1209,8 @@ body {
   color: #fcc52c;
 }
 
-.item-mack2>a>i {}
+.item-mack2 > a > i {
+}
 
 .allproject-item:hover .item-mack {
   transform: scale(1.1);
@@ -1231,7 +1231,7 @@ body {
   display: block;
 }
 
-.skill>.skill-back {
+.skill > .skill-back {
   position: absolute;
   top: 0;
   left: 0;
@@ -1242,7 +1242,7 @@ body {
   background-size: cover;
 }
 
-.skill>.skill-back2 {
+.skill > .skill-back2 {
   position: absolute;
   bottom: -100px;
   right: 0;
@@ -1270,7 +1270,7 @@ body {
   transition: all 0.5s;
 }
 
-.ab-text>h3 {
+.ab-text > h3 {
   position: relative;
   text-align: center;
   color: #32333c;
@@ -1279,7 +1279,7 @@ body {
   transition: all 0.5s;
 }
 
-.ab-text>h3::after {
+.ab-text > h3::after {
   content: "";
   position: absolute;
   bottom: -15px;
@@ -1290,7 +1290,7 @@ body {
   transition: all 0.5s;
 }
 
-.ab-text>span {
+.ab-text > span {
   position: relative;
   display: block;
   text-align: center;
@@ -1315,19 +1315,19 @@ body {
   transition: all 0.5s;
 }
 
-.skill-about-container>div {
+.skill-about-container > div {
   position: relative;
   display: block;
   height: 350px;
   transition: all 0.5s;
 }
 
-.skill-about-container>div>i {
+.skill-about-container > div > i {
   font-size: 50px;
   transition: all 0.5s;
 }
 
-.skill-about-container>div>div {
+.skill-about-container > div > div {
   position: absolute;
   left: calc(50% + 10px);
   top: 100px;
@@ -1356,7 +1356,7 @@ body {
   display: block;
 }
 
-.experience-title-box>h2 {
+.experience-title-box > h2 {
   position: relative;
   font-size: 45px;
   font-weight: 700;
@@ -1368,7 +1368,7 @@ body {
   transition: all 0.3s;
 }
 
-.experience-title-box>h2::after {
+.experience-title-box > h2::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1378,7 +1378,7 @@ body {
   background: #fcc52c;
 }
 
-.experience-title-box>p {
+.experience-title-box > p {
   text-align: center;
   font-weight: 600;
   font-size: 18px;
@@ -1409,7 +1409,6 @@ body {
   transition: all 0.5s;
 }
 
-
 /* 나이스 스크롤 */
 .nicescroll-rails .nicescroll-rails-vr {
   position: relative;
@@ -1424,7 +1423,7 @@ body {
   border-right: 1px solid #edecec;
 }
 
-.experience-item>p {
+.experience-item > p {
   font-size: 15px;
   line-height: 28px;
   text-transform: uppercase;
@@ -1433,21 +1432,21 @@ body {
   transition: all 0.3s;
 }
 
-.experience-item>h3 {
+.experience-item > h3 {
   color: #32333c;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-.experience-item>.experience-item-list {
+.experience-item > .experience-item-list {
   max-width: 770px;
   width: 100%;
   height: 300px;
   margin: 0 auto 80px;
 }
 
-.experience-item-list>li {
+.experience-item-list > li {
   font-size: 12px;
   font-weight: 300;
   color: #8a8fa3;
@@ -1469,12 +1468,16 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
+  transition: all 0.5s;
 }
 
 .life-item {
-  width: 30%;
+  position: relative;
+  display: block;
   height: 600px;
   background: #fff;
   padding-bottom: 75px;
@@ -1482,47 +1485,73 @@ body {
   transition: all 0.5s;
 }
 
-.life-item>div>img {
-  width: 360px;
-  height: 240px;
+.life-item > img {
+  display: block;
+  width: 18.75vw;
+  height: 245px;
   box-shadow: 0px 4px 6px 0px rgb(0 12 29 / 8%);
+  opacity: 1;
+  transition: all 0.5s;
 }
 
 .life-item .life-item-study {
+  position: absolute;
+  display: block;
+  width: 18.75vw;
+  height: 245px;
+  opacity: 0;
+  visibility: hidden;
   background: url("../images/studyfrends2.png") no-repeat center;
   background-size: cover;
   transition: all 0.5s;
 }
 
 .life-item .life-item-tiproad {
+  position: absolute;
+  display: block;
+  width: 18.75vw;
+  height: 245px;
+  opacity: 0;
+  visibility: hidden;
   background: url("../images/tripfoodG.gif") no-repeat center;
   background-size: cover;
   transition: all 0.5s;
 }
 
 .life-item .life-item-drow {
+  position: absolute;
+  display: block;
+  width: 18.75vw;
+  height: 245px;
+  opacity: 0;
+  visibility: hidden;
   background: url("../images/painting2.png") no-repeat center;
   background-size: cover;
   transition: all 0.5s;
 }
 
-.life-item:hover img {
-  opacity: 0;
-}
-
-.life-item img {
+.life-item:hover .life-item-study {
   opacity: 1;
-  width: 100%;
-  height: 240px;
-  transition: all 0.5s;
+  visibility: visible;
+}
+.life-item:hover .life-item-tiproad {
+  opacity: 1;
+  visibility: visible;
+}
+.life-item:hover .life-item-drow {
+  opacity: 1;
+  visibility: visible;
 }
 
 .life-item-text {
+  position: relative;
+  display: block;
+  width: 18.75vw;
   padding: 33px 35px;
   white-space: wrap;
 }
 
-.life-item-text>h3 {
+.life-item-text > h3 {
   color: #fec110;
   font: 500 14px/30px "Poppins", sans-serif;
   text-transform: uppercase;
@@ -1531,7 +1560,7 @@ body {
   margin-top: 0;
 }
 
-.life-item-text>h3::after {
+.life-item-text > h3::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -1541,14 +1570,14 @@ body {
   background: #fec110;
 }
 
-.life-item-text>span {
+.life-item-text > span {
   display: block;
   color: #022144;
   font: 400 20px/30px "Poppins", sans-serif;
   padding-bottom: 30px;
 }
 
-.life-item-text>p {
+.life-item-text > p {
   color: #8a8fa3;
   font: 300 16px/28px "Poppins", sans-serif;
   margin-bottom: 10px;
@@ -1559,7 +1588,7 @@ body {
   position: relative;
   display: block;
   background: #fcfcfc;
-  padding-bottom: 100px;
+  padding-bottom: 6.25em;
 }
 
 .vision .inner {
@@ -1574,7 +1603,7 @@ body {
   text-align: center;
 }
 
-.vision-t>h2 {
+.vision-t > h2 {
   color: #2b304e;
   font-size: 44px;
   font-weight: 700;
@@ -1609,7 +1638,7 @@ body {
   align-items: center;
 }
 
-.swiper-slide .visionslide-item>h2 {
+.swiper-slide .visionslide-item > h2 {
   padding-bottom: 40px;
   text-align: center;
   font-size: 36px;
@@ -1659,11 +1688,11 @@ body {
   width: 100%;
 }
 
-.textvision1>ul {
+.textvision1 > ul {
   padding-left: 10%;
 }
 
-.textvision1>ul>h4 {
+.textvision1 > ul > h4 {
   position: relative;
   display: block;
   font-size: 32px;
@@ -1674,7 +1703,7 @@ body {
   z-index: 99;
 }
 
-.textvision1>ul>h5 {
+.textvision1 > ul > h5 {
   position: relative;
   display: block;
   font-size: 32px;
@@ -1686,7 +1715,7 @@ body {
   margin-bottom: 30px;
 }
 
-.textvision1>ul>h5::after {
+.textvision1 > ul > h5::after {
   content: "";
   position: absolute;
   bottom: 10px;
@@ -1697,7 +1726,7 @@ body {
   z-index: -1;
 }
 
-.textvision1>ul>li>p {
+.textvision1 > ul > li > p {
   color: #8a8fa3;
   font-size: 20px;
   font-weight: 500;
@@ -1728,17 +1757,17 @@ body {
   color: #fff;
 }
 
-.contact-box>h2 {
+.contact-box > h2 {
   font-size: 36px;
   font-weight: 500;
   padding-bottom: 25px;
 }
 
-.contact-box>ul>span {
+.contact-box > ul > span {
   padding-right: 20px;
 }
 
-.contact-box>h5 {
+.contact-box > h5 {
   padding-top: 20px;
 }
 
