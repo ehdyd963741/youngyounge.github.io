@@ -245,6 +245,7 @@
     position: absolute;
     display: block;
     top: 140px;
+    overflow-x: hidden;
   }
 
   .visual-right {
@@ -287,6 +288,13 @@
     display: block;
     height: 700px !important;
     background: #fcfcfc;
+  }
+
+  .visual-left > img {
+    position: absolute;
+    display: block;
+    top: 140px;
+    overflow-x: hidden !important;
   }
 
   .visual-right {
@@ -668,6 +676,15 @@
 }
 
 @media screen and (max-width: 400px) {
+  .porfile-left-img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 62.5000vw !important;
+  }
+  .profile-right {
+    margin-top: 20px;
+  }
   .profile-right-education {
     display: block !important;
   }
@@ -995,7 +1012,57 @@
     margin-bottom: 10px !important;
   }
 }
+@media screen and (max-width: 420px) {
+  .allproject-title-item {
+    width: 100%;
+  }
 
+  .allproject-item {
+    position: relative;
+    display: block;
+    border: 1px solid #fcc52c;
+    margin-bottom: 15px !important;
+    border-radius: 20px 0px 20px 0px !important;
+    box-shadow: 0px 8px 12px 0px rgb(0 12 29 / 8%);
+  }
+
+  .allproject-item > img {
+    width: 45.8732vw !important;
+    height: 180px !important;
+  }
+
+  .allproject-title-box > p {
+    text-align: center;
+    color: #022144;
+    padding-bottom: 35px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .item-mack {
+    display: none !important;
+  }
+
+  .item-mack2 {
+    display: none !important;
+  }
+
+  .allproject-menubar {
+    display: inline-block !important;
+  }
+  
+  .allproject-menubar button {
+    margin-bottom: 10px !important;
+  }
+
+  .allproject-menubar button p {
+    margin-right: 3px !important;
+  }
+
+  .allproject-menubar > button > p:hover {
+    transform: scale(1) !important;
+  }
+}
 @media screen and (max-width: 355px) {
   .allproject-title-item {
     width: 100%;
