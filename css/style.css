@@ -1198,6 +1198,7 @@ body {
   color: #ffff;
   background: rgba(0, 0, 0, 0.5);
   transition: all 0.3s;
+  font-size: 1.00em;
   margin-right: 1px;
 }
 
@@ -1208,7 +1209,6 @@ body {
   border: 1.8px solid #fcc52c;
   color: #fcc52c;
 }
-
 
 .allproject-item:hover .item-mack {
   transform: scale(1.1);

@@ -517,7 +517,7 @@
     position: relative;
     display: block;
     padding-top: 50px !important;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
   }
 
   .porfile-left-img {
@@ -572,7 +572,9 @@
   .profile-center-textbox > div > p {
     font-size: 14px !important;
   }
-
+  .profile-right {
+    margin-top: 30px;
+  }
   .profile-right-education {
     display: inline-block;
   }
@@ -680,9 +682,9 @@
     position: relative;
     display: block;
     margin: 0 auto;
-    width: 62.5000vw !important;
+    width: 62.5vw !important;
   }
-  
+
   .profile-bt {
     margin-left: 13px !important;
   }
@@ -1007,14 +1009,58 @@
   }
 
   .item-mack2 {
-    display: none !important;
+    display: block !important;
   }
 
   .allproject-menubar > button {
     margin-bottom: 10px !important;
   }
+  /* 막 */
+  .item-mack2 {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 27%;
+    content: "";
+    width: 16.6667vw;
+    height: 0px;
+    border-radius: 0px 0px 20px 0px;
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 25px;
+    opacity: 0;
+    transition: all 0.3s;
+    overflow: hidden;
+  }
+
+  .item-mack2 > a {
+    display: inline-block;
+    border: 1px solid #ffff;
+    border-radius: 20px;
+    width: 15vw;
+    height: 28px;
+    margin-bottom: 10px;
+    color: #ffff;
+    font-size: 1em;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+    margin-right: 1px;
+  }
+
+  .allproject-item:hover .item-mack2 {
+    opacity: 1;
+    height: 170px;
+    z-index: 999;
+  }
 }
+
 @media screen and (max-width: 420px) {
+  .allproject-title-box {
+    padding-top: 25px;
+  }
+  .allproject-title-box > h2 {
+    margin-top: 15px !important;
+  }
   .allproject-title-item {
     width: 100%;
   }
@@ -1037,7 +1083,7 @@
     text-align: center;
     color: #022144;
     padding-bottom: 35px;
-    font-size: 16px;
+    font-size: 0.81em;
     font-weight: 500;
   }
 
@@ -1046,13 +1092,13 @@
   }
 
   .item-mack2 {
-    display: none !important;
+    display: block !important;
   }
 
   .allproject-menubar {
     display: inline-block !important;
   }
-  
+
   .allproject-menubar button {
     margin-bottom: 10px !important;
   }
@@ -1064,48 +1110,42 @@
   .allproject-menubar > button > p:hover {
     transform: scale(1) !important;
   }
-}
-@media screen and (max-width: 355px) {
-  .allproject-title-item {
-    width: 100%;
-  }
-
-  .allproject-item {
-    position: relative;
-    display: block;
-    border: 1px solid #fcc52c;
-    margin-bottom: 15px !important;
-    border-radius: 20px 0px 20px 0px !important;
-    box-shadow: 0px 8px 12px 0px rgb(0 12 29 / 8%);
-  }
-
-  .allproject-item > img {
-    width: 45.8732vw !important;
-    height: 180px !important;
-  }
-
-  .item-mack {
-    display: none !important;
-  }
-
+  /* 막 */
   .item-mack2 {
-    display: none !important;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 27%;
+    content: "";
+    width: 66.6667vw;
+    height: 0px;
+    border-radius: 0px 0px 20px 0px;
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 30px;
+    opacity: 0;
+    transition: all 0.3s;
+    overflow: hidden;
   }
 
-  .allproject-menubar {
-    display: inline-block !important;
+  .item-mack2 > a {
+    display: block;
+    border: 1px solid #ffff;
+    border-radius: 20px;
+    width: 21.4286vw;
+    height: 20px;
+    margin-bottom: 5px;
+    color: #ffff;
+    font-size: 0.75em;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+    margin-right: 1px;
   }
 
-  .allproject-menubar button {
-    margin-bottom: 10px !important;
-  }
-
-  .allproject-menubar button p {
-    margin-right: 3px !important;
-  }
-
-  .allproject-menubar > button > p:hover {
-    transform: scale(1) !important;
+  .allproject-item:hover .item-mack2 {
+    opacity: 1;
+    height: 170px;
+    z-index: 999;
   }
 }
 
@@ -1173,7 +1213,43 @@
     transition: all 0.5s;
   }
 }
+@media screen and (max-width: 500px) {
+  .experience {
+    padding: 50px 0px 50px 0px !important;
+  }
 
+  .experience-title-box > h2 {
+    font-size: 30px;
+  }
+
+  .experience-title-box > p {
+    margin: 0 0 0 0 !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .experience-item {
+    width: 100% !important;
+    height: 18.75em !important;
+    border-top: 0.06em solid #edecec;
+    border-bottom: 0.06em solid #edecec;
+    border-left: 0.06em solid #edecec;
+    border-right: 0.06em solid #edecec;
+    background: #fff;
+    padding: 3.75em 2.5em 0em 3.75em !important;
+    margin-left: 20px !important;
+    margin-right: 50px !important;
+    flex-wrap: wrap;
+    transition: all 0.5s;
+  }
+
+  .experience-item:last-child {
+    margin-right: 50px;
+  }
+}
 /* life */
 @media screen and (max-width: 1230px) {
   .life-item {
@@ -1191,7 +1267,55 @@
     opacity: 1;
     transition: all 0.5s;
   }
+  /* 호버시 이미지 사이즈 조절 */
+  .life-item .life-item-study {
+  position: absolute;
+  display: block;
+    width: 33.75vw !important;
+    height: 24.5vh !important;
+  opacity: 0;
+  visibility: hidden;
+  background: url("../images/studyfrends2.png") no-repeat center;
+  background-size: cover;
+  transition: all 0.5s;
+}
 
+.life-item .life-item-tiproad {
+  position: absolute;
+  display: block;
+    width: 33.75vw !important;
+    height: 24.5vh !important;
+  opacity: 0;
+  visibility: hidden;
+  background: url("../images/tripfoodG.gif") no-repeat center;
+  background-size: cover;
+  transition: all 0.5s;
+}
+
+.life-item .life-item-drow {
+  position: absolute;
+  display: block;
+    width: 33.75vw !important;
+    height: 24.5vh !important;
+  opacity: 0;
+  visibility: hidden;
+  background: url("../images/painting2.png") no-repeat center;
+  background-size: cover;
+  transition: all 0.5s;
+}
+
+.life-item:hover .life-item-study {
+  opacity: 1;
+  visibility: visible;
+}
+.life-item:hover .life-item-tiproad {
+  opacity: 1;
+  visibility: visible;
+}
+.life-item:hover .life-item-drow {
+  opacity: 1;
+  visibility: visible;
+}
   .life-item-text {
     position: absolute !important;
     display: block;
