@@ -1285,7 +1285,7 @@
 @media screen and (max-width: 1230px) {
   .life-item {
     width: 100%;
-    height: 30vh !important;
+    height: 26.14vh !important;
     padding-bottom: 0 !important;
     padding-left: 4.065vw !important;
   }
@@ -1293,9 +1293,9 @@
   .life-item > img {
     display: block;
     width: 33.75vw !important;
-    height: 245px;
-    box-shadow: 0px 4px 6px 0px rgb(0 12 29 / 8%);
+    height: 26.14vh !important;
     opacity: 1;
+    padding-bottom: 20px;
     transition: all 0.5s;
   }
 
