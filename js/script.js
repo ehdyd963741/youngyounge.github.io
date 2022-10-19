@@ -38,7 +38,7 @@ window.onload = function () {
   // 모바일 메뉴 펼치기 기능
   // 1. 모바일 메뉴 저장
   let mb_mainmenu = $(".mb-mainmenu");
-
+  
   // 최종 결과
   let mb_li = $(".mb-menu > li");
   $.each(mb_mainmenu, function (index) {
