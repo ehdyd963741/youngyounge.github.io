@@ -233,20 +233,34 @@
 }
 
 @media screen and (max-width: 680px) {
-  .visual-left > img {
+  .visual {
+    position: relative;
+    display: block;
+    height: 700px !important;
+    background: #fcfcfc;
+  }
+
+  .visual-right {
     position: absolute;
     display: block;
-    /* transform: scaleX(-1); */
-    top: 140px;
-    left: 36%;
-    /* left: -10%; */
-    width: 27.1875vw;
-    height: 64.9vh;
-    /* opacity: 0.8; */
+    width: 60% !important;
+    height: 600px !important;
+    left: 10%;
+    transition: all 0.5s;
+  }
+
+  .visual-right-box {
+    position: absolute;
+    display: block;
+    top: 30%;
+    left: -4%;
+    width: 10.79vw;
+    height: 500px;
+    background: #fcc52c;
   }
 
   .visual-right-textbox {
-    padding-left: 20px !important;
+    padding-left: 1px !important;
   }
 
   .visual-right-textbox > p {
@@ -325,18 +339,16 @@
     display: block;
   }
 
-  /* .profile-container {
-
-  } */
   .porfile-left-img {
     position: relative;
     display: inline-block;
-    width: 13.48vw;
+    width: 22.8311vw;
   }
 
   .profile-center {
     position: relative;
     display: inline-block;
+    width: 70%;
   }
 
   .profile-right {
@@ -366,6 +378,12 @@
     display: block;
     padding-top: 50px !important;
     padding-bottom: 50px;
+  }
+
+  .porfile-left-img {
+    position: relative;
+    display: inline-block;
+    width: 30.1205vw !important;
   }
 
   .profile-container {
@@ -406,6 +424,7 @@
   .profile-right {
     position: relative;
     display: block;
+    height: 20vh;
     margin-top: 100px;
     padding-left: 100px;
   }
@@ -430,6 +449,12 @@
     display: block;
     padding-top: 50px !important;
     padding-bottom: 50px;
+  }
+
+  .porfile-left-img {
+    position: relative;
+    display: inline-block;
+    width: 41.6667vw !important;
   }
 
   .profile-container {
@@ -490,7 +515,12 @@
     padding-top: 50px !important;
     padding-bottom: 50px;
   }
-
+  .porfile-left-img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width:50.0000vw !important;
+  }
   .profile-container {
     display: block !important;
   }
