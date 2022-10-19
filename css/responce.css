@@ -682,15 +682,17 @@
     margin: 0 auto;
     width: 62.5000vw !important;
   }
+  
+  .profile-bt {
+    margin-left: 13px !important;
+  }
+
   .profile-right {
     margin-top: 20px;
   }
   .profile-right-education {
     display: block !important;
-  }
-
-  .profile-bt {
-    margin-left: 13px !important;
+    padding-bottom: 20px;
   }
 
   .profile-right-education ul li {
