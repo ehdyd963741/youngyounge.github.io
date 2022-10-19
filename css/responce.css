@@ -9,6 +9,10 @@
 }
 /* header */
 @media screen and (max-width: 1100px) {
+  .header {
+    overflow-x: hidden;
+  }
+
   .visual-left {
     top: 0;
     width: 10% !important;
@@ -29,6 +33,7 @@
   .header {
     width: 100%;
     text-align: center;
+    overflow-x: hidden;
   }
 
   .header > .logo {
@@ -52,6 +57,7 @@
     width: 11.11vw;
     height: 5vh;
     top: 15px;
+    overflow-x: hidden;
   }
 }
 
@@ -62,6 +68,7 @@
     display: block;
     height: 850px;
     background: #fcfcfc;
+    overflow-x: hidden;
   }
 
   .visual-left {
@@ -154,6 +161,7 @@
     display: block;
     height: 95.73vh;
     background: #fcfcfc;
+    overflow-x: hidden;
   }
 
   .visual-left {
@@ -1285,6 +1293,7 @@
   .life-item > img {
     display: block;
     width: 33.75vw !important;
+    height: 245px;
     box-shadow: 0px 4px 6px 0px rgb(0 12 29 / 8%);
     opacity: 1;
     transition: all 0.5s;
@@ -1295,6 +1304,7 @@
     position: absolute;
     display: block;
     width: 33.75vw !important;
+    height: 245px;
     opacity: 0;
     visibility: hidden;
     background: url("../images/studyfrends2.png") no-repeat center;
@@ -1306,6 +1316,7 @@
     position: absolute;
     display: block;
     width: 33.75vw !important;
+    height: 245px;
     opacity: 0;
     visibility: hidden;
     background: url("../images/tripfoodG.gif") no-repeat center;
@@ -1317,6 +1328,7 @@
     position: absolute;
     display: block;
     width: 33.75vw !important;
+    height: 245px;
     opacity: 0;
     visibility: hidden;
     background: url("../images/painting2.png") no-repeat center;

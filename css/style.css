@@ -294,6 +294,7 @@ body {
   width: 100%;
   box-shadow: 0px 3px 8px 0px rgb(21 47 95 / 12%);
   background: #fff;
+  overflow: hidden;
   z-index: 9999;
 }
 
@@ -366,6 +367,7 @@ body {
   display: block;
   height: 850px;
   background: #fcfcfc;
+  overflow-x: hidden;
 }
 
 .visual-left {
