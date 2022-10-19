@@ -4,7 +4,7 @@ window.onload = function () {
     document.documentElement.style.setProperty("--vh", `${vh}px`);
   });
   // AOS
-  // AOS.init();
+  AOS.init();
   // 모바일 메뉴 버튼
   // 모바일 메뉴 기능
   // .mb-bt 를 저장해서 활용하자.
