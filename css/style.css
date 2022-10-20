@@ -509,7 +509,7 @@ body {
   transition: all 0.5s;
 }
 
-.porfile-left-img {
+.profile-left-img {
   position: relative;
   display: block;
   width: 250px;
@@ -523,7 +523,7 @@ body {
   transition: all 0.3s;
 }
 
-.porfile-left-img:hover {
+.profile-left-img:hover {
   opacity: 1;
 }
 
@@ -597,13 +597,13 @@ body {
   transition: all 0.5s;
 }
 
-.profile-bt {
+.profile-center-bt {
   position: relative;
   display: block;
   margin-top: 20px;
 }
 
-.profile-center-bt {
+.profile-center-bt1 {
   border: none;
   background: #fcc52c;
   border: 1px solid #fcc52c;
@@ -689,7 +689,6 @@ body {
 
 .profile-right-experience ul li {
   color: #8a8fa3;
-  transition: all 0.5s;
 }
 
 /* portfolio */
