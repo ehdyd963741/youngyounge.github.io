@@ -376,15 +376,15 @@ body {
   transition: all 0.5s;
 }
 
-.visual-left > img {
+.visual-left-img {
   position: absolute;
   display: block;
-  /* transform: scaleX(-1); */
-  top: 140px;
-  left: 36%;
-  /* left: -10%; */
-  width: 522px;
-  /* opacity: 0.8; */
+  top: 170px;
+  left: 40%;
+  width: 480px;
+  height: 586px;
+  background: url("../images/visualmyfhoto.png") no-repeat center;
+  background-size: cover;
 }
 
 .visual-right {

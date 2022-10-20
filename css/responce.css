@@ -61,15 +61,6 @@
     overflow: hidden;
   }
 
-  .visual-left {
-    top: 0;
-    width: 10% !important;
-  }
-
-  .visual-right {
-    right: 30% !important;
-    opacity: 0.5;
-  }
 }
 
 @media screen and (max-width: 1040px) {
@@ -118,23 +109,21 @@
     background: #fcfcfc;
     overflow: hidden;
   }
+  .visual-left {
+    top: 0;
+    width: 10% !important;
+  }
+
+  .visual-right {
+    right: 30% !important;
+    opacity: 0.5;
+  }
 
   .visual-left {
     position: relative;
     display: block;
     width: 50%;
     transition: all 0.5s;
-  }
-
-  .visual-left>img {
-    position: absolute;
-    display: block;
-    /* transform: scaleX(-1); */
-    top: 140px;
-    left: 36%;
-    /* left: -10%; */
-    width: 522px;
-    /* opacity: 0.8; */
   }
 
   .visual-right {

@@ -4,10 +4,9 @@ window.onload = function () {
     document.documentElement.style.setProperty("--vh", `${vh}px`);
   });
   // AOS
-  // AOS.init();
+  AOS.init();
   // 모바일 메뉴 버튼
   // 모바일 메뉴 기능
-  // .mb-bt 를 저장해서 활용하자.
   $(".mb-bt").click(function (e) {
     e.preventDefault();
     $(this).toggleClass("mb-bt-open");
@@ -26,27 +25,19 @@ window.onload = function () {
 
   // 화면 사이즈 체크
   $(window).resize(function () {
-    // 화면 너비를 계산한다.
     let temp = $(window).width();
-    // 1000 px 보다 크면
     if (temp > 1000) {
-      // 모바일 버튼 기능 초기화
       buttonReset();
     }
   });
 
   // 모바일 메뉴 펼치기 기능
-  // 1. 모바일 메뉴 저장
   let mb_mainmenu = $(".mb-mainmenu");
-  
-  // 최종 결과
+
   let mb_li = $(".mb-menu > li");
   $.each(mb_mainmenu, function (index) {
     $(this).click(function (e) {
-      // mb-mainmenu-open 를 toggleClass 한다.
       $(this).toggleClass("mb-mainmenu-open");
-      // 만약에 mb-mainmenu-open 이 있으면 펼치고
-      // 없으면 닫고
       let active = $(this).hasClass("mb-mainmenu-open");
       if (active) {
         let temp = mb_submenu_high[index];
@@ -56,14 +47,12 @@ window.onload = function () {
       }
     });
   });
-  // 모바일 메뉴 배경 클릭시 사라짐.
+
   let mb_dim = $(".mb-dim");
   mb_dim.click(function () {
-    // 모바일 버튼 기능 초기화
     buttonReset();
   });
 
-  // 메뉴바의 포커스 유지
   let gnbMenuA = $(".gnb > li > a");
   let sectionArr = $(".wrap > section");
 
@@ -72,11 +61,9 @@ window.onload = function () {
       element: $(this),
       handler: function (direction) {
         if (direction == "down") {
-          // 스크롤을 아래로 내릴떄
           gnbMenuA.removeClass("gnb-active");
           gnbMenuA.eq(index).addClass("gnb-active");
         } else if (direction == "up") {
-          // 스크롤을 위로 올릴떄
           let tempIndex = index - 1;
           if (index != 0) {
             gnbMenuA.removeClass("gnb-active");
@@ -91,12 +78,10 @@ window.onload = function () {
   let slideMenu = $(".st-list li a");
   $.each(slideMenu, function (index, item) {
     $(this).click(function (event) {
-      //href막기
       event.preventDefault();
       swSlide.slideTo(index + 1);
     });
   });
-  // 처음 슬라이드 표현을 위해서 0번이 포커스 된다.
   slideMenu.eq(0).addClass("slide-menu-active");
 
   let swSlide = new Swiper(".sw-port-cube", {
@@ -117,9 +102,7 @@ window.onload = function () {
   });
 
   swSlide.on("slideChange", function () {
-    // 일단 모두 포커스 class 지운다.
     slideMenu.removeClass("slide-menu-active");
-    // 나는 포커스 들어간다.
     slideMenu.eq(swSlide.realIndex).addClass("slide-menu-active");
   });
 
@@ -129,52 +112,6 @@ window.onload = function () {
   $(".sw-port-cube").mouseleave(function () {
     swSlide.autoplay.start();
   });
-
-  const $text = document.querySelector(".auto-text");
-  // 글자 모음
-  const letters = [
-    "HELLOW",
-    "MyFortPolio",
-    "Always From Development 'WooJunKim'",
-  ];
-  const letters2 = ["From"];
-  const letters3 = ["DevelopMent"];
-  // 글자 입력 속도
-  const speed = 100;
-  let i = 0;
-  // 타이핑 효과
-  const typing = async () => {
-    const letter = letters[i].split("");
-    while (letter.length) {
-      await wait(speed);
-      // $text.innerHTML += letter.shift();
-    }
-    // 잠시 대기
-    await wait(500);
-    // 지우는 효과
-    if (letters[i + 1]) remove();
-  };
-
-  // 글자 지우는 효과
-  const remove = async () => {
-    const letter = letters[i].split("");
-    while (letter.length) {
-      await wait(speed);
-      letter.pop();
-      $text.innerHTML = letter.join("");
-    }
-    // 다음 순서의 글자로 지정, 타이핑 함수 다시 실행
-    i++;
-    typing();
-  };
-
-  // 딜레이 기능 ( 마이크로초 )
-  function wait(ms) {
-    return new Promise((res) => setTimeout(res, ms));
-  }
-
-  // 초기 실행
-  setTimeout(typing, 1200);
 
   // 애니메이션
   var scene = document.getElementById("scene");
@@ -495,7 +432,6 @@ window.onload = function () {
   });
   // vision스와이퍼 부분
   let visonSwiper = new Swiper(".visionswiper", {
-    // grabCursor: true,
     loop: true,
     speed: 1500,
     autoplay: {
@@ -582,7 +518,8 @@ $(document).ready(function () {
   //위로가기 기능
   let go_top = $(".gotop");
   go_top.click(function () {
-    $("html").animate({
+    $("html").animate(
+      {
         scrollTop: 0,
       },
       1000
