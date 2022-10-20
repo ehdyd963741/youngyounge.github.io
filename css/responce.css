@@ -1230,9 +1230,11 @@
   .skill>.skill-back {
     width: 95.0000vw !important;
     height: 386px;
+    left: -50px;
   }
 
   .skill>.skill-back2 {
+    left: 0;
     width: 95.0000vw !important;
     height: 386px;
   }
