@@ -255,7 +255,6 @@ body {
   font-weight: 500;
 }
 
-
 /* 모바일 메뉴 가림막 */
 .mb-dim {
   position: fixed;
@@ -1200,7 +1199,7 @@ body {
   color: #ffff;
   background: rgba(0, 0, 0, 0.5);
   transition: all 0.3s;
-  font-size: 1.00em;
+  font-size: 1em;
   margin-right: 1px;
 }
 
