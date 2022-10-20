@@ -1226,6 +1226,19 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .skill>.skill-back {
+    width: 95.0000vw !important;
+    height: 386px;
+  }
+
+  .skill>.skill-back2 {
+    width: 95.0000vw !important;
+    height: 386px;
+  }
+
+}
+
 /* experience */
 @media screen and (max-width: 1000px) {
   .experience {
